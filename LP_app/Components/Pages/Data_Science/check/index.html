@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>DS Academy</h1>
+                <p class="tagline">Master Data Science</p>
+            </div>
+            
+            <div class="progress-summary">
+                <div class="progress-ring">
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35" class="progress-background"></circle>
+                        <circle cx="40" cy="40" r="35" class="progress-circle" id="progressCircle"></circle>
+                    </svg>
+                    <div class="progress-text">
+                        <span class="progress-value" id="progressValue">0%</span>
+                    </div>
+                </div>
+                <p class="progress-label">Overall Progress</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="nav-title">Core Courses</h3>
+                    <ul class="nav-list" id="coreCourses"></ul>
+                </div>
+                
+                <div class="nav-section">
+                    <h3 class="nav-title">Electives</h3>
+                    <ul class="nav-list" id="electives"></ul>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="btn btn-secondary" id="resetProgress">Reset Progress</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-bar">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">☰</button>
+                    <h2 id="currentCourseTitle">Welcome to Data Science Academy</h2>
+                </div>
+                <div class="header-right">
+                    <span class="course-code" id="courseCode"></span>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-wrapper">
+                <!-- Welcome Section -->
+                <section id="welcomeSection" class="welcome-section active">
+                    <div class="welcome-content">
+                        <h1>Welcome to Your Data Science Journey</h1>
+                        <p>This comprehensive learning platform guides you through the complete data science curriculum, from foundational concepts to advanced specializations.</p>
+                        
+                        <div class="welcome-grid">
+                            <div class="welcome-card">
+                                <h3>📚 Structured Curriculum</h3>
+                                <p>12 carefully designed courses progressing from basics to advanced topics</p>
+                            </div>
+                            <div class="welcome-card">
+                                <h3>🎯 Clear Learning Paths</h3>
+                                <p>Follow a guided sequence with clear prerequisites and dependencies</p>
+                            </div>
+                            <div class="welcome-card">
+                                <h3>📊 Track Progress</h3>
+                                <p>Monitor your advancement with detailed progress tracking</p>
+                            </div>
+                            <div class="welcome-card">
+                                <h3>🔧 Hands-on Projects</h3>
+                                <p>Apply your knowledge with real-world capstone and elective projects</p>
+                            </div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h2>Get Started</h2>
+                            <p>Choose a course from the sidebar to begin your learning journey</p>
+                            <button class="btn btn-primary" onclick="selectCourse(0)">Start with Fundamentals</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Content Section -->
+                <section id="courseSection" class="course-section">
+                    <div class="course-header">
+                        <div class="course-info">
+                            <h2 id="courseTitle"></h2>
+                            <p id="courseDescription"></p>
+                        </div>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Difficulty</span>
+                                <span class="meta-value" id="courseDifficulty"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Duration</span>
+                                <span class="meta-value" id="courseDuration"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module Tabs -->
+                    <div class="module-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="modules">Modules</button>
+                        <button class="tab-btn" data-tab="skills">Skills</button>
+                        <button class="tab-btn" data-tab="resources">Resources</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane active" id="overview">
+                            <div class="learning-objectives">
+                                <h3>Learning Objectives</h3>
+                                <ul id="objectivesList"></ul>
+                            </div>
+
+                            <div class="prerequisites">
+                                <h3>Prerequisites</h3>
+                                <ul id="prerequisitesList"></ul>
+                            </div>
+
+                            <div class="course-structure">
+                                <h3>Course Structure</h3>
+                                <div id="courseStructure"></div>
+                            </div>
+                        </div>
+
+                        <!-- Modules Tab -->
+                        <div class="tab-pane" id="modules">
+                            <div class="modules-list" id="modulesList"></div>
+                        </div>
+
+                        <!-- Skills Tab -->
+                        <div class="tab-pane" id="skills">
+                            <div class="skills-grid" id="skillsList"></div>
+                        </div>
+
+                        <!-- Resources Tab -->
+                        <div class="tab-pane" id="resources">
+                            <div class="resources-list" id="resourcesList"></div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Section -->
+                    <div class="course-progress">
+                        <div class="progress-header">
+                            <h3>Your Progress</h3>
+                            <span id="progressPercent">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="courseLessonProgress"></div>
+                        </div>
+                        <p class="progress-text"><span id="completedLessons">0</span> of <span id="totalLessons">0</span> lessons completed</p>
+                    </div>
+
+                    <!-- Course Actions -->
+                    <div class="course-actions">
+                        <button class="btn btn-primary" id="toggleCourseCompletion">Mark as In Progress</button>
+                        <button class="btn btn-outline" id="previousCourse" style="display:none;">← Previous Course</button>
+                        <button class="btn btn-outline" id="nextCourse" style="display:none;">Next Course →</button>
+                    </div>
+                </section>
+
+                <!-- Learning Path Section -->
+                <section id="pathSection" class="learning-path-section">
+                    <h2>Learning Path</h2>
+                    <div class="path-timeline" id="pathTimeline"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-content"></div>
+    </div>
+
+    <script src="courses-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

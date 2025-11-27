@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LP_app
+build_property.RootNamespace = LP_app
+build_property.ProjectDir = /Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Aerospace_Engineering/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZXJvc3BhY2VfRW5naW5lZXJpbmcvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/BioMedical_Engineering/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9CaW9NZWRpY2FsX0VuZ2luZWVyaW5nL0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/BioTechnology_Program/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9CaW9UZWNobm9sb2d5X1Byb2dyYW0vSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Chemistry/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVtaXN0cnkvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Data_Science/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhX1NjaWVuY2UvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Engineering/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FbmdpbmVlcmluZy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Geospatial_Analytics/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9HZW9zcGF0aWFsX0FuYWx5dGljcy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Mathematics/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9NYXRoZW1hdGljcy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ob3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Nuclear_Engineering/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9OdWNsZWFyX0VuZ2luZWVyaW5nL0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Physics/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9QaHlzaWNzL0luZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Pages/Textiles/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UZXh0aWxlcy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2czftve675
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cgq88qfwn3
+
+[/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/Components/Layout/ReconnectModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmVjb25uZWN0TW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uugq7wodjd
