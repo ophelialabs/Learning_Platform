@@ -1,0 +1,622 @@
+@page "/nanotechnology"
+
+<PageTitle>Nanotechnology - Learning Platform</PageTitle>
+
+<CourseHeader 
+    CourseName="Nanotechnology & Advanced Materials"
+    Description="Explore nanostructured materials, light manipulation, and advanced material applications including UV control, semiconductors, and emerging technologies."
+    Duration="10 months"
+    LessonCount="48"
+    HasCertificate="true" />
+
+<div class="learning-cta">
+    <a href="/nanotechnology/learning" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
+    </a>
+</div>
+
+<div class="container">
+    <section class="course-overview">
+        <h2>Course Modules</h2>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="card-number">1</div>
+                <h3>Nanostructured Materials</h3>
+                <p>Fundamentals of nanostructures, material characterization, and synthesis methods.</p>
+                <div class="card-meta">12 lessons • 10 hours</div>
+                <a href="/nanotechnology/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">2</div>
+                <h3>Light Manipulation & UV Control</h3>
+                <p>UV light control through nanostructuring, advanced materials, and optical devices.</p>
+                <div class="card-meta">14 lessons • 12 hours</div>
+                <a href="/nanotechnology/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">3</div>
+                <h3>Advanced Applications</h3>
+                <p>EUV lithography, DUV LEDs, and emerging nanotechnologies.</p>
+                <div class="card-meta">12 lessons • 10 hours</div>
+                <a href="/nanotechnology/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <h2>Tools You'll Master</h2>
+        <div class="tools-grid">
+            @foreach (var tool in Tools)
+            {
+                <div class="tool-badge">@tool</div>
+            }
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <h2>What You'll Learn</h2>
+        <div class="requirements-grid">
+            <div class="requirement">
+                <h4>✓ Nanostructures</h4>
+                <p>AlN, bismuth, silica, and metamaterials for advanced applications.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Light Control</h4>
+                <p>Diffraction, polarization, reflection, and absorption mechanisms.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ UV Manipulation</h4>
+                <p>Extreme UV (EUV) and deep UV (DUV) light generation and control.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Material Design</h4>
+                <p>Nanostructured solids, polymers, and specialized optical devices.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Semiconductor Technology</h4>
+                <p>AlGaN-based LEDs and semiconductor manufacturing processes.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Research Applications</h4>
+                <p>Lithography, sterilization, medical devices, and emerging technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="research-section">
+        <h2>Research & Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-item">
+                <h3>Research Centers</h3>
+                <ul>
+                    <li><a href="https://ir.arcnl.nl/" target="_blank">Advanced Research Center for NanoLithography (ARCNL)</a></li>
+                    <li>Leading research in extreme ultraviolet lithography and nanomaterials</li>
+                </ul>
+            </div>
+            <div class="resource-item">
+                <h3>Key Topics</h3>
+                <ul>
+                    <li>Nanostructured materials manipulation of UV light</li>
+                    <li>EUV lithography for advanced microprocessor manufacturing</li>
+                    <li>DUV LED efficiency and design challenges</li>
+                    <li>Polymer additives for UV protection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="uv-materials-section">
+        <h2>UV Light Control & Materials</h2>
+        <p class="section-intro">Advanced materials manipulate ultraviolet (UV) light through various mechanisms, including absorption, reflection, fluorescence, and complex interactions facilitated by nanostructures and specialized material compositions.</p>
+        
+        <div class="materials-table">
+            <div class="table-header">
+                <div class="header-cell">Material Type</div>
+                <div class="header-cell">Mechanism</div>
+                <div class="header-cell">Applications</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">AlGaN-based semiconductors</div>
+                <div class="cell">Light Emission (LEDs)</div>
+                <div class="cell">Deep UV (DUV) light sources for sterilization and bio/medical uses</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Nanostructured solids (etched silica)</div>
+                <div class="cell">Diffraction/Polarization control</div>
+                <div class="cell">Extreme UV (EUV) light generation, probing computer chips and biological cells</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">UV Fused Silica, CaF₂, Sapphire</div>
+                <div class="cell">Transmission</div>
+                <div class="cell">UV optics, lenses, and filters due to high transparency in UV range</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Inorganic filters (TiO₂, ZnO)</div>
+                <div class="cell">Reflection/Scattering</div>
+                <div class="cell">Sunscreen creams and UV-protective coatings</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Organic absorbers (Avobenzone, Oxybenzone)</div>
+                <div class="cell">Absorption (photoisomerization)</div>
+                <div class="cell">Sunscreens, fabrics, and personal care products</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Fluorescent materials & phosphors</div>
+                <div class="cell">Absorption/Re-emission (as visible light)</div>
+                <div class="cell">Fluorescent lamps, art conservation, security features</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Aluminum (Al)</div>
+                <div class="cell">High reflectivity</div>
+                <div class="cell">UV reflecting materials in specialized optical systems</div>
+            </div>
+            <div class="table-row">
+                <div class="cell">Photoinitiators/Polymers</div>
+                <div class="cell">Photochemistry (curing/cross-linking)</div>
+                <div class="cell">UV-curable resins/coatings for manufacturing and batteries</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+    <!-- Automatically search recent advances & update the section regularly -->
+        <h2>Recent Advances & Applications</h2>
+        <div class="applications-grid">
+            <div class="application-card">
+                <h3>Extreme UV Lithography</h3>
+                <p>Specialized materials, including highly reflective optics and tin droplet plasmas, are used in advanced machinery to generate and focus extreme ultraviolet (EUV) light for manufacturing advanced microprocessors.</p>
+            </div>
+            <div class="application-card">
+                <h3>Deep UV LEDs</h3>
+                <p>Research focuses on improving the efficiency of Aluminum Gallium Nitride (AlGaN) based LEDs for use in compact, high-efficiency sterilization and medical devices.</p>
+            </div>
+            <div class="application-card">
+                <h3>Nanoscale Control</h3>
+                <p>Scientists have developed methods using nanostructured solid materials, such as etched silica gratings, to control properties of generated EUV light like polarization and direction.</p>
+            </div>
+            <div class="application-card">
+                <h3>Biomimetic Materials</h3>
+                <p>Development of nature-based UV-shielding materials, such as those made from lignin and melanin, offers eco-friendly alternatives for food packaging and sunscreen fabrics.</p>
+            </div>
+            <div class="application-card">
+                <h3>Intelligent Light Manipulation</h3>
+                <p>Novel stimulus-responsive materials are being developed for applications in energy-saving smart windows and agricultural films with dynamic UV and visible light control.</p>
+            </div>
+            <div class="application-card">
+                <h3>Key Research</h3>
+                <p><a href="https://ir.arcnl.nl/pub/521/2025-PhD-Thesis-Dion-Engels.pdf" target="_blank">Solid-State Laser-Driven Vaporization and Ionization of Tin →</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges-section">
+        <h2>DUV LED Efficiency Challenges</h2>
+        <div class="challenges-grid">
+            <div class="challenge-card">
+                <h4>Material Quality & Defect Density</h4>
+                <p><strong>Issue:</strong> AlGaN layers grown on sapphire substrates suffer from large lattice mismatch, resulting in high threading dislocation densities (10¹⁰ cm⁻²).</p>
+                <p><strong>Impact:</strong> Acts as non-radiative recombination centers, significantly reducing internal quantum efficiency (IQE).</p>
+            </div>
+            <div class="challenge-card">
+                <h4>Inefficient Doping & Carrier Injection</h4>
+                <p><strong>Issue:</strong> Achieving high conductivity in both n-type and p-type AlGaN layers is difficult due to magnesium (Mg) activation energy increasing dramatically with higher Al content.</p>
+                <p><strong>Impact:</strong> Poor carrier injection efficiency (CIE) and high operating voltages.</p>
+            </div>
+            <div class="challenge-card">
+                <h4>Low Light Extraction Efficiency</h4>
+                <p><strong>Issue:</strong> p-GaN contact layers strongly absorb DUV light, and emitted light tends to be polarized in TM mode, easily trapped by total internal reflection.</p>
+                <p><strong>Impact:</strong> Much of generated light is lost before exiting the chip.</p>
+            </div>
+            <div class="challenge-card">
+                <h4>Thermal Management & Reliability</h4>
+                <p><strong>Issue:</strong> Low electrical conductivity of AlGaN and non-radiative recombination processes generate significant heat. Sapphire substrates have low thermal conductivity.</p>
+                <p><strong>Impact:</strong> Increased junction temperature accelerates device degradation and shortens lifespan.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    private List<string> Tools = new()
+    {
+        "Electron Microscopy",
+        "X-ray Diffraction",
+        "Spectroscopy",
+        "Material Simulation",
+        "Photonics",
+        "Lithography",
+        "Semiconductor Design",
+        "Optical Engineering",
+        "Nanotechnology CAD",
+        "Lab Equipment"
+    };
+}
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .course-overview,
+    .tools-section,
+    .requirements-section,
+    .research-section,
+    .uv-materials-section,
+    .applications-section,
+    .challenges-section {
+        margin-bottom: 60px;
+    }
+
+    .course-overview h2,
+    .tools-section h2,
+    .requirements-section h2,
+    .research-section h2,
+    .uv-materials-section h2,
+    .applications-section h2,
+    .challenges-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #1b6ec2;
+        border-bottom: 3px solid #1b6ec2;
+        padding-bottom: 10px;
+    }
+
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .overview-card {
+        background: white;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 25px;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .overview-card:hover {
+        border-color: #1b6ec2;
+        box-shadow: 0 8px 24px rgba(27, 110, 194, 0.15);
+        transform: translateY(-5px);
+    }
+
+    .card-number {
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: #1b6ec2;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .overview-card h3 {
+        margin-top: 15px;
+        color: #333;
+        font-size: 1.3rem;
+    }
+
+    .overview-card p {
+        color: #666;
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    .card-meta {
+        font-size: 0.9rem;
+        color: #999;
+        margin: 15px 0;
+    }
+
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
+    .tool-badge {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 12px 15px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 500;
+        border: 2px solid #1b6ec2;
+        transition: all 0.3s;
+    }
+
+    .tool-badge:hover {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    .requirements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .requirement {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+    }
+
+    .requirement h4 {
+        color: #1b6ec2;
+        margin: 0 0 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .requirement p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+    }
+
+    .resource-item {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 2px solid #e0e0e0;
+        transition: all 0.3s;
+    }
+
+    .resource-item:hover {
+        border-color: #1b6ec2;
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.1);
+    }
+
+    .resource-item h3 {
+        color: #1b6ec2;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    .resource-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resource-item li {
+        padding: 8px 0;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .resource-item a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .resource-item a:hover {
+        text-decoration: underline;
+    }
+
+    .learning-cta {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+
+    .btn-primary {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #0d47a1;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.3);
+    }
+
+    .btn-lg {
+        padding: 15px 40px;
+        font-size: 1.1rem;
+    }
+
+    .btn-sm {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .btn-outline-primary {
+        border: 2px solid #1b6ec2;
+        color: #1b6ec2;
+        background: transparent;
+    }
+
+    .btn-outline-primary:hover {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    /* Materials Table Styles */
+    .section-intro {
+        font-size: 1.05rem;
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .materials-table {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-header {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1.5fr;
+        gap: 20px;
+        background: #1b6ec2;
+        color: white;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+    .table-row {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1.5fr;
+        gap: 20px;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        align-items: start;
+    }
+
+    .table-row:last-child {
+        border-bottom: none;
+    }
+
+    .table-row:hover {
+        background-color: #f8f9fa;
+    }
+
+    .cell {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    /* Applications Section */
+    .applications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .application-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+        transition: all 0.3s;
+    }
+
+    .application-card:hover {
+        background: white;
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.1);
+    }
+
+    .application-card h3 {
+        color: #1b6ec2;
+        margin: 0 0 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .application-card p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .application-card a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .application-card a:hover {
+        text-decoration: underline;
+    }
+
+    /* Challenges Section */
+    .challenges-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .challenge-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 2px solid #e0e0e0;
+        transition: all 0.3s;
+    }
+
+    .challenge-card:hover {
+        border-color: #1b6ec2;
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.1);
+    }
+
+    .challenge-card h4 {
+        color: #1b6ec2;
+        margin: 0 0 15px 0;
+        font-size: 1.1rem;
+    }
+
+    .challenge-card p {
+        color: #666;
+        margin: 8px 0;
+        line-height: 1.5;
+    }
+
+    .challenge-card strong {
+        color: #333;
+    }
+
+    @@media (max-width: 1024px) {
+        .table-header,
+        .table-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .overview-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .tools-grid {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        }
+
+        .requirements-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .resources-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .applications-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .challenges-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

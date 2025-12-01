@@ -1,0 +1,174 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Learning Platform</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <a class="nav-link" onclick="document.querySelector('.research-section').classList.toggle('collapsed')" style="cursor: pointer;">
+                <span class="bi bi-journal-bookmark-fill-nav-menu" aria-hidden="true"></span> Research
+            </a>
+        </div>
+
+        <div class="research-section collapsed">
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/universities">
+                    <span class="bi bi-rocket-fill-nav-menu" aria-hidden="true"></span> Universities
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/journals">
+                    <span class="bi bi-journal-bookmark-fill-nav-menu" aria-hidden="true"></span> Journals
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/research">
+                    <span class="bi bi-journal-bookmark-fill-nav-menu" aria-hidden="true"></span> Research
+                </NavLink>
+            </div>
+        </div>
+
+        <div class="nav-item px-3">
+            <a class="nav-link" onclick="document.querySelector('.learning-section').classList.toggle('collapsed')" style="cursor: pointer;">
+                <span class="bi bi-journal-bookmark-fill-nav-menu" aria-hidden="true"></span> Learning
+            </a>
+        </div>
+
+        <div class="learning-section collapsed">
+        
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/aerospace-engineering">
+                <span class="bi bi-rocket-fill-nav-menu" aria-hidden="true"></span> Aerospace Engineering
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/biomedical-engineering">
+                <span class="bi bi-heart-pulse-fill-nav-menu" aria-hidden="true"></span> BioMedical Engineering
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/biotechnology">
+                <span class="bi bi-bug-fill-nav-menu" aria-hidden="true"></span> BioTechnology Program
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/chemistry">
+                <span class="bi bi-flask-fill-nav-menu" aria-hidden="true"></span> Chemistry
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/data-science">
+                <span class="bi bi-graph-up-fill-nav-menu" aria-hidden="true"></span> Data Science
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/engineering">
+                <span class="bi bi-gear-fill-nav-menu" aria-hidden="true"></span> Engineering
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/geospatial">
+                <span class="bi bi-map-fill-nav-menu" aria-hidden="true"></span> Geospatial Analytics
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/mathematics">
+                <span class="bi bi-calculator-fill-nav-menu" aria-hidden="true"></span> Mathematics
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/nanotechnology">
+                <span class="bi bi-brightness-high-fill-nav-menu" aria-hidden="true"></span> Nanotechnology
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/nuclear-engineering">
+                <span class="bi bi-lightning-fill-nav-menu" aria-hidden="true"></span> Nuclear Engineering
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/physics">
+                <span class="bi bi-brightness-high-fill-nav-menu" aria-hidden="true"></span> Physics
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/textiles">
+                <span class="bi bi-scissors-nav-menu" aria-hidden="true"></span> Textiles
+            </NavLink>
+        </div>
+        </div>
+
+        <div class="nav-item px-3">
+            <a class="nav-link" onclick="document.querySelector('.enterprise-section').classList.toggle('collapsed')" style="cursor: pointer;">
+                <span class="bi bi-journal-bookmark-fill-nav-menu" aria-hidden="true"></span> Enterprise
+            </a>
+        </div>
+
+        <div class="enterprise-section collapsed">
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/enterprise">
+                    <span class="bi bi-rocket-fill-nav-menu" aria-hidden="true"></span> Enterprise Solutions
+                </NavLink>
+            </div>
+
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/enterprise/architecture">
+                    <span class="bi bi-rocket-fill-nav-menu" aria-hidden="true"></span> Architecture
+                </NavLink>
+            </div>
+            </div>
+
+        <div class="nav-item px-3">
+            <a class="nav-link" onclick="document.querySelector('.account-section').classList.toggle('collapsed')" style="cursor: pointer;">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Account
+            </a>
+        </div>
+
+        <div class="account-section collapsed">
+        
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/my-learning">
+                <span class="bi bi-bookmark-fill-nav-menu" aria-hidden="true"></span> My Learning
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/profile">
+                <span class="bi bi-person-fill-nav-menu" aria-hidden="true"></span> Profile
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/certificates">
+                <span class="bi bi-award-fill-nav-menu" aria-hidden="true"></span> Certificates
+            </NavLink>
+        </div>
+        </div>
+    </nav>
+</div>
+

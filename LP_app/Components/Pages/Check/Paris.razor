@@ -1,0 +1,116 @@
+@page "/Paris"
+@using Microsoft.AspNetCore.Components.Web
+<PageTitle>Globe</PageTitle>
+
+<div id="map3d-container" style="width: 75vw; height: 75vh;"></div>
+
+@* Optionally, you can add a loading spinner or fallback here *@
+
+<script>
+    (g => { 
+        var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; 
+        b = b[c] || (b[c] = {}); 
+        var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, 
+        u = () => h || (h = new Promise(async (f, n) => { 
+            await (a = m.createElement("script")); 
+            e.set("libraries", [...r] + ""); 
+            for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); 
+            e.set("callback", c + ".maps." + q); 
+            a.src = `https://maps.${c}apis.com/maps/api/js?` + e; 
+            d[q] = f; 
+            a.onerror = () => h = n(Error(p + " could not load.")); 
+            a.nonce = m.querySelector("script[nonce]")?.nonce || ""; 
+            m.head.append(a) 
+        })); 
+        d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) 
+    })({
+        key: "AIzaSyDK7BXtZz4ypjq0yr-7FrrAcl3oCoPpxK8",
+        v: "alpha"
+    });
+</script>
+<script>
+    let map3D = null;
+
+    const base = document.location.origin;
+
+    const europeCamera = {
+        center: { lat: 46.717, lng: 7.075, altitude: 2175.130 },
+        range: 5814650,
+        tilt: 33,
+        heading: 4.36,
+    };
+
+    const officeLocations = [
+        {
+            name: "Google France",
+            details: "8 Rue de Londres, 75009 Paris, France",
+            camera: {
+                center: { lat: 48.877276, lng: 2.329978, altitude: 48 },
+                range: 178,
+                tilt: 57.48,
+                heading: -17,
+            },
+            point: { lat: 48.8775183, lng: 2.3299791, altitude: 60 },
+            pin: {
+                background: 'white',
+                glyph: new URL(base + '/images/fr.svg'),
+                scale: 1.0,
+            },
+        },
+        // ... (other officeLocations as in your original code)
+        // For brevity, only one is shown here. Copy the rest from your original array.
+    ];
+
+    async function init() {
+        const { Map3DElement, MapMode, Marker3DInteractiveElement } = await google.maps.importLibrary("maps3d");
+        const { PinElement } = await google.maps.importLibrary('marker');
+
+        map3D = new Map3DElement({
+            ...europeCamera,
+            mode: MapMode.SATELLITE,
+        });
+
+        officeLocations.forEach(office => {
+            const marker = new Marker3DInteractiveElement({
+                position: office.point,
+                label: office.name,
+                altitudeMode: 'RELATIVE_TO_GROUND',
+                extruded: true,
+            });
+
+            marker.addEventListener('gmp-click', (event) => {
+                map3D.flyCameraTo({
+                    endCamera: office.camera,
+                    durationMillis: 2000,
+                });
+
+                map3D.addEventListener('gmp-animationend', () => {
+                    map3D.flyCameraAround({
+                        camera: office.camera,
+                        durationMillis: 2000,
+                        rounds: 1
+                    });
+
+                    map3D.addEventListener('gmp-animationend', () => {
+                        map3D.flyCameraTo({
+                            endCamera: europeCamera,
+                            durationMillis: 2000,
+                        });
+                    }, { once: true });
+
+                }, { once: true });
+
+                event.stopPropagation();
+            });
+
+            const markerPin = new PinElement(office.pin);
+            marker.append(markerPin);
+
+            map3D.append(marker);
+        });
+
+        document.getElementById('map3d-container').append(map3D);
+    }
+    
+    window.addEventListener('DOMContentLoaded', init);
+</script>

@@ -1,0 +1,138 @@
+@page "/data-science/learning"
+
+<div class="data-science-platform">
+    <!-- Tabs Navigation -->
+    <div class="platform-tabs">
+        <button class="tab-btn @(CurrentTab == "lessons" ? "active" : "")" onclick="SelectTab('lessons')">
+            <i class="bi bi-book-fill"></i> Lessons & Modules
+        </button>
+        <button class="tab-btn @(CurrentTab == "sandbox" ? "active" : "")" onclick="SelectTab('sandbox')">
+            <i class="bi bi-code-slash"></i> Code Sandbox
+        </button>
+        <button class="tab-btn @(CurrentTab == "summary" ? "active" : "")" onclick="SelectTab('summary')">
+            <i class="bi bi-graph-up-fill"></i> Progress
+        </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        @if (CurrentTab == "lessons")
+        {
+            <LessonContent Lessons="AllLessons" />
+        }
+        else if (CurrentTab == "sandbox")
+        {
+            <CodeSandbox />
+        }
+        else if (CurrentTab == "summary")
+        {
+            <CompletionSummary 
+                OverallProgress="65"
+                CompletedLessons="42"
+                TotalLessons="65"
+                CompletedModules="5"
+                TotalHoursPracticed="48.5"
+                CertificatesEarned="3"
+                CurrentStreak="12" />
+        }
+    </div>
+</div>
+
+@code {
+    private string CurrentTab = "lessons";
+    private List<LessonContent.LessonData> AllLessons = new();
+
+    protected override void OnInitialized()
+    {
+        AllLessons = new()
+        {
+            // Module 1: Program Induction
+            new() { Id = 1, Title = "Program Overview", ModuleNumber = 1, Duration = "30 mins", Overview = "Get started with the Professional Certificate in Data Science and Generative AI. Learn about program structure, expectations, and career paths.", Topics = new() { "Program Structure", "Career Opportunities", "Resources & Support" }, Objectives = new() { "Understand program goals", "Meet your instructors", "Set up learning tools" }, CodeExample = "", Resources = new() { "[Welcome Video](/data-science/resources/welcome-video)", "[Program Syllabus](/data-science/resources/program-syllabus)", "[Getting Started Guide](/data-science/resources/getting-started-guide)" }, IsCompleted = true },
+            new() { Id = 2, Title = "Course Navigation", ModuleNumber = 1, Duration = "20 mins", Overview = "Learn how to navigate the platform, access materials, and submit assignments.", Topics = new() { "Platform Tour", "Dashboard", "Assignment Submission" }, Objectives = new() { "Navigate the LMS", "Access course materials", "Submit work" }, CodeExample = "", Resources = new() { "[Platform Guide](/data-science/resources/platform-guide)", "[FAQ](/data-science/resources/faq)", "[Support Contact](/data-science/resources/support-contact)" }, IsCompleted = true },
+            new() { Id = 3, Title = "Setting Up Your Environment", ModuleNumber = 1, Duration = "45 mins", Overview = "Install Python, Jupyter Notebook, and essential libraries for data science.", Topics = new() { "Python Installation", "Jupyter Setup", "Library Configuration" }, Objectives = new() { "Install Python 3.x", "Set up Jupyter", "Verify installation" }, CodeExample = "# Verify Python installation\nimport sys\nprint(f'Python {sys.version}')\n\n# Check key libraries\nimport numpy\nimport pandas\nimport sklearn\nprint('All libraries installed!')", Resources = new() { "[Installation Guide](/data-science/resources/installation-guide)", "[Troubleshooting](/data-science/resources/troubleshooting)", "[Video Tutorial](/data-science/resources/video-setup-tutorial)" }, IsCompleted = true },
+            new() { Id = 4, Title = "Program Induction Assessment", ModuleNumber = 1, Duration = "60 mins", Overview = "Complete the induction assessment to test your understanding of foundational concepts.", Topics = new() { "Quiz", "Reflection", "Goal Setting" }, Objectives = new() { "Pass induction quiz", "Set learning goals", "Join the community" }, CodeExample = "", Resources = new() { "[Assessment](/data-science/resources/induction-assessment)", "[Solutions](/data-science/resources/assessment-solutions)", "[Discussion Board](/data-science/resources/discussion-board)" }, IsCompleted = true },
+
+            // Module 2: Programming Refresher
+            new() { Id = 5, Title = "Python Basics", ModuleNumber = 2, Duration = "50 mins", Overview = "Review Python fundamentals including variables, data types, and operations.", Topics = new() { "Variables", "Data Types", "Operators" }, Objectives = new() { "Understand Python syntax", "Work with variables", "Use operators" }, CodeExample = "# Variables and Data Types\nname = 'Alice'\nage = 25\ngpa = 3.85\nis_student = True\n\nprint(f'{name} is {age} years old with GPA {gpa}')\nprint(f'Student: {is_student}')", Resources = new() { "[Tutorial](/data-science/resources/python-basics-tutorial)", "[Cheat Sheet](/data-science/resources/python-cheat-sheet)", "[Exercises](/data-science/resources/python-basics-exercises)" }, IsCompleted = true },
+            new() { Id = 6, Title = "Control Flow", ModuleNumber = 2, Duration = "55 mins", Overview = "Master if statements, loops, and exception handling in Python.", Topics = new() { "If Statements", "Loops", "Exception Handling" }, Objectives = new() { "Use conditionals", "Write loops", "Handle errors" }, CodeExample = "# Control Flow Examples\nfor i in range(5):\n    if i % 2 == 0:\n        print(f'{i} is even')\n    else:\n        print(f'{i} is odd')\n\n# Try-except\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')", Resources = new() { "[Tutorial](/data-science/resources/control-flow-tutorial)", "[Examples](/data-science/resources/control-flow-examples)", "[Exercises](/data-science/resources/control-flow-exercises)" }, IsCompleted = true },
+            new() { Id = 7, Title = "Functions and Modules", ModuleNumber = 2, Duration = "60 mins", Overview = "Learn to create reusable functions and organize code into modules.", Topics = new() { "Function Definition", "Parameters", "Return Values", "Modules" }, Objectives = new() { "Write functions", "Use parameters", "Import modules" }, CodeExample = "# Define a function\ndef calculate_gpa(grades):\n    return sum(grades) / len(grades)\n\ndef print_report(name, gpa):\n    print(f'{name}\\'s GPA: {gpa:.2f}')\n\n# Use functions\ngrades = [3.8, 3.9, 3.7]\nstudent_gpa = calculate_gpa(grades)\nprint_report('Alice', student_gpa)", Resources = new() { "[Tutorial](/data-science/resources/functions-modules-tutorial)", "[Best Practices](/data-science/resources/functions-best-practices)", "[Exercises](/data-science/resources/functions-exercises)" }, IsCompleted = true },
+            new() { Id = 8, Title = "Data Structures", ModuleNumber = 2, Duration = "70 mins", Overview = "Deep dive into lists, tuples, dictionaries, and sets.", Topics = new() { "Lists", "Tuples", "Dictionaries", "Sets" }, Objectives = new() { "Work with lists", "Use dictionaries", "Understand sets" }, CodeExample = "# Data Structures\nstudents = ['Alice', 'Bob', 'Charlie']  # List\ncoordinates = (10, 20)  # Tuple\nstudent_info = {'name': 'Alice', 'gpa': 3.8}  # Dictionary\nunique_ids = {1, 2, 3, 4, 5}  # Set\n\nstudents.append('Diana')\nprint(f'Name: {student_info[\"name\"]}')\nprint(f'IDs: {unique_ids}')", Resources = new() { "[Tutorial](/data-science/resources/data-structures-tutorial)", "[Comparison](/data-science/resources/data-structures-comparison)", "[Exercises](/data-science/resources/data-structures-exercises)" }, IsCompleted = false },
+            new() { Id = 9, Title = "List Comprehensions", ModuleNumber = 2, Duration = "45 mins", Overview = "Master Python's powerful list comprehension syntax for concise code.", Topics = new() { "List Comprehensions", "Dictionary Comprehensions", "Generators" }, Objectives = new() { "Write comprehensions", "Optimize loops" }, CodeExample = "# List Comprehensions\nnumbers = [1, 2, 3, 4, 5]\nsquared = [x**2 for x in numbers]\nevens = [x for x in numbers if x % 2 == 0]\n\nprint(f'Squared: {squared}')\nprint(f'Evens: {evens}')\n\n# Dictionary Comprehension\nsquare_dict = {x: x**2 for x in numbers}\nprint(square_dict)", Resources = new() { "[Examples](/data-science/resources/comprehensions-examples)", "[Performance Tips](/data-science/resources/comprehensions-performance)", "[Exercises](/data-science/resources/comprehensions-exercises)" }, IsCompleted = false },
+            new() { Id = 10, Title = "Python Refresher Quiz", ModuleNumber = 2, Duration = "90 mins", Overview = "Test your Python knowledge with comprehensive assessment.", Topics = new() { "Quiz", "Coding Challenges", "Peer Review" }, Objectives = new() { "Demonstrate mastery", "Get feedback", "Prepare for next module" }, CodeExample = "", Resources = new() { "[Assessment](/data-science/resources/python-quiz)", "[Solutions](/data-science/resources/python-quiz-solutions)", "[Discussion](/data-science/resources/python-quiz-discussion)" }, IsCompleted = false },
+
+            // Module 3: Database Management with SQL
+            new() { Id = 11, Title = "SQL Basics", ModuleNumber = 3, Duration = "50 mins", Overview = "Introduction to SQL and relational databases.", Topics = new() { "Databases", "Tables", "SQL Statements" }, Objectives = new() { "Understand databases", "Write basic SQL" }, CodeExample = "-- SQL Basics\nSELECT * FROM students;\nSELECT name, gpa FROM students WHERE gpa > 3.7;\nSELECT COUNT(*) FROM students;\nSELECT DISTINCT major FROM students;", Resources = new() { "[Tutorial](/data-science/resources/sql-basics-tutorial)", "[Database Design](/data-science/resources/database-design)", "[Exercises](/data-science/resources/sql-basics-exercises)" }, IsCompleted = false },
+            new() { Id = 12, Title = "Joins and Queries", ModuleNumber = 3, Duration = "60 mins", Overview = "Master SQL joins and complex queries.", Topics = new() { "INNER JOIN", "LEFT JOIN", "Subqueries" }, Objectives = new() { "Join tables", "Write subqueries" }, CodeExample = "-- SQL Joins\nSELECT s.name, e.course\nFROM students s\nINNER JOIN enrollments e ON s.id = e.student_id;\n\nSELECT * FROM students\nWHERE id IN (SELECT student_id FROM enrollments);", Resources = new() { "[Tutorial](/data-science/resources/sql-joins-tutorial)", "[Examples](/data-science/resources/sql-joins-examples)", "[Exercises](/data-science/resources/sql-joins-exercises)" }, IsCompleted = false },
+
+            // Module 4: Python for Data Science (IBM)
+            new() { Id = 13, Title = "NumPy Arrays", ModuleNumber = 4, Duration = "55 mins", Overview = "Work with NumPy arrays for numerical computing.", Topics = new() { "Arrays", "Array Operations", "Broadcasting" }, Objectives = new() { "Create arrays", "Perform operations" }, CodeExample = "import numpy as np\n\n# Create arrays\narr = np.array([1, 2, 3, 4, 5])\nmatrix = np.array([[1, 2], [3, 4]])\n\nprint(f'Sum: {np.sum(arr)}')\nprint(f'Mean: {np.mean(arr)}')\nprint(f'Shape: {matrix.shape}')", Resources = new() { "[Tutorial](/data-science/resources/numpy-tutorial)", "[Cheat Sheet](/data-science/resources/numpy-cheat-sheet)", "[Exercises](/data-science/resources/numpy-exercises)" }, IsCompleted = false },
+            new() { Id = 14, Title = "Pandas DataFrames", ModuleNumber = 4, Duration = "65 mins", Overview = "Master Pandas for data manipulation and analysis.", Topics = new() { "DataFrames", "Series", "Data Cleaning" }, Objectives = new() { "Create DataFrames", "Clean data" }, CodeExample = "import pandas as pd\n\ndata = {'name': ['Alice', 'Bob'], 'age': [25, 30]}\ndf = pd.DataFrame(data)\n\nprint(df.head())\nprint(df.describe())\nprint(df.isnull().sum())", Resources = new() { "[Tutorial](/data-science/resources/pandas-tutorial)", "[Documentation](/data-science/resources/pandas-documentation)", "[Exercises](/data-science/resources/pandas-exercises)" }, IsCompleted = false },
+        };
+    }
+
+    private void SelectTab(string tab)
+    {
+        CurrentTab = tab;
+    }
+}
+
+<style>
+    .data-science-platform {
+        min-height: 100vh;
+        background: #f5f5f5;
+    }
+
+    .platform-tabs {
+        background: white;
+        border-bottom: 2px solid #e0e0e0;
+        display: flex;
+        gap: 0;
+        padding: 0 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .tab-btn {
+        padding: 16px 24px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #666;
+        transition: all 0.3s;
+        border-bottom: 3px solid transparent;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 500;
+    }
+
+    .tab-btn:hover {
+        color: #1b6ec2;
+    }
+
+    .tab-btn.active {
+        color: #1b6ec2;
+        border-bottom-color: #1b6ec2;
+    }
+
+    .tab-content {
+        padding: 0;
+    }
+
+    @@media (max-width: 768px) {
+        .platform-tabs {
+            overflow-x: auto;
+            padding: 0 10px;
+        }
+
+        .tab-btn {
+            padding: 12px 16px;
+            font-size: 0.9rem;
+        }
+
+        .tab-btn span:not(.bi) {
+            display: none;
+        }
+    }
+</style>

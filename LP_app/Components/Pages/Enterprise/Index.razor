@@ -1,0 +1,915 @@
+@page "/enterprise"
+@rendermode InteractiveServer
+
+<PageTitle>Enterprise Solutions & Architecture - Complete Learning Path</PageTitle>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        animation: slideDown 0.6s ease-out;
+    }
+
+    @@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 5px;
+    }
+
+    .learning-path {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 40px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .path-title {
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .path-steps {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .step-badge {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .step-badge.active {
+        background: #667eea;
+        border-color: #667eea;
+    }
+
+    .path-description {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+    }
+
+    .modules-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .module-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        animation: fadeInUp 0.6s ease-out forwards;
+        opacity: 0;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .module-card:nth-child(1) { animation-delay: 0s; }
+    .module-card:nth-child(2) { animation-delay: 0.1s; }
+    .module-card:nth-child(3) { animation-delay: 0.2s; }
+    .module-card:nth-child(4) { animation-delay: 0.3s; }
+    .module-card:nth-child(5) { animation-delay: 0.4s; }
+    .module-card:nth-child(6) { animation-delay: 0.5s; }
+    .module-card:nth-child(7) { animation-delay: 0.6s; }
+    .module-card:nth-child(8) { animation-delay: 0.7s; }
+    .module-card:nth-child(9) { animation-delay: 0.8s; }
+    .module-card:nth-child(10) { animation-delay: 0.9s; }
+    .module-card:nth-child(11) { animation-delay: 1s; }
+    .module-card:nth-child(12) { animation-delay: 1.1s; }
+
+    .module-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .module-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .module-icon {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .module-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .module-subtitle {
+        font-size: 0.85rem;
+        opacity: 0.9;
+    }
+
+    .module-content {
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .module-description {
+        color: #333;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        flex: 1;
+    }
+
+    .module-stats {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .stat-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #667eea;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        color: #999;
+        text-transform: uppercase;
+        margin-top: 3px;
+    }
+
+    .module-topics {
+        margin-bottom: 15px;
+    }
+
+    .topics-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #666;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .topics-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .topic-tag {
+        background: #f0f0f0;
+        color: #667eea;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .module-footer {
+        display: flex;
+        gap: 10px;
+        margin-top: auto;
+    }
+
+    .module-link {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        border: 2px solid #667eea;
+        color: #667eea;
+    }
+
+    .module-link:hover {
+        background: #667eea;
+        color: white;
+    }
+
+    .module-link.primary {
+        background: #667eea;
+        color: white;
+        border-color: #667eea;
+    }
+
+    .module-link.primary:hover {
+        background: #764ba2;
+        border-color: #764ba2;
+    }
+
+    .progress-indicator {
+        height: 4px;
+        background: #eee;
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        width: 0%;
+        transition: width 0.3s ease;
+    }
+
+    .difficulty-badge {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    .difficulty-beginner {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .difficulty-intermediate {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .difficulty-advanced {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .filter-section {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 2px solid white;
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: white;
+        color: #667eea;
+    }
+
+    .section-divider {
+        text-align: center;
+        margin: 50px 0 30px;
+        position: relative;
+    }
+
+    .section-divider h2 {
+        color: white;
+        font-size: 1.8rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .stat-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-card-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+
+    .stat-card-label {
+        color: #666;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+</style>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>
+            <i class="bi bi-diagram-3-fill"></i> 
+            Enterprise Solutions & Architecture
+        </h1>
+        <p>Comprehensive Learning Path for Enterprise Development</p>
+        <p style="font-size: 0.95rem; opacity: 0.8;">Master scalable systems, cloud infrastructure, and enterprise patterns</p>
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats-section">
+        <div class="stat-card">
+            <div class="stat-card-number">12</div>
+            <div class="stat-card-label">Learning Modules</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-number">50+</div>
+            <div class="stat-card-label">Advanced Topics</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-number">100%</div>
+            <div class="stat-card-label">Hands-on Projects</div>
+        </div>
+    </div>
+
+    <!-- Learning Paths -->
+    <div class="learning-path">
+        <div class="path-title">🎓 Recommended Learning Path</div>
+        <div class="path-steps">
+            <span class="step-badge active">1. Fundamentals</span>
+            <span class="step-badge">2. Architecture</span>
+            <span class="step-badge">3. Development</span>
+            <span class="step-badge">4. Cloud & DevOps</span>
+            <span class="step-badge">5. Advanced Topics</span>
+        </div>
+        <p class="path-description">
+            Start with enterprise fundamentals, explore system architecture patterns, dive into development practices, 
+            master cloud deployment and DevOps workflows, then advance to specialized topics like geofencing, IoT, 
+            and big data systems. Each module builds upon previous knowledge.
+        </p>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-section">
+        <button class="filter-btn active" @onclick="@(() => selectedCategory = "all")">All Topics</button>
+        <button class="filter-btn" @onclick="@(() => selectedCategory = "fundamental")">Fundamentals</button>
+        <button class="filter-btn" @onclick="@(() => selectedCategory = "infrastructure")">Infrastructure</button>
+        <button class="filter-btn" @onclick="@(() => selectedCategory = "development")">Development</button>
+        <button class="filter-btn" @onclick="@(() => selectedCategory = "advanced")">Advanced</button>
+    </div>
+
+    <!-- Modules Grid -->
+    <div class="modules-grid">
+        <!-- General -->
+        @if (selectedCategory == "all" || selectedCategory == "fundamental")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">📋</div>
+                    <div class="module-title">General Overview</div>
+                    <div class="module-subtitle">Enterprise Basics</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Foundation concepts for enterprise systems, governance, and organizational structures.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Beginner</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Governance</span>
+                            <span class="topic-tag">Best Practices</span>
+                            <span class="topic-tag">Strategy</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-beginner">Beginner Friendly</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/general" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Architecture -->
+        @if (selectedCategory == "all" || selectedCategory == "infrastructure")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">🏗️</div>
+                    <div class="module-title">Enterprise Architecture</div>
+                    <div class="module-subtitle">System Design Patterns</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Deep dive into architectural patterns, microservices, scalability, and system design principles.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Intermediate</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Microservices</span>
+                            <span class="topic-tag">Patterns</span>
+                            <span class="topic-tag">Scalability</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-intermediate">Intermediate</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/architecture" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Security -->
+        @if (selectedCategory == "all" || selectedCategory == "infrastructure")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">🔒</div>
+                    <div class="module-title">Enterprise Security</div>
+                    <div class="module-subtitle">Protection & Compliance</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Security frameworks, compliance standards, encryption, and threat mitigation strategies.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Encryption</span>
+                            <span class="topic-tag">Compliance</span>
+                            <span class="topic-tag">Threats</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/security" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Development -->
+        @if (selectedCategory == "all" || selectedCategory == "development")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">💻</div>
+                    <div class="module-title">Development Practices</div>
+                    <div class="module-subtitle">Code & Workflow</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Best practices for enterprise development, testing, version control, and collaborative workflows.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">9</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Intermediate</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Testing</span>
+                            <span class="topic-tag">CI/CD</span>
+                            <span class="topic-tag">Workflows</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-intermediate">Intermediate</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/development" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Cloud & DevOps -->
+        @if (selectedCategory == "all" || selectedCategory == "infrastructure")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">☁️</div>
+                    <div class="module-title">Cloud & DevOps</div>
+                    <div class="module-subtitle">Deployment & Infrastructure</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Cloud platforms, containerization, orchestration, continuous integration and deployment.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">14</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Kubernetes</span>
+                            <span class="topic-tag">Docker</span>
+                            <span class="topic-tag">CI/CD</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/cloud-and-devops" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- DevOps -->
+        @if (selectedCategory == "all" || selectedCategory == "infrastructure")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">⚙️</div>
+                    <div class="module-title">DevOps Engineering</div>
+                    <div class="module-subtitle">Operations & Automation</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        DevOps principles, infrastructure automation, monitoring, and operational excellence.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">11</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Automation</span>
+                            <span class="topic-tag">Monitoring</span>
+                            <span class="topic-tag">Infrastructure</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/devops" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Geofencing -->
+        @if (selectedCategory == "all" || selectedCategory == "advanced")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">📍</div>
+                    <div class="module-title">Geofencing Systems</div>
+                    <div class="module-subtitle">Location-Based Services</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Enterprise geofencing implementation, location tracking, real-time event processing, and APIs.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">13</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Location Services</span>
+                            <span class="topic-tag">Real-time</span>
+                            <span class="topic-tag">Tracking</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/geofence" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- IoT -->
+        @if (selectedCategory == "all" || selectedCategory == "advanced")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">📡</div>
+                    <div class="module-title">IoT Solutions</div>
+                    <div class="module-subtitle">Connected Devices</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        IoT architecture, protocols (MQTT, LoRa), device management, and edge computing solutions.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">11</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Protocols</span>
+                            <span class="topic-tag">Edge</span>
+                            <span class="topic-tag">Devices</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/iot" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Big Data -->
+        @if (selectedCategory == "all" || selectedCategory == "advanced")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">📊</div>
+                    <div class="module-title">Big Data Systems</div>
+                    <div class="module-subtitle">Data at Scale</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Data lakes, data warehouses, ETL pipelines, analytics platforms, and big data frameworks.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Data Lakes</span>
+                            <span class="topic-tag">ETL</span>
+                            <span class="topic-tag">Analytics</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/bigdata" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Platform -->
+        @if (selectedCategory == "all" || selectedCategory == "development")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">🚀</div>
+                    <div class="module-title">Platform Engineering</div>
+                    <div class="module-subtitle">Internal Developer Platforms</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Building internal developer platforms, automation frameworks, and self-service infrastructure.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Advanced</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Automation</span>
+                            <span class="topic-tag">Platform</span>
+                            <span class="topic-tag">Tools</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-advanced">Advanced</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/platform" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- SEO -->
+        @if (selectedCategory == "all" || selectedCategory == "development")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">🔍</div>
+                    <div class="module-title">Enterprise SEO</div>
+                    <div class="module-subtitle">Search & Discovery</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Enterprise-scale search, indexing strategies, discoverability, and knowledge management.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Sections</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Intermediate</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">Search</span>
+                            <span class="topic-tag">Indexing</span>
+                            <span class="topic-tag">Discovery</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-intermediate">Intermediate</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/seo" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Resources -->
+        @if (selectedCategory == "all" || selectedCategory == "fundamental")
+        {
+            <div class="module-card">
+                <div class="module-header">
+                    <div class="module-icon">📚</div>
+                    <div class="module-title">Resources & FAQ</div>
+                    <div class="module-subtitle">Learning Materials</div>
+                </div>
+                <div class="module-content">
+                    <div class="module-description">
+                        Curated resources, frequently asked questions, links to tools, and additional learning materials.
+                    </div>
+                    <div class="module-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Resources</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Beginner</div>
+                            <div class="stat-label">Level</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <div class="topics-title">Topics</div>
+                        <div class="topics-list">
+                            <span class="topic-tag">FAQ</span>
+                            <span class="topic-tag">Links</span>
+                            <span class="topic-tag">Tools</span>
+                        </div>
+                    </div>
+                    <span class="difficulty-badge difficulty-beginner">Beginner Friendly</span>
+                    <div class="module-footer">
+                        <a href="/enterprise/process-and-resources" class="module-link primary">View Module</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private string selectedCategory = "all";
+}

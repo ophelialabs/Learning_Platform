@@ -1,0 +1,424 @@
+@page "/mathematics"
+
+<PageTitle>Mathematics - Learning Platform</PageTitle>
+
+<CourseHeader 
+    CourseName="Mathematics"
+    Description="Master essential and advanced mathematics including calculus, linear algebra, statistics, and discrete math."
+    Duration="10 months"
+    LessonCount="48"
+    HasCertificate="true" />
+
+<div class="learning-cta">
+    <a href="/mathematics/learning" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
+    </a>
+</div>
+
+<div class="container">
+    <section class="course-overview">
+        <h2>Course Modules</h2>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="card-number">1</div>
+                <h3>Calculus</h3>
+                <p>Limits, derivatives, integrals, and multivariable calculus.</p>
+                <div class="card-meta">12 lessons • 9 hours</div>
+                <a href="/mathematics/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">2</div>
+                <h3>Linear Algebra</h3>
+                <p>Matrices, vectors, eigenvalues, and applications.</p>
+                <div class="card-meta">10 lessons • 8 hours</div>
+                <a href="/mathematics/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">3</div>
+                <h3>Statistics & Probability</h3>
+                <p>Distributions, hypothesis testing, regression, and data analysis.</p>
+                <div class="card-meta">11 lessons • 8.5 hours</div>
+                <a href="/mathematics/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <h2>Tools You'll Master</h2>
+        <div class="tools-grid">
+            @foreach (var tool in Tools)
+            {
+                <div class="tool-badge">@tool</div>
+            }
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <h2>What You'll Learn</h2>
+        <div class="requirements-grid">
+            <div class="requirement">
+                <h4>✓ Calculus</h4>
+                <p>Limits, derivatives, integrals, and applications.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Linear Algebra</h4>
+                <p>Vectors, matrices, systems of equations, and eigenvalues.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Statistics</h4>
+                <p>Descriptive statistics, probability, and hypothesis testing.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Discrete Mathematics</h4>
+                <p>Set theory, logic, combinatorics, and graph theory.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Differential Equations</h4>
+                <p>Ordinary and partial differential equations with applications.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Problem Solving</h4>
+                <p>Apply math to engineering and real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="research-section">
+        <h2>Research & Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-item">
+                <h3>Mathematical Societies</h3>
+                <ul>
+                    <li><a href="https://www.maa.org/" target="_blank">Mathematical Association of America (MAA)</a></li>
+                    <li>Dedicated to advancing mathematics education and research</li>
+                    <li>Access to publications and mathematical competitions</li>
+                </ul>
+            </div>
+            <div class="resource-item">
+                <h3>Research Fields</h3>
+                <ul>
+                    <li>Abstract algebra and number theory</li>
+                    <li>Analysis and topology</li>
+                    <li>Applied mathematics and optimization</li>
+                    <li>Mathematical logic and set theory</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <h2>Real-World Applications</h2>
+        <div class="applications-grid">
+            <div class="application-card">
+                <h3>Cryptography</h3>
+                <p>Develop secure encryption algorithms using number theory and advanced mathematical principles.</p>
+            </div>
+            <div class="application-card">
+                <h3>Machine Learning</h3>
+                <p>Build AI systems using linear algebra, calculus, and statistical mathematics.</p>
+            </div>
+            <div class="application-card">
+                <h3>Financial Modeling</h3>
+                <p>Design mathematical models for portfolio optimization and risk assessment.</p>
+            </div>
+            <div class="application-card">
+                <h3>Operations Research</h3>
+                <p>Solve complex optimization problems in logistics, scheduling, and resource allocation.</p>
+            </div>
+            <div class="application-card">
+                <h3>Engineering Simulations</h3>
+                <p>Create computational models for structural analysis, fluid dynamics, and electromagnetic fields.</p>
+            </div>
+            <div class="application-card">
+                <h3>Data Science</h3>
+                <p>Apply statistics and mathematical analysis to extract insights from large datasets.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    private LessonsList? lessonsComponent;
+    private QuizzesList? quizzesComponent;
+
+    private List<string> Tools = new()
+    {
+        "MATLAB", "Python", "Mathematica", "Wolfram Alpha", "R", "NumPy"
+    };
+
+    protected override void OnInitialized() {
+        if (lessonsComponent != null) lessonsComponent.Lessons = new() { new() { Title = "Math Fundamentals", Description = "Overview", Duration = "2 hours", Link = "/lesson/math-intro", Topics = new() { "Basics" } } };
+        if (quizzesComponent != null) quizzesComponent.Quizzes = new() { new() { Title = "Math Quiz", Description = "Test", Questions = 15, TimeLimit = 25, Link = "/quiz/math-101" } };
+    }
+}
+
+<style>
+    .learning-cta {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+        border-radius: 8px;
+        margin: -20px 0 40px 0;
+    }
+
+    .learning-cta .btn {
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.3);
+    }
+
+    .learning-cta .btn:hover {
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .course-overview { 
+        margin: 40px 0; 
+    }
+
+    .course-overview h2 {
+        font-size: 1.6rem;
+        color: #333;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .overview-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 25px; 
+    }
+
+    .overview-card { 
+        background: white; 
+        padding: 25px; 
+        border-radius: 8px; 
+        border-left: 4px solid #1b6ec2; 
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-card:hover { 
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12); 
+        transform: translateY(-4px); 
+    }
+
+    .card-number {
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        background: #1b6ec2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .overview-card h3 {
+        color: #333;
+        font-weight: 700;
+        margin: 15px 0 12px 0;
+    }
+
+    .overview-card p {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;
+        flex: 1;
+    }
+
+    .card-meta {
+        font-size: 0.85rem;
+        color: #999;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tools-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .tools-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .tool-badge {
+        background: white;
+        padding: 12px 15px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: 600;
+        color: #1b6ec2;
+        border: 1px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .tool-badge:hover {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    .requirements-section {
+        margin: 40px 0;
+    }
+
+    .requirements-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .requirements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .requirement {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .requirement:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .requirement h4 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .requirement p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    .research-section {
+        margin: 40px 0;
+    }
+
+    .research-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .resource-item {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .resource-item:hover {
+        border-color: #1b6ec2;
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.15);
+    }
+
+    .resource-item h3 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .resource-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resource-item li {
+        color: #666;
+        margin: 8px 0;
+        line-height: 1.6;
+    }
+
+    .resource-item a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .resource-item a:hover {
+        text-decoration: underline;
+    }
+
+    .applications-section {
+        margin: 40px 0;
+    }
+
+    .applications-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .applications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .application-card {
+        background: #f0f5ff;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .application-card:hover {
+        background: white;
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.15);
+    }
+
+    .application-card h3 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        font-size: 1.05rem;
+    }
+
+    .application-card p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+</style>

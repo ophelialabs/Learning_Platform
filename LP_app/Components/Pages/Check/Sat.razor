@@ -1,0 +1,48 @@
+@page "/Sat"
+@using System.Linq
+
+<PageTitle>Real-Time Satellite</PageTitle>
+
+<!-- Mapbox GL JS CSS -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+
+<!-- Mapbox GL JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+<script>
+    window.initMapboxSatellite = (accessToken) => {
+        mapboxgl.accessToken = accessToken;
+        const map = new mapboxgl.Map({
+            container: 'globe-container',
+            style: 'mapbox://styles/mapbox/satellite-v9',
+            center: [0, 20], // [lng, lat]
+            zoom: 1.5,
+            pitch: 45,
+            bearing: -17.6,
+            antialias: true
+        });
+
+        // Optional: Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl());
+    };
+</script>
+
+<div id="globe-container" style="width:75vw; height:75vh; border-radius: 12px; overflow: hidden;"></div>
+
+@* Alerts Popup Section and rest of your code remain unchanged *@
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Replace with your Mapbox access token
+            var mapboxToken = "YOUR_MAPBOX_ACCESS_TOKEN";
+            await JS.InvokeVoidAsync("initMapboxSatellite", mapboxToken);
+        }
+    }
+
+    [Inject] IJSRuntime JS { get; set; }
+
+    // ... (rest of your code: FetchRobotLocationsFromGoogleMapsAsync, Robot, FleetAlert, etc.) ...
+}

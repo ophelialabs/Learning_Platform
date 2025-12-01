@@ -1,0 +1,78 @@
+@* Course Header Component *@
+
+<div class="course-header">
+    <div class="container">
+        <h1>@CourseName</h1>
+        <p class="course-description">@Description</p>
+        <div class="course-meta">
+            <span class="meta-item">
+                <i class="bi bi-clock-fill"></i> @Duration
+            </span>
+            <span class="meta-item">
+                <i class="bi bi-book-fill"></i> @LessonCount lessons
+            </span>
+            <span class="meta-item">
+                <i class="bi bi-clipboard-check-fill"></i> @(HasCertificate ? "Certificate Included" : "")
+            </span>
+        </div>
+        <button class="btn btn-primary btn-lg">Start Now</button>
+        <button class="btn btn-primary btn-lg">Research, Recent Advances and Applications</button>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string CourseName { get; set; } = string.Empty;
+    
+    [Parameter]
+    public string Description { get; set; } = string.Empty;
+    
+    [Parameter]
+    public string Duration { get; set; } = string.Empty;
+    
+    [Parameter]
+    public int LessonCount { get; set; }
+    
+    [Parameter]
+    public bool HasCertificate { get; set; } = true;
+}
+
+<style>
+    .course-header {
+        background: linear-gradient(135deg, #1b6ec2 0%, #004a7d 100%);
+        color: white;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+        border-radius: 0;
+    }
+    
+    .course-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    
+    .course-description {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        opacity: 0.95;
+    }
+    
+    .course-meta {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1rem;
+    }
+    
+    .meta-item i {
+        font-size: 1.2rem;
+    }
+</style>

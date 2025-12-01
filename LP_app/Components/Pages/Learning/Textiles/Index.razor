@@ -1,0 +1,424 @@
+@page "/textiles"
+
+<PageTitle>Textiles & Materials - Learning Platform</PageTitle>
+
+<CourseHeader 
+    CourseName="Textiles & Materials"
+    Description="Master textile science, fiber properties, fabric production, and advanced textile technologies."
+    Duration="5 months"
+    LessonCount="24"
+    HasCertificate="true" />
+
+<div class="learning-cta">
+    <a href="/textiles/learning" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
+    </a>
+</div>
+
+<div class="container">
+    <section class="course-overview">
+        <h2>Course Modules</h2>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="card-number">1</div>
+                <h3>Fiber Science</h3>
+                <p>Natural and synthetic fibers, properties, and characteristics.</p>
+                <div class="card-meta">6 lessons • 4.5 hours</div>
+                <a href="/textiles/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">2</div>
+                <h3>Fabric Production</h3>
+                <p>Spinning, weaving, knitting, and other fabric manufacturing processes.</p>
+                <div class="card-meta">7 lessons • 5.5 hours</div>
+                <a href="/textiles/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">3</div>
+                <h3>Advanced Textiles</h3>
+                <p>Smart textiles, sustainable textiles, and technical applications.</p>
+                <div class="card-meta">6 lessons • 5 hours</div>
+                <a href="/textiles/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <h2>Tools You'll Master</h2>
+        <div class="tools-grid">
+            @foreach (var tool in Tools)
+            {
+                <div class="tool-badge">@tool</div>
+            }
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <h2>What You'll Learn</h2>
+        <div class="requirements-grid">
+            <div class="requirement">
+                <h4>✓ Fiber Science</h4>
+                <p>Classification, structure, and properties of natural and synthetic fibers.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Yarn Production</h4>
+                <p>Spinning technologies, yarn twist, and properties.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Weaving & Knitting</h4>
+                <p>Fabric construction methods, patterns, and design.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Fabric Finishing</h4>
+                <p>Dyeing, printing, and finishing processes.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Sustainability</h4>
+                <p>Eco-friendly textiles and sustainable manufacturing.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Technical Textiles</h4>
+                <p>Smart textiles, performance fabrics, and innovations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="research-section">
+        <h2>Research & Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-item">
+                <h3>Professional Organizations</h3>
+                <ul>
+                    <li><a href="https://www.aatcc.org/" target="_blank">American Association of Textile Chemists and Colorists (AATCC)</a></li>
+                    <li>Standards and best practices for textile technology</li>
+                    <li>Testing methods and technical resources</li>
+                </ul>
+            </div>
+            <div class="resource-item">
+                <h3>Research Areas</h3>
+                <ul>
+                    <li>Fiber science and polymer chemistry</li>
+                    <li>Textile dyeing and finishing</li>
+                    <li>Sustainable and smart textiles</li>
+                    <li>Quality control and testing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <h2>Real-World Applications</h2>
+        <div class="applications-grid">
+            <div class="application-card">
+                <h3>Fashion & Apparel</h3>
+                <p>Design and produce textiles for clothing, considering aesthetics, comfort, and durability.</p>
+            </div>
+            <div class="application-card">
+                <h3>Technical Textiles</h3>
+                <p>Develop specialized fabrics for automotive, medical, and industrial applications.</p>
+            </div>
+            <div class="application-card">
+                <h3>Smart Textiles</h3>
+                <p>Create textiles with embedded sensors and electronic functionality for wearables.</p>
+            </div>
+            <div class="application-card">
+                <h3>Sustainability</h3>
+                <p>Develop eco-friendly materials and processes for sustainable fashion production.</p>
+            </div>
+            <div class="application-card">
+                <h3>Quality Assurance</h3>
+                <p>Test and ensure textiles meet industry standards for performance and safety.</p>
+            </div>
+            <div class="application-card">
+                <h3>Process Optimization</h3>
+                <p>Improve manufacturing efficiency through automation and process control technologies.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    private LessonsList? lessonsComponent;
+    private QuizzesList? quizzesComponent;
+
+    private List<string> Tools = new()
+    {
+        "Textile CAD", "Weaving Sims", "Testing Equipment", "MATLAB", "Design Software", "Lab Tools"
+    };
+
+    protected override void OnInitialized() {
+        if (lessonsComponent != null) lessonsComponent.Lessons = new() { new() { Title = "Textiles Basics", Description = "Overview", Duration = "2 hours", Link = "/lesson/textiles-intro", Topics = new() { "Fibers" } } };
+        if (quizzesComponent != null) quizzesComponent.Quizzes = new() { new() { Title = "Textiles Quiz", Description = "Test", Questions = 15, TimeLimit = 25, Link = "/quiz/textiles-101" } };
+    }
+}
+
+<style>
+    .learning-cta {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+        border-radius: 8px;
+        margin: -20px 0 40px 0;
+    }
+
+    .learning-cta .btn {
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.3);
+    }
+
+    .learning-cta .btn:hover {
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .course-overview { 
+        margin: 40px 0; 
+    }
+
+    .course-overview h2 {
+        font-size: 1.6rem;
+        color: #333;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .overview-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 25px; 
+    }
+
+    .overview-card { 
+        background: white; 
+        padding: 25px; 
+        border-radius: 8px; 
+        border-left: 4px solid #1b6ec2; 
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-card:hover { 
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12); 
+        transform: translateY(-4px); 
+    }
+
+    .card-number {
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        background: #1b6ec2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .overview-card h3 {
+        color: #333;
+        font-weight: 700;
+        margin: 15px 0 12px 0;
+    }
+
+    .overview-card p {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;
+        flex: 1;
+    }
+
+    .card-meta {
+        font-size: 0.85rem;
+        color: #999;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tools-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .tools-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .tool-badge {
+        background: white;
+        padding: 12px 15px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: 600;
+        color: #1b6ec2;
+        border: 1px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .tool-badge:hover {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    .requirements-section {
+        margin: 40px 0;
+    }
+
+    .requirements-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .requirements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .requirement {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .requirement:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .requirement h4 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .requirement p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    .research-section {
+        margin: 40px 0;
+    }
+
+    .research-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .resource-item {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .resource-item:hover {
+        border-color: #1b6ec2;
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.15);
+    }
+
+    .resource-item h3 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .resource-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resource-item li {
+        color: #666;
+        margin: 8px 0;
+        line-height: 1.6;
+    }
+
+    .resource-item a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .resource-item a:hover {
+        text-decoration: underline;
+    }
+
+    .applications-section {
+        margin: 40px 0;
+    }
+
+    .applications-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .applications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .application-card {
+        background: #f0f5ff;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .application-card:hover {
+        background: white;
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.15);
+    }
+
+    .application-card h3 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        font-size: 1.05rem;
+    }
+
+    .application-card p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+</style>

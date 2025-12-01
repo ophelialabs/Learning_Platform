@@ -1,0 +1,251 @@
+@page "/data-science/lessons/course-navigation"
+
+<PageTitle>Course Navigation - Data Science Learning Platform</PageTitle>
+
+<div class="lesson-page-wrapper">
+    <div class="lesson-header">
+        <a href="/data-science/learning" class="back-link">&lt;- Back to Learning</a>
+        <h1>Course Navigation</h1>
+        <div class="lesson-meta">
+            <span class="meta-badge"><i class="bi bi-clock"></i> 20 mins</span>
+            <span class="meta-badge"><i class="bi bi-bookmark"></i> Module 1</span>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <section class="content-section">
+            <h2>Overview</h2>
+            <p>Learn how to navigate the platform, access materials, and submit assignments.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Key Topics</h2>
+            <ul class="topics-list">
+                <li><span class="topic-icon">📌</span> Platform Tour</li>
+                <li><span class="topic-icon">📌</span> Dashboard</li>
+                <li><span class="topic-icon">📌</span> Assignment Submission</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Learning Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Navigate the LMS
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Access course materials
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Submit work
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Platform Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h4>📚 Course Materials</h4>
+                    <p>Access all lesson videos, readings, and code examples from the Materials section.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>✍️ Assignments</h4>
+                    <p>Submit assignments through the platform and receive feedback from instructors.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>💬 Discussion Forums</h4>
+                    <p>Ask questions and engage with peers in course-specific discussion boards.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>📊 Progress Tracking</h4>
+                    <p>Monitor your progress with our intuitive dashboard and completion indicators.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="lesson-actions">
+            <a href="/data-science/lessons/program-overview" class="btn btn-outline-secondary">&lt;- Previous</a>
+            <button class="btn btn-success">Mark as Complete</button>
+            <a href="/data-science/lessons/setting-up-environment" class="btn btn-primary">Next Lesson -&gt;</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .lesson-page-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .back-link {
+        color: #1b6ec2;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .lesson-header {
+        margin-bottom: 40px;
+    }
+
+    .lesson-header h1 {
+        font-size: 2.2rem;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    .lesson-meta {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .meta-badge {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .lesson-content {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .content-section {
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content-section:last-of-type {
+        border-bottom: none;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .content-section p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topics-list li {
+        padding: 12px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-left: 4px solid #1b6ec2;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topic-icon {
+        font-size: 1.2rem;
+    }
+
+    .objectives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .objective-card {
+        background: #f0f7ff;
+        border: 1px solid #c3e7ff;
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .objective-icon {
+        color: #26b050;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .features-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .feature-item {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 6px;
+        border-left: 4px solid #26b050;
+    }
+
+    .feature-item h4 {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-size: 1.1rem;
+    }
+
+    .feature-item p {
+        margin: 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .lesson-actions {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-top: 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .lesson-actions .btn {
+        flex: 1;
+    }
+
+    @@media (max-width: 768px) {
+        .lesson-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .lesson-content {
+            padding: 20px;
+        }
+
+        .lesson-actions {
+            flex-direction: column;
+        }
+    }
+</style>

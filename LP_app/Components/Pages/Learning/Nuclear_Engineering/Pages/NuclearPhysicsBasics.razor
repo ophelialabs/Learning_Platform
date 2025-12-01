@@ -1,0 +1,204 @@
+@page "/nuclear-engineering/lessons/nuclear-physics-basics"
+
+<PageTitle>Nuclear Physics Basics - Nuclear Engineering</PageTitle>
+
+<div class="lesson-page-wrapper">
+    <div class="lesson-header">
+        <a href="/nuclear-engineering/learning" class="back-link">&lt;- Back to Learning</a>
+        <h1>Nuclear Physics Basics</h1>
+        <div class="lesson-meta">
+            <span class="meta-badge"><i class="bi bi-clock"></i> 75 mins</span>
+            <span class="meta-badge"><i class="bi bi-bookmark"></i> Module 1</span>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <section class="content-section">
+            <h2>Overview</h2>
+            <p>Understand nuclear reactions, radioactivity, and atomic physics fundamentals.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Key Topics</h2>
+            <ul class="topics-list">
+                <li><span class="topic-icon">⚛️</span> Nuclear Structure</li>
+                <li><span class="topic-icon">⚛️</span> Radioactive Decay</li>
+                <li><span class="topic-icon">⚛️</span> Nuclear Reactions</li>
+                <li><span class="topic-icon">⚛️</span> Energy Release</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Learning Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Understand nuclear processes
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Analyze radioactivity
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Calculate nuclear energy
+                </div>
+            </div>
+        </section>
+
+        <div class="lesson-actions">
+            <button class="btn btn-success">Mark as Complete</button>
+            <a href="/nuclear-engineering/learning" class="btn btn-primary">Return to Course</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .lesson-page-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .back-link {
+        color: #1b6ec2;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .lesson-header {
+        margin-bottom: 40px;
+    }
+
+    .lesson-header h1 {
+        font-size: 2.2rem;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    .lesson-meta {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .meta-badge {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .lesson-content {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .content-section {
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content-section:last-of-type {
+        border-bottom: none;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .content-section p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topics-list li {
+        padding: 12px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-left: 4px solid #1b6ec2;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topic-icon {
+        font-size: 1.2rem;
+    }
+
+    .objectives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .objective-card {
+        background: #f0f7ff;
+        border: 1px solid #c3e7ff;
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .objective-icon {
+        color: #26b050;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .lesson-actions {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-top: 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .lesson-actions .btn {
+        flex: 1;
+    }
+
+    @@media (max-width: 768px) {
+        .lesson-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .lesson-content {
+            padding: 20px;
+        }
+
+        .lesson-actions {
+            flex-direction: column;
+        }
+    }
+</style>

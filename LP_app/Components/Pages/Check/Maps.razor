@@ -1,0 +1,75 @@
+@page "/maps"
+@inject IConfiguration Configuration
+
+<PageTitle>Maps</PageTitle>
+
+<h3>Google Maps Example</h3>
+<!--
+<GoogleMap @ref="mapRef"
+           ApiKey="@GoogleMapsApiKey"
+           Center="@MapCenter"
+           Zoom="13"
+           Style="height: 600px; width: 100%;"></GoogleMap>
+    @foreach (var poi in Locations)
+    {
+        <GoogleMapMarker Position="@poi.Location"
+                         Title="@poi.Key"
+                         OnClick="() => OnMarkerClick(poi.Location)">
+        </GoogleMapMarker>
+    }
+    @if (CircleCenter != null)
+    {
+        <GoogleMapCircle Center="@CircleCenter"
+                         Radius="800"
+                         StrokeColor="#0c4cb3"
+                         StrokeOpacity="1"
+                         StrokeWeight="3"
+                         FillColor="#3b82f6"
+                         FillOpacity="0.3" />
+    }
+</GoogleMap> -
+
+@code {
+    private GoogleMap mapRef; -->
+    private string GoogleMapsApiKey => Configuration["GoogleMaps:ApiKey"] ?? "YOUR_API_KEY";
+    private LatLngLiteral MapCenter = new LatLngLiteral { Lat = -33.860664, Lng = 151.208138 };
+    private LatLngLiteral? CircleCenter;
+
+    public class LatLngLiteral
+    {
+        public double Lat { get; set; }
+        public double Lng { get; set; }
+    }
+
+    public class Poi
+    {
+        public string Key { get; set; }
+        public LatLngLiteral Location { get; set; }
+    }
+
+    private List<Poi> Locations = new()
+    {
+        new Poi { Key = "operaHouse", Location = new LatLngLiteral { Lat = -33.8567844, Lng = 151.213108 } },
+        new Poi { Key = "tarongaZoo", Location = new LatLngLiteral { Lat = -33.8472767, Lng = 151.2188164 } },
+        new Poi { Key = "manlyBeach", Location = new LatLngLiteral { Lat = -33.8209738, Lng = 151.2563253 } },
+        new Poi { Key = "hyderPark", Location = new LatLngLiteral { Lat = -33.8690081, Lng = 151.2052393 } },
+        new Poi { Key = "theRocks", Location = new LatLngLiteral { Lat = -33.8587568, Lng = 151.2058246 } },
+        new Poi { Key = "circularQuay", Location = new LatLngLiteral { Lat = -33.858761, Lng = 151.2055688 } },
+        new Poi { Key = "harbourBridge", Location = new LatLngLiteral { Lat = -33.852228, Lng = 151.2038374 } },
+        new Poi { Key = "kingsCross", Location = new LatLngLiteral { Lat = -33.8737375, Lng = 151.222569 } },
+        new Poi { Key = "botanicGardens", Location = new LatLngLiteral { Lat = -33.864167, Lng = 151.216387 } },
+        new Poi { Key = "museumOfSydney", Location = new LatLngLiteral { Lat = -33.8636005, Lng = 151.2092542 } },
+        new Poi { Key = "maritimeMuseum", Location = new LatLngLiteral { Lat = -33.869395, Lng = 151.198648 } },
+        new Poi { Key = "kingStreetWharf", Location = new LatLngLiteral { Lat = -33.8665445, Lng = 151.1989808 } },
+        new Poi { Key = "aquarium", Location = new LatLngLiteral { Lat = -33.869627, Lng = 151.202146 } },
+        new Poi { Key = "darlingHarbour", Location = new LatLngLiteral { Lat = -33.87488, Lng = 151.1987113 } },
+        new Poi { Key = "barangaroo", Location = new LatLngLiteral { Lat = -33.8605523, Lng = 151.1972205 } },
+    };
+
+    private async Task OnMarkerClick(LatLngLiteral location)
+    {
+        CircleCenter = location;
+        await mapRef.PanToAsync(location.Lat, location.Lng);
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,307 @@
+@page "/data-science/resources/getting-started-guide"
+
+
+<div class="resource-container">
+    <div class="resource-header">
+        <a href="/data-science/learning" class="back-link">← Back to Learning</a>
+        <h1>Getting Started Guide</h1>
+        <p class="resource-subtitle">Step-by-step instructions to set up your learning environment</p>
+    </div>
+
+    <div class="resource-content">
+        <section class="quick-start">
+            <h2>Quick Start (5 minutes)</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create Your Profile</h3>
+                        <p>Complete your learner profile with your background and learning goals</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Watch Welcome Video</h3>
+                        <p>Watch the program introduction and overview</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Take Induction Quiz</h3>
+                        <p>Complete the induction assessment to assess your baseline knowledge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="environment-setup">
+            <h2>Setting Up Your Environment</h2>
+            
+            <div class="setup-section">
+                <h3>System Requirements</h3>
+                <ul class="requirements-list">
+                    <li>Windows 10+, macOS 10.14+, or Linux (Ubuntu 18.04+)</li>
+                    <li>4GB RAM minimum (8GB recommended)</li>
+                    <li>2GB free disk space</li>
+                    <li>Reliable internet connection</li>
+                </ul>
+            </div>
+
+            <div class="setup-section">
+                <h3>Install Python</h3>
+                <ol class="install-steps">
+                    <li>Download Python 3.9 or later from <code>python.org</code></li>
+                    <li>Run the installer and select "Add Python to PATH"</li>
+                    <li>Verify installation: <code>python --version</code></li>
+                </ol>
+            </div>
+
+            <div class="setup-section">
+                <h3>Install Required Libraries</h3>
+                <p>Open terminal/command prompt and run:</p>
+                <code class="code-block">pip install numpy pandas jupyter matplotlib scikit-learn</code>
+            </div>
+
+            <div class="setup-section">
+                <h3>Launch Jupyter Notebook</h3>
+                <p>In your terminal, run:</p>
+                <code class="code-block">jupyter notebook</code>
+                <p>This will open Jupyter in your browser at <code>localhost:8888</code></p>
+            </div>
+        </section>
+
+        <section class="platform-tour">
+            <h2>Platform Tour</h2>
+            <div class="tour-items">
+                <div class="tour-item">
+                    <h3>Learning Dashboard</h3>
+                    <p>Access all course modules, track progress, and view your achievements</p>
+                </div>
+                <div class="tour-item">
+                    <h3>Code Sandbox</h3>
+                    <p>Write and run Python code directly in the browser</p>
+                </div>
+                <div class="tour-item">
+                    <h3>Resources</h3>
+                    <p>Download materials, guides, and code examples</p>
+                </div>
+                <div class="tour-item">
+                    <h3>Community</h3>
+                    <p>Connect with peers and instructors in discussion forums</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="troubleshooting">
+            <h2>Common Issues</h2>
+            <div class="faq-items">
+                <details>
+                    <summary>Python not recognized in terminal</summary>
+                    <p>Make sure you selected "Add Python to PATH" during installation. Restart your terminal and try again.</p>
+                </details>
+                <details>
+                    <summary>Jupyter won't start</summary>
+                    <p>Try: <code>pip install --upgrade jupyter</code> then run <code>jupyter notebook</code> again</p>
+                </details>
+                <details>
+                    <summary>Can't import libraries</summary>
+                    <p>Verify installation: <code>pip list</code> should show numpy, pandas, etc. If missing, reinstall with pip</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="next-steps">
+            <h2>Next Steps</h2>
+            <p>Once you've completed setup, proceed to:</p>
+            <ol>
+                <li>Module 1: Program Overview</li>
+                <li>Module 1: Course Navigation</li>
+                <li>Module 1: Environment Setup</li>
+                <li>Module 1: Induction Assessment</li>
+            </ol>
+        </section>
+    </div>
+</div>
+
+<style>
+    .resource-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .resource-header {
+        margin-bottom: 2rem;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .resource-header h1 {
+        font-size: 2rem;
+        color: #1b6ec2;
+        margin-bottom: 0.5rem;
+    }
+
+    .resource-subtitle {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .resource-content section {
+        margin-bottom: 3rem;
+    }
+
+    .resource-content h2 {
+        color: #1b6ec2;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #1b6ec2;
+        padding-bottom: 0.5rem;
+    }
+
+    .resource-content h3 {
+        color: #333;
+        margin-top: 1rem;
+    }
+
+    .steps {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .step {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        background: #1b6ec2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    .step-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+    }
+
+    .step-content p {
+        color: #666;
+        margin: 0;
+    }
+
+    .setup-section {
+        background: #f5f5f5;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .setup-section h3 {
+        color: #1b6ec2;
+        margin-top: 0;
+    }
+
+    .requirements-list, .install-steps {
+        color: #666;
+        margin: 0.5rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .requirements-list li, .install-steps li {
+        padding: 0.3rem 0;
+    }
+
+    code {
+        background: #fff;
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+        color: #d63384;
+    }
+
+    .code-block {
+        display: block;
+        background: #fff;
+        padding: 1rem;
+        border-left: 3px solid #1b6ec2;
+        border-radius: 4px;
+        font-family: 'Courier New', monospace;
+        overflow-x: auto;
+        margin: 1rem 0;
+    }
+
+    .tour-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .tour-item {
+        background: #f5f5f5;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+    }
+
+    .tour-item h3 {
+        margin-top: 0;
+        color: #1b6ec2;
+    }
+
+    .tour-item p {
+        color: #666;
+        margin-bottom: 0;
+    }
+
+    .faq-items {
+        display: grid;
+        gap: 1rem;
+    }
+
+    details {
+        background: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+        border-left: 3px solid #1b6ec2;
+    }
+
+    summary {
+        cursor: pointer;
+        color: #1b6ec2;
+        font-weight: 500;
+    }
+
+    details p {
+        margin-top: 0.75rem;
+        color: #666;
+    }
+
+    .next-steps ol {
+        color: #666;
+        padding-left: 1.5rem;
+    }
+
+    .next-steps li {
+        padding: 0.3rem 0;
+    }
+</style>

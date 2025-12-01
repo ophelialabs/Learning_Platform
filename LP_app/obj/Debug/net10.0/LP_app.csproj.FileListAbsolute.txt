@@ -1,0 +1,256 @@
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-w7mf952350-w7mf952350.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-bwtsdfdc8u-bwtsdfdc8u.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-bwtsdfdc8u-bwtsdfdc8u.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/ref/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/ref/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-zcd2eb7xx1-zcd2eb7xx1.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-j0nwxb0iqh-j0nwxb0iqh.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-j0nwxb0iqh-j0nwxb0iqh.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-zcd2eb7xx1-zcd2eb7xx1.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/9jr8lpkvcs-{0}-x7t7cfpcik-x7t7cfpcik.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-rj06a7yho5-rj06a7yho5.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-rj06a7yho5-rj06a7yho5.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/ref/LP_app.dll

@@ -1,0 +1,183 @@
+@page "/data-science/resources/{ResourceName}"
+
+
+<div class="resource-container">
+    <div class="resource-header">
+        <a href="/data-science/learning" class="back-link">← Back to Learning</a>
+        <h1>@(FormatResourceName(ResourceName))</h1>
+        <p class="resource-subtitle">Learning resource for Data Science course</p>
+    </div>
+
+    <div class="resource-content">
+        <section class="placeholder-section">
+            <div class="placeholder-content">
+                <div class="icon">📚</div>
+                <h2>Resource Content Coming Soon</h2>
+                <p>This resource page is being prepared and will be available shortly.</p>
+                <p>In the meantime, explore other resources or continue with the course modules.</p>
+                <a href="/data-science/learning" class="btn-primary">Return to Learning Dashboard</a>
+            </div>
+        </section>
+
+        <section class="resource-metadata">
+            <h2>Resource Information</h2>
+            <div class="metadata-grid">
+                <div class="metadata-item">
+                    <label>Resource Name</label>
+                    <p>@(FormatResourceName(ResourceName))</p>
+                </div>
+                <div class="metadata-item">
+                    <label>Course</label>
+                    <p>Data Science</p>
+                </div>
+                <div class="metadata-item">
+                    <label>Type</label>
+                    <p>Learning Material</p>
+                </div>
+                <div class="metadata-item">
+                    <label>Status</label>
+                    <p><span class="badge badge-info">In Development</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string ResourceName { get; set; }
+
+    private string FormatResourceName(string name)
+    {
+        if (string.IsNullOrEmpty(name)) return "Resource";
+        
+        // Convert kebab-case to Title Case
+        return string.Join(" ", name
+            .Split('-')
+            .Select(word => char.ToUpper(word[0]) + word.Substring(1)));
+    }
+}
+
+<style>
+    .resource-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .resource-header {
+        margin-bottom: 2rem;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .resource-header h1 {
+        font-size: 2rem;
+        color: #1b6ec2;
+        margin-bottom: 0.5rem;
+    }
+
+    .resource-subtitle {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .resource-content section {
+        margin-bottom: 3rem;
+    }
+
+    .placeholder-section {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        border-radius: 8px;
+    }
+
+    .placeholder-content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .placeholder-section h2 {
+        color: #1b6ec2;
+        margin-bottom: 0.5rem;
+    }
+
+    .placeholder-section p {
+        color: #666;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background: #1b6ec2;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+        background: #0d47a1;
+    }
+
+    .resource-content h2 {
+        color: #1b6ec2;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #1b6ec2;
+        padding-bottom: 0.5rem;
+    }
+
+    .metadata-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .metadata-item {
+        background: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .metadata-item label {
+        display: block;
+        color: #1b6ec2;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    .metadata-item p {
+        color: #666;
+        margin: 0;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .badge-info {
+        background: #e3f2fd;
+        color: #1b6ec2;
+    }
+</style>

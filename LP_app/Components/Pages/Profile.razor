@@ -1,0 +1,389 @@
+@page "/profile"
+
+<PageTitle>My Profile - Learning Platform</PageTitle>
+
+<div class="profile-header">
+    <div class="container">
+        <h1>My Profile</h1>
+        <p>Manage your account and learning preferences</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="profile-grid">
+        <aside class="profile-sidebar">
+            <div class="profile-card">
+                <div class="avatar">
+                    <div class="avatar-placeholder">👤</div>
+                </div>
+                <h3>John Doe</h3>
+                <p class="profile-email">john.doe@example.com</p>
+                <p class="profile-member">Member since 2024</p>
+                <button class="btn btn-sm btn-primary btn-block" style="margin-top: 15px;">Upload Photo</button>
+            </div>
+
+            <div class="profile-card">
+                <h4>Profile Stats</h4>
+                <div class="stat">
+                    <span class="label">Courses Enrolled</span>
+                    <span class="value">3</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Certificates Earned</span>
+                    <span class="value">1</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Learning Hours</span>
+                    <span class="value">48</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="profile-content">
+            <section class="profile-section">
+                <h2>Personal Information</h2>
+                <form class="profile-form">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" value="John" />
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" value="Doe" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" value="john.doe@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select class="form-select">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>United Kingdom</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </form>
+            </section>
+
+            <section class="profile-section">
+                <h2>Learning Preferences</h2>
+                <form class="preference-form">
+                    <div class="preference-group">
+                        <label class="preference-label">
+                            <input type="checkbox" checked />
+                            <span>Email me course recommendations</span>
+                        </label>
+                    </div>
+                    <div class="preference-group">
+                        <label class="preference-label">
+                            <input type="checkbox" checked />
+                            <span>Notify me about course updates</span>
+                        </label>
+                    </div>
+                    <div class="preference-group">
+                        <label class="preference-label">
+                            <input type="checkbox" />
+                            <span>Send weekly learning reminders</span>
+                        </label>
+                    </div>
+                    <div class="preference-group">
+                        <label class="preference-label">
+                            <input type="checkbox" checked />
+                            <span>Newsletter with learning tips</span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Save Preferences</button>
+                </form>
+            </section>
+
+            <section class="profile-section">
+                <h2>Learning Goals</h2>
+                <form class="goals-form">
+                    <div class="form-group">
+                        <label>What's Your Primary Goal?</label>
+                        <select class="form-select">
+                            <option>Select a goal...</option>
+                            <option>Career advancement</option>
+                            <option>Skill development</option>
+                            <option>Personal growth</option>
+                            <option>Certification</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>How Many Hours Per Week Can You Study?</label>
+                        <select class="form-select">
+                            <option>5-10 hours</option>
+                            <option>10-15 hours</option>
+                            <option>15-20 hours</option>
+                            <option>20+ hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Learning Style</label>
+                        <div class="learning-styles">
+                            <label class="style-option">
+                                <input type="radio" name="style" checked />
+                                <span>Videos & Lectures</span>
+                            </label>
+                            <label class="style-option">
+                                <input type="radio" name="style" />
+                                <span>Hands-on Projects</span>
+                            </label>
+                            <label class="style-option">
+                                <input type="radio" name="style" />
+                                <span>Reading Materials</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Save Goals</button>
+                </form>
+            </section>
+
+            <section class="profile-section danger-zone">
+                <h2>Account Settings</h2>
+                <div class="danger-action">
+                    <h4>Change Password</h4>
+                    <p>Update your password to keep your account secure</p>
+                    <button class="btn btn-sm btn-outline-secondary">Change Password</button>
+                </div>
+                <div class="danger-action">
+                    <h4>Delete Account</h4>
+                    <p>Permanently delete your account and all data</p>
+                    <button class="btn btn-sm btn-outline-danger">Delete Account</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+<style>
+    .profile-header {
+        background: linear-gradient(135deg, #1b6ec2 0%, #004a7d 100%);
+        color: white;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+
+    .profile-header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .profile-sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 15px;
+    }
+
+    .avatar-placeholder {
+        font-size: 3rem;
+    }
+
+    .profile-card h3 {
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .profile-email {
+        color: #1b6ec2;
+        font-weight: 600;
+        margin: 5px 0;
+    }
+
+    .profile-member {
+        color: #999;
+        font-size: 0.9rem;
+    }
+
+    .profile-card h4 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .stat {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .stat:last-child {
+        border-bottom: none;
+    }
+
+    .stat .label {
+        color: #666;
+    }
+
+    .stat .value {
+        font-weight: 700;
+        color: #1b6ec2;
+    }
+
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-section {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 25px;
+    }
+
+    .profile-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .profile-form,
+    .preference-form,
+    .goals-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .profile-form .form-group:last-child,
+    .preference-form,
+    .goals-form {
+        grid-column: 1 / -1;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group label {
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    .preference-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .preference-label input[type="checkbox"] {
+        cursor: pointer;
+    }
+
+    .learning-styles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .style-option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .style-option input[type="radio"] {
+        cursor: pointer;
+    }
+
+    .danger-zone {
+        border-left: 4px solid #e50000;
+    }
+
+    .danger-action {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .danger-action:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .danger-action h4 {
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    .danger-action p {
+        color: #999;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+    }
+
+    @@media (max-width: 768px) {
+        .profile-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .profile-form,
+        .preference-form,
+        .goals-form {
+            grid-template-columns: 1fr;
+        }
+
+        .learning-styles {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .btn-block {
+        width: 100%;
+        display: block;
+    }
+
+    .btn-outline-danger {
+        color: #e50000;
+        border-color: #e50000;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: #e50000;
+        color: white;
+    }
+</style>

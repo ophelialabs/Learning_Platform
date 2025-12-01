@@ -1,0 +1,689 @@
+@page "/enterprise/geofence"
+@rendermode InteractiveServer
+
+<PageTitle>Enterprise Geofencing Implementation Guide - Location-Based Services</PageTitle>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+        animation: slideDown 0.6s ease-out;
+    }
+
+    @@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    .breadcrumb {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+    }
+
+    .breadcrumb a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.9;
+    }
+
+    .breadcrumb a:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    .nav-tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        flex-wrap: wrap;
+    }
+
+    .nav-tab {
+        padding: 12px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .nav-tab:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-tab.active {
+        background: white;
+        color: #667eea;
+    }
+
+    .content-section {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        color: #667eea;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #667eea;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+        color: #333;
+        margin: 25px 0 15px;
+        font-weight: 600;
+    }
+
+    .section-text {
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+
+    .section-list {
+        list-style: none;
+        margin: 15px 0;
+    }
+
+    .section-list li {
+        padding: 8px 0;
+        padding-left: 25px;
+        position: relative;
+        color: #555;
+    }
+
+    .section-list li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+    }
+
+    .code-block {
+        background: #f5f5f5;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    .code-block code {
+        color: #333;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+    }
+
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    @@media (max-width: 768px) {
+        .two-column {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .column-box {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+    }
+
+    .column-box h4 {
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    table th {
+        background: #667eea;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    table tr:hover {
+        background: #f5f5f5;
+    }
+
+    .highlight-box {
+        background: #e8f4f8;
+        border-left: 4px solid #0088cc;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+    .highlight-box strong {
+        color: #0088cc;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+        background: #764ba2;
+    }
+</style>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>📍 Enterprise Geofencing Implementation Guide</h1>
+        <p>A Comprehensive Guide to Building Scalable Geofencing Solutions</p>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="/enterprise">← Back to Enterprise</a> / Geofencing Systems
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+        <button class="nav-tab active" @onclick="@(() => activeTab = "overview")">Overview</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "architecture")">Architecture</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "implementation")">Implementation</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "deployment")">Deployment</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "best-practices")">Best Practices</button>
+    </div>
+
+    <!-- Overview Section -->
+    @if (activeTab == "overview")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Introduction to Geofencing</h2>
+            
+            <p class="section-text">
+                Geofencing is a location-based service technology that triggers actions when a device enters or exits a 
+                predefined geographical area. In enterprise environments, geofencing enables powerful location-aware applications 
+                for asset tracking, fleet management, security, marketing, and compliance.
+            </p>
+
+            <h3 class="section-subtitle">Enterprise Use Cases</h3>
+            <ul class="section-list">
+                <li><strong>Asset Tracking & Management:</strong> Real-time location monitoring of valuable assets</li>
+                <li><strong>Fleet Management & Logistics:</strong> Route optimization and delivery tracking</li>
+                <li><strong>Security & Access Control:</strong> Unauthorized entry detection and alerts</li>
+                <li><strong>Location-Based Marketing:</strong> Proximity-triggered customer engagement</li>
+                <li><strong>Compliance & Regulatory:</strong> Geolocation-based compliance reporting</li>
+            </ul>
+
+            <h3 class="section-subtitle">Key Concepts</h3>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Core Concepts</h4>
+                    <ul class="section-list">
+                        <li>Geofence Perimeters</li>
+                        <li>Shape Types (Circle, Polygon, Rectangle)</li>
+                        <li>Event Triggers (Enter, Exit, Dwell)</li>
+                        <li>Device Tracking</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Technical Aspects</h4>
+                    <ul class="section-list">
+                        <li>GPS Precision & Accuracy</li>
+                        <li>Real-time Processing</li>
+                        <li>Latency Optimization</li>
+                        <li>Scalability Requirements</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <strong>💡 Tip:</strong> Successful geofencing implementations require careful consideration of GPS accuracy, 
+                processing latency, and system scalability to handle thousands of devices and geofences simultaneously.
+            </div>
+        </div>
+    }
+
+    <!-- Architecture Section -->
+    @if (activeTab == "architecture")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Enterprise Architecture</h2>
+            
+            <p class="section-text">
+                A robust geofencing system requires multiple integrated components working together to process location data, 
+                manage geofences, and trigger events in real-time.
+            </p>
+
+            <h3 class="section-subtitle">Core Infrastructure Components</h3>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">1. Location Services Engine</h4>
+            <ul class="section-list">
+                <li>GPS data processing and validation</li>
+                <li>Coordinate system transformations (WGS84, UTM)</li>
+                <li>Location accuracy optimization and filtering</li>
+                <li>Batch location updates handling</li>
+            </ul>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">2. Real-time Event Processing System</h4>
+            <ul class="section-list">
+                <li>Event stream processing using Kafka or RabbitMQ</li>
+                <li>Event correlation and filtering</li>
+                <li>Webhook notification system</li>
+                <li>Event persistence and replay capability</li>
+            </ul>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">3. Geofence Management System</h4>
+            <ul class="section-list">
+                <li>Geofence CRUD operations with audit trails</li>
+                <li>Spatial indexing using R-tree or QuadTree</li>
+                <li>Multi-shape support (circles, polygons, rectangles)</li>
+                <li>Batch operations for bulk geofence management</li>
+            </ul>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">4. Data Storage & Analytics</h4>
+            <ul class="section-list">
+                <li>MongoDB for geofence and device metadata</li>
+                <li>Time-series database (InfluxDB, TimescaleDB) for historical data</li>
+                <li>Analytics engine for insights and reporting</li>
+                <li>Data archival and automated cleanup</li>
+            </ul>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">5. API Gateway</h4>
+            <ul class="section-list">
+                <li>RESTful API endpoints for all operations</li>
+                <li>Authentication and authorization layer</li>
+                <li>Rate limiting and throttling</li>
+                <li>API versioning and backwards compatibility</li>
+            </ul>
+
+            <h3 class="section-subtitle">High Availability Setup</h3>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Infrastructure</h4>
+                    <ul class="section-list">
+                        <li>Load Balancers (round-robin, sticky sessions)</li>
+                        <li>Geographic distribution across regions</li>
+                        <li>Redundant database systems</li>
+                        <li>Auto-scaling groups</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Monitoring & Resilience</h4>
+                    <ul class="section-list">
+                        <li>Real-time metrics collection</li>
+                        <li>Automated alerts and notifications</li>
+                        <li>Health checks and circuit breakers</li>
+                        <li>Disaster recovery procedures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Implementation Section -->
+    @if (activeTab == "implementation")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Implementation Details</h2>
+
+            <p class="section-text">
+                This section covers practical implementation patterns and code examples for building a production-grade 
+                geofencing system.
+            </p>
+
+            <h3 class="section-subtitle">Geofence Core Implementation</h3>
+            <div class="code-block">
+                <code>
+class Geofence {
+    constructor(id, shape, coordinates, options = {}) {
+        this.id = id;
+        this.shape = shape;  // CIRCLE, POLYGON, RECTANGLE
+        this.coordinates = coordinates;
+        this.active = true;
+    }
+
+    isPointInside(point) {
+        switch (this.shape) {
+            case GeofenceShape.CIRCLE:
+                return this._isPointInCircle(point);
+            case GeofenceShape.POLYGON:
+                return this._isPointInPolygon(point);
+            case GeofenceShape.RECTANGLE:
+                return this._isPointInRectangle(point);
+        }
+    }
+}
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Event Processing System</h3>
+            <div class="code-block">
+                <code>
+class GeofenceManager {
+    async processLocationUpdate(deviceId, location) {
+        const events = [];
+        for (const fence of this.activeGeofences) {
+            const isInside = fence.isPointInside(location);
+            const wasInside = this.deviceStates[deviceId];
+            
+            if (isInside !== wasInside) {
+                events.push({
+                    type: isInside ? 'enter' : 'exit',
+                    deviceId,
+                    geofenceId: fence.id,
+                    timestamp: new Date(),
+                    location
+                });
+            }
+        }
+        
+        this.publishEvents(events);
+        return events;
+    }
+}
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Database Schema</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Collection</th>
+                            <th>Purpose</th>
+                            <th>Key Fields</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>geofences</td>
+                            <td>Store geofence definitions</td>
+                            <td>id, shape, coordinates, status, createdAt</td>
+                        </tr>
+                        <tr>
+                            <td>devices</td>
+                            <td>Track managed devices</td>
+                            <td>id, name, lastLocation, status</td>
+                        </tr>
+                        <tr>
+                            <td>events</td>
+                            <td>Log all geofencing events</td>
+                            <td>deviceId, geofenceId, type, timestamp</td>
+                        </tr>
+                        <tr>
+                            <td>locations</td>
+                            <td>Historical location data</td>
+                            <td>deviceId, coordinates, accuracy, timestamp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="highlight-box">
+                <strong>📌 Important:</strong> Use spatial indexes on coordinate fields for optimal query performance when 
+                dealing with large geofence and device datasets.
+            </div>
+        </div>
+    }
+
+    <!-- Deployment Section -->
+    @if (activeTab == "deployment")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Deployment Strategy</h2>
+
+            <p class="section-text">
+                Modern geofencing systems are deployed using container-based architectures with Kubernetes orchestration 
+                for scalability and reliability.
+            </p>
+
+            <h3 class="section-subtitle">Container Configuration</h3>
+            <div class="code-block">
+                <code>
+# Dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+ENV NODE_ENV=production
+EXPOSE 3000
+CMD ["node", "src/server.js"]
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Kubernetes Deployment</h3>
+            <div class="code-block">
+                <code>
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: geofencing-service
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: geofencing
+    template:
+        metadata:
+            labels:
+                app: geofencing
+        spec:
+            containers:
+            - name: geofencing
+              image: geofencing:latest
+              ports:
+              - containerPort: 3000
+              env:
+              - name: MONGODB_URI
+                valueFrom:
+                    secretKeyRef:
+                        name: geofencing-secrets
+                        key: mongodb-uri
+              resources:
+                  requests:
+                      memory: "256Mi"
+                      cpu: "250m"
+                  limits:
+                      memory: "512Mi"
+                      cpu: "500m"
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Scaling Strategies</h3>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">Database Scaling</h4>
+            <ul class="section-list">
+                <li>Sharding for large datasets across multiple database instances</li>
+                <li>Read replicas for query load distribution</li>
+                <li>Time-series optimization for location history</li>
+                <li>Redis caching for hot geofence data</li>
+            </ul>
+
+            <h4 style="color: #333; margin: 20px 0 10px;">Application Scaling</h4>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Horizontal Scaling</h4>
+                    <ul class="section-list">
+                        <li>Load balancing across instances</li>
+                        <li>Session state management</li>
+                        <li>Cache synchronization</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Vertical Scaling</h4>
+                    <ul class="section-list">
+                        <li>Resource optimization</li>
+                        <li>Memory management</li>
+                        <li>CPU utilization patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Best Practices Section -->
+    @if (activeTab == "best-practices")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Best Practices & Monitoring</h2>
+
+            <p class="section-text">
+                Implementing geofencing at scale requires careful attention to security, performance, and operational 
+                excellence.
+            </p>
+
+            <h3 class="section-subtitle">Security Best Practices</h3>
+            <ul class="section-list">
+                <li><strong>Authentication:</strong> Use JWT tokens with role-based access control</li>
+                <li><strong>Rate Limiting:</strong> Implement rate limiting to prevent abuse</li>
+                <li><strong>Input Validation:</strong> Validate all location data and parameters</li>
+                <li><strong>Data Encryption:</strong> Encrypt sensitive location data at rest and in transit</li>
+                <li><strong>Audit Logging:</strong> Maintain comprehensive audit trails for all operations</li>
+            </ul>
+
+            <h3 class="section-subtitle">Performance Best Practices</h3>
+            <ul class="section-list">
+                <li><strong>Batch Processing:</strong> Group location updates for efficient processing</li>
+                <li><strong>Caching Strategy:</strong> Use multi-level caching for geofence queries</li>
+                <li><strong>Async Operations:</strong> Use asynchronous processing for event notifications</li>
+                <li><strong>Query Optimization:</strong> Index frequently queried fields appropriately</li>
+                <li><strong>Resource Pooling:</strong> Reuse database connections and resources</li>
+            </ul>
+
+            <h3 class="section-subtitle">Monitoring & Maintenance</h3>
+            <div class="code-block">
+                <code>
+const metrics = {
+    activeGeofences: new Gauge({
+        name: 'geofencing_active_geofences',
+        help: 'Number of active geofences'
+    }),
+    trackedDevices: new Gauge({
+        name: 'geofencing_tracked_devices',
+        help: 'Number of tracked devices'
+    }),
+    eventLatency: new Histogram({
+        name: 'geofencing_event_latency_ms',
+        help: 'Event processing latency in milliseconds'
+    }),
+    errorRate: new Counter({
+        name: 'geofencing_errors_total',
+        help: 'Total number of errors'
+    })
+};
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Health Checks</h3>
+            <div class="code-block">
+                <code>
+app.get('/health', async (req, res) => {
+    try {
+        // Check database connectivity
+        await mongoose.connection.db.admin().ping();
+        
+        // Check cache connectivity
+        await redis.ping();
+        
+        // Check event streaming
+        await kafka.admin().listTopics();
+        
+        res.status(200).json({ 
+            status: 'healthy',
+            timestamp: new Date()
+        });
+    } catch (error) {
+        res.status(503).json({ 
+            status: 'unhealthy',
+            error: error.message
+        });
+    }
+});
+                </code>
+            </div>
+
+            <div class="highlight-box">
+                <strong>🎯 Key Takeaway:</strong> Regular monitoring, comprehensive logging, and proactive alerting are 
+                essential for maintaining a stable geofencing system in production environments.
+            </div>
+        </div>
+    }
+
+    <!-- Navigation -->
+    <a href="/enterprise" class="back-link">← Back to Enterprise Solutions</a>
+</div>
+
+@code {
+    private string activeTab = "overview";
+}

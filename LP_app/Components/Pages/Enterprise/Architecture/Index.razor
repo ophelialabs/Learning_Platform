@@ -1,0 +1,570 @@
+@page "/enterprise/architecture"
+@rendermode InteractiveServer
+
+<PageTitle>Enterprise Architecture - System Design Patterns and Scalability</PageTitle>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .header {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+        animation: slideDown 0.6s ease-out;
+    }
+
+    @@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+
+    .breadcrumb {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        backdrop-filter: blur(10px);
+    }
+
+    .breadcrumb a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.9;
+    }
+
+    .breadcrumb a:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    .nav-tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        flex-wrap: wrap;
+    }
+
+    .nav-tab {
+        padding: 12px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .nav-tab:hover { background: rgba(255, 255, 255, 0.2); }
+    .nav-tab.active { background: white; color: #667eea; }
+
+    .content-section {
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        color: #667eea;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #667eea;
+    }
+
+    .section-subtitle {
+        font-size: 1.3rem;
+        color: #333;
+        margin: 25px 0 15px;
+        font-weight: 600;
+    }
+
+    .section-text {
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+
+    .section-list {
+        list-style: none;
+        margin: 15px 0;
+    }
+
+    .section-list li {
+        padding: 8px 0;
+        padding-left: 25px;
+        position: relative;
+        color: #555;
+    }
+
+    .section-list li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+    }
+
+    .diagram-box {
+        background: #f9f9f9;
+        border: 2px solid #667eea;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+        font-family: monospace;
+        white-space: pre-wrap;
+        overflow-x: auto;
+    }
+
+    .code-block {
+        background: #f5f5f5;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    .code-block code {
+        color: #333;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+    }
+
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    @@media (max-width: 768px) {
+        .two-column { grid-template-columns: 1fr; }
+    }
+
+    .column-box {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+    }
+
+    .column-box h4 {
+        color: #667eea;
+        margin-bottom: 10px;
+    }
+
+    .highlight-box {
+        background: #e8f4f8;
+        border-left: 4px solid #0088cc;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+    .highlight-box strong { color: #0088cc; }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .back-link:hover { background: #764ba2; }
+</style>
+
+<div class="container">
+    <div class="header">
+        <h1>🏗️ Enterprise Architecture</h1>
+        <p>System Design Patterns, Scalability, and Microservices</p>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="/enterprise">← Back to Enterprise</a> / Architecture
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" @onclick="@(() => activeTab = "patterns")">Design Patterns</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "microservices")">Microservices</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "scalability")">Scalability</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "communication")">Communication</button>
+        <button class="nav-tab" @onclick="@(() => activeTab = "best-practices")">Best Practices</button>
+    </div>
+
+    @if (activeTab == "patterns")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Enterprise Architectural Patterns</h2>
+
+            <p class="section-text">
+                Enterprise applications require careful architectural planning to ensure scalability, maintainability, and 
+                resilience. This section covers fundamental patterns and approaches used in large-scale systems.
+            </p>
+
+            <h3 class="section-subtitle">Monolithic Architecture</h3>
+            <p class="section-text">
+                A traditional approach where the entire application is built as a single unified unit.
+            </p>
+            <ul class="section-list">
+                <li><strong>Advantages:</strong> Simple deployment, easier testing, single database</li>
+                <li><strong>Disadvantages:</strong> Scaling limitations, tight coupling, difficult maintenance at scale</li>
+                <li><strong>Best For:</strong> Startups, small-to-medium applications, prototypes</li>
+            </ul>
+
+            <h3 class="section-subtitle">Layered (N-Tier) Architecture</h3>
+            <p class="section-text">
+                Organizes the system into horizontal layers (Presentation, Business Logic, Persistence, Database).
+            </p>
+            <div class="diagram-box">Presentation Layer
+    ↓
+Business Logic Layer
+    ↓
+Persistence Layer
+    ↓
+Database Layer</div>
+
+            <h3 class="section-subtitle">Service-Oriented Architecture (SOA)</h3>
+            <p class="section-text">
+                Application is composed of loosely coupled, reusable services that communicate over standard protocols.
+            </p>
+            <ul class="section-list">
+                <li>Services are independent and deployable</li>
+                <li>Communication via SOAP, REST, or message queues</li>
+                <li>Enables code reuse and flexibility</li>
+                <li>Good for large, complex systems</li>
+            </ul>
+
+            <h3 class="section-subtitle">Event-Driven Architecture</h3>
+            <p class="section-text">
+                Components communicate through events rather than direct calls, enabling loose coupling and async processing.
+            </p>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Advantages</h4>
+                    <ul class="section-list">
+                        <li>Loose coupling</li>
+                        <li>Async processing</li>
+                        <li>Scalability</li>
+                        <li>Flexibility</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Challenges</h4>
+                    <ul class="section-list">
+                        <li>Debugging complexity</li>
+                        <li>Event ordering</li>
+                        <li>Testing difficulty</li>
+                        <li>Learning curve</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <strong>💡 Tip:</strong> Choose architectural patterns based on your team size, project complexity, 
+                and scaling requirements. Most large enterprises use a combination of these patterns.
+            </div>
+        </div>
+    }
+
+    @if (activeTab == "microservices")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Microservices Architecture</h2>
+
+            <p class="section-text">
+                Microservices is an approach to develop a single application as a suite of small services, each running 
+                in its own process and communicating with lightweight mechanisms.
+            </p>
+
+            <h3 class="section-subtitle">Core Principles</h3>
+            <ul class="section-list">
+                <li><strong>Single Responsibility:</strong> Each service handles one business capability</li>
+                <li><strong>Independence:</strong> Services are developed, deployed, and scaled independently</li>
+                <li><strong>Decoupling:</strong> Services communicate through well-defined APIs</li>
+                <li><strong>Resilience:</strong> Failure in one service doesn't cascade to others</li>
+                <li><strong>Polyglot:</strong> Different services can use different technologies</li>
+            </ul>
+
+            <h3 class="section-subtitle">Microservices Benefits</h3>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Technical Benefits</h4>
+                    <ul class="section-list">
+                        <li>Independent scaling</li>
+                        <li>Technology flexibility</li>
+                        <li>Easier testing</li>
+                        <li>Fault isolation</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Organizational Benefits</h4>
+                    <ul class="section-list">
+                        <li>Team autonomy</li>
+                        <li>Faster deployment</li>
+                        <li>Clear ownership</li>
+                        <li>Independent scaling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle">Service Communication Patterns</h3>
+            <ul class="section-list">
+                <li><strong>Synchronous (Request/Response):</strong> REST APIs, gRPC</li>
+                <li><strong>Asynchronous (Event-Based):</strong> Message queues, event streaming</li>
+                <li><strong>Hybrid:</strong> Combination of both for different scenarios</li>
+            </ul>
+
+            <h3 class="section-subtitle">Challenges</h3>
+            <ul class="section-list">
+                <li>Distributed system complexity</li>
+                <li>Network latency and unreliability</li>
+                <li>Data consistency across services</li>
+                <li>Debugging and monitoring challenges</li>
+                <li>Deployment complexity</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>⚠️ Important:</strong> Microservices add operational complexity. They're best suited for 
+                large, complex applications with multiple teams. Start with monolithic architecture and refactor 
+                when you have clear scaling needs.
+            </div>
+        </div>
+    }
+
+    @if (activeTab == "scalability")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Scalability Patterns</h2>
+
+            <p class="section-text">
+                Scalability is the ability to handle growing amounts of work or requests. There are several proven 
+                patterns and strategies for building scalable systems.
+            </p>
+
+            <h3 class="section-subtitle">Horizontal Scalability (Scale Out)</h3>
+            <p class="section-text">
+                Add more servers or instances to distribute the load rather than making individual servers more powerful.
+            </p>
+            <ul class="section-list">
+                <li>Load balancing across multiple instances</li>
+                <li>Stateless application design</li>
+                <li>Session management strategies</li>
+                <li>Database replication and sharding</li>
+            </ul>
+
+            <h3 class="section-subtitle">Vertical Scalability (Scale Up)</h3>
+            <p class="section-text">
+                Increase the resources (CPU, RAM) of existing servers to handle more load.
+            </p>
+            <ul class="section-list">
+                <li>Simpler to implement initially</li>
+                <li>Limited by hardware constraints</li>
+                <li>Single point of failure risk</li>
+                <li>Higher costs for very large scales</li>
+            </ul>
+
+            <h3 class="section-subtitle">Caching Strategies</h3>
+            <div class="code-block">
+                <code>
+// Multi-level caching approach
+Client-Side Cache (Browser)
+    ↓
+CDN Cache (Content Delivery Network)
+    ↓
+Application Cache (Redis, Memcached)
+    ↓
+Database Cache (Query results)
+    ↓
+Database (Source of truth)
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Database Scaling</h3>
+            <ul class="section-list">
+                <li><strong>Read Replicas:</strong> Scale read operations across multiple replicas</li>
+                <li><strong>Sharding:</strong> Partition data across multiple database instances</li>
+                <li><strong>CQRS:</strong> Separate read and write models</li>
+                <li><strong>Time-series Optimization:</strong> Special handling for time-based data</li>
+            </ul>
+
+            <h3 class="section-subtitle">Asynchronous Processing</h3>
+            <ul class="section-list">
+                <li>Move long-running tasks to background workers</li>
+                <li>Use message queues (RabbitMQ, Kafka) for task distribution</li>
+                <li>Implement job queues with retry logic</li>
+                <li>Monitor queue depths and worker performance</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>💡 Tip:</strong> Always measure and identify bottlenecks before scaling. Premature optimization 
+                often wastes resources. Use monitoring and profiling to guide scaling decisions.
+            </div>
+        </div>
+    }
+
+    @if (activeTab == "communication")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Inter-Service Communication</h2>
+
+            <p class="section-text">
+                In distributed systems, services need efficient mechanisms to communicate. The choice of communication 
+                pattern significantly impacts system performance and reliability.
+            </p>
+
+            <h3 class="section-subtitle">Synchronous Communication</h3>
+            <ul class="section-list">
+                <li><strong>REST API:</strong> HTTP-based, widely supported, human-readable</li>
+                <li><strong>gRPC:</strong> High-performance, uses Protocol Buffers, HTTP/2</li>
+                <li><strong>GraphQL:</strong> Flexible querying, single endpoint, reduces over-fetching</li>
+                <li><strong>WebSocket:</strong> Full-duplex communication for real-time data</li>
+            </ul>
+
+            <h3 class="section-subtitle">Asynchronous Communication</h3>
+            <div class="two-column">
+                <div class="column-box">
+                    <h4>Message Queues</h4>
+                    <ul class="section-list">
+                        <li>RabbitMQ</li>
+                        <li>AWS SQS</li>
+                        <li>Azure Service Bus</li>
+                        <li>Guaranteed delivery</li>
+                    </ul>
+                </div>
+                <div class="column-box">
+                    <h4>Event Streaming</h4>
+                    <ul class="section-list">
+                        <li>Apache Kafka</li>
+                        <li>AWS Kinesis</li>
+                        <li>Event sourcing</li>
+                        <li>High throughput</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle">Communication Patterns</h3>
+            <ul class="section-list">
+                <li><strong>Request/Reply:</strong> Service A calls Service B and waits for response</li>
+                <li><strong>Publish/Subscribe:</strong> Service publishes event, multiple subscribers react</li>
+                <li><strong>Event Sourcing:</strong> Store all state changes as events</li>
+                <li><strong>CQRS:</strong> Separate command (write) and query (read) models</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>📌 Best Practice:</strong> Use synchronous communication for immediate results, 
+                asynchronous for fire-and-forget operations. Combine both for optimal performance.
+            </div>
+        </div>
+    }
+
+    @if (activeTab == "best-practices")
+    {
+        <div class="content-section">
+            <h2 class="section-title">Architectural Best Practices</h2>
+
+            <p class="section-text">
+                These practices have proven effective across many successful enterprise systems and should guide 
+                your architectural decisions.
+            </p>
+
+            <h3 class="section-subtitle">Design for Failure</h3>
+            <ul class="section-list">
+                <li>Assume services and networks will fail</li>
+                <li>Implement circuit breakers and retries</li>
+                <li>Use health checks and automated recovery</li>
+                <li>Plan for graceful degradation</li>
+                <li>Implement comprehensive logging and monitoring</li>
+            </ul>
+
+            <h3 class="section-subtitle">Security by Design</h3>
+            <ul class="section-list">
+                <li>Implement authentication at service boundaries</li>
+                <li>Use API gateways for centralized security</li>
+                <li>Encrypt data in transit and at rest</li>
+                <li>Follow the principle of least privilege</li>
+                <li>Audit and monitor all service interactions</li>
+            </ul>
+
+            <h3 class="section-subtitle">Observability</h3>
+            <div class="code-block">
+                <code>
+// The three pillars of observability
+1. Logging - Detailed event records
+2. Metrics - Quantifiable measurements
+3. Tracing - Request flow across services
+
+// Implementation
+- Structured logging (JSON format)
+- Centralized logging (ELK, Splunk)
+- Time-series metrics (Prometheus)
+- Distributed tracing (Jaeger, Zipkin)
+                </code>
+            </div>
+
+            <h3 class="section-subtitle">Documentation</h3>
+            <ul class="section-list">
+                <li>Document service contracts and APIs</li>
+                <li>Maintain architecture decision records (ADRs)</li>
+                <li>Provide runbooks for common operations</li>
+                <li>Document deployment procedures</li>
+                <li>Keep examples up-to-date</li>
+            </ul>
+
+            <h3 class="section-subtitle">Continuous Improvement</h3>
+            <ul class="section-list">
+                <li>Regular architecture reviews</li>
+                <li>Performance profiling and optimization</li>
+                <li>Security audits and penetration testing</li>
+                <li>Disaster recovery drills</li>
+                <li>Learning from incidents and post-mortems</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>🎯 Key Takeaway:</strong> Good architecture is not just about technical choices; 
+                it's about enabling your team to build, deploy, and operate systems effectively. Focus on 
+                clarity, observability, and resilience.
+            </div>
+        </div>
+    }
+
+    <a href="/enterprise" class="back-link">← Back to Enterprise Solutions</a>
+</div>
+
+@code {
+    private string activeTab = "patterns";
+}

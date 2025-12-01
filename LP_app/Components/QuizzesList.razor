@@ -1,0 +1,110 @@
+@* Quizzes Component *@
+
+<div class="quizzes-section">
+    <h2>Quizzes & Assessments</h2>
+    <div class="quizzes-grid">
+        @foreach (var quiz in Quizzes)
+        {
+            <div class="quiz-card">
+                <div class="quiz-icon">📋</div>
+                <h3>@quiz.Title</h3>
+                <p class="quiz-description">@quiz.Description</p>
+                <div class="quiz-info">
+                    <span class="info-item">
+                        <strong>@quiz.Questions</strong> questions
+                    </span>
+                    <span class="info-item">
+                        <strong>@quiz.TimeLimit</strong> mins
+                    </span>
+                </div>
+                <a href="@quiz.Link" class="btn btn-sm btn-primary">Take Quiz</a>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<QuizItem> Quizzes { get; set; } = new();
+    
+    public class QuizItem
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public int Questions { get; set; }
+        public int TimeLimit { get; set; }
+        public string Link { get; set; } = string.Empty;
+    }
+}
+
+<style>
+    .quizzes-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+    
+    .quizzes-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: #333;
+        font-weight: 700;
+    }
+    
+    .quizzes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .quiz-card {
+        background: white;
+        border-radius: 8px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+    
+    .quiz-card:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        transform: translateY(-4px);
+    }
+    
+    .quiz-icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+    }
+    
+    .quiz-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color: #333;
+        font-weight: 700;
+    }
+    
+    .quiz-description {
+        color: #666;
+        margin: 12px 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .quiz-info {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        font-size: 0.9rem;
+    }
+    
+    .info-item {
+        color: #666;
+    }
+    
+    .quiz-card .btn {
+        margin-top: 15px;
+        width: 100%;
+    }
+</style>

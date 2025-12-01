@@ -1,0 +1,246 @@
+@page "/data-science/lessons/functions-modules"
+
+<PageTitle>Functions & Modules - Data Science Learning Platform</PageTitle>
+
+<div class="lesson-page-wrapper">
+    <div class="lesson-header">
+        <a href="/data-science/learning" class="back-link">&lt;- Back to Learning</a>
+        <h1>Functions & Modules</h1>
+        <div class="lesson-meta">
+            <span class="meta-badge"><i class="bi bi-clock"></i> 75 mins</span>
+            <span class="meta-badge"><i class="bi bi-bookmark"></i> Module 2</span>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <section class="content-section">
+            <h2>Overview</h2>
+            <p>Learn to write reusable functions and organize code using modules for better maintainability.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Key Topics</h2>
+            <ul class="topics-list">
+                <li><span class="topic-icon">📦</span> Function Definition and Calls</li>
+                <li><span class="topic-icon">📦</span> Parameters and Arguments</li>
+                <li><span class="topic-icon">📦</span> Return Values</li>
+                <li><span class="topic-icon">📦</span> Importing Modules</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Learning Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Define and call functions
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Work with parameters
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Import modules
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Code Example</h2>
+            <div class="code-block">
+                <pre><code># Function Definition
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+
+# Function Call
+message = greet("Alice")
+print(message)
+
+# Using Modules
+import math
+from datetime import datetime
+
+result = math.sqrt(16)
+current_time = datetime.now()
+print(f"Square root: {result}")
+print(f"Current time: {current_time}")</code></pre>
+            </div>
+        </section>
+
+        <div class="lesson-actions">
+            <a href="/data-science/lessons/control-flow" class="btn btn-outline-secondary">&lt;- Previous</a>
+            <button class="btn btn-success">Mark as Complete</button>
+            <a href="/data-science/lessons/data-structures" class="btn btn-primary">Next Lesson -&gt;</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .lesson-page-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .back-link {
+        color: #1b6ec2;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .lesson-header {
+        margin-bottom: 40px;
+    }
+
+    .lesson-header h1 {
+        font-size: 2.2rem;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    .lesson-meta {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .meta-badge {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .lesson-content {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .content-section {
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content-section:last-of-type {
+        border-bottom: none;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .content-section p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topics-list li {
+        padding: 12px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-left: 4px solid #1b6ec2;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topic-icon {
+        font-size: 1.2rem;
+    }
+
+    .objectives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .objective-card {
+        background: #f0f7ff;
+        border: 1px solid #c3e7ff;
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .objective-icon {
+        color: #26b050;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .code-block {
+        background: #2d2d2d;
+        color: #f8f8f2;
+        padding: 20px;
+        border-radius: 6px;
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    .code-block pre {
+        margin: 0;
+        font-family: 'Monaco', 'Courier New', monospace;
+        font-size: 0.95rem;
+    }
+
+    .code-block code {
+        color: #f8f8f2;
+    }
+
+    .lesson-actions {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-top: 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .lesson-actions .btn {
+        flex: 1;
+    }
+
+    @@media (max-width: 768px) {
+        .lesson-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .lesson-content {
+            padding: 20px;
+        }
+
+        .lesson-actions {
+            flex-direction: column;
+        }
+    }
+</style>

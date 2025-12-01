@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Academy - Learning Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            background: #f5f5f5;
+            border-bottom: 2px solid #ddd;
+            overflow-x: auto;
+        }
+
+        .tab-button {
+            flex: 1;
+            min-width: 120px;
+            padding: 15px 20px;
+            background: #f5f5f5;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-button:hover {
+            background: #e0e0e0;
+        }
+
+        .tab-button.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .content {
+            padding: 30px;
+            min-height: 500px;
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        /* Courses Tab Styles */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .course-card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .course-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .course-details {
+            display: none;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .course-details.active {
+            display: block;
+        }
+
+        /* Lessons Tab Styles */
+        .lessons-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .lesson-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lesson-item:hover {
+            background: #f0f0f0;
+            transform: translateX(5px);
+        }
+
+        .lesson-item h4 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .lesson-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Quiz Styles */
+        .quiz-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .quiz-question {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .quiz-question h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quiz-option {
+            padding: 10px 15px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .quiz-option:hover {
+            background: #e8e8ff;
+            border-color: #667eea;
+        }
+
+        .quiz-option input {
+            margin-right: 10px;
+        }
+
+        .quiz-button {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .quiz-button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .quiz-result {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .quiz-result.show {
+            display: block;
+        }
+
+        /* Sandbox Styles */
+        .sandbox-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sandbox-section {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .sandbox-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .code-editor {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            resize: vertical;
+        }
+
+        .sandbox-output {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background: #f0f0f0;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .sandbox-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .sandbox-btn {
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .sandbox-btn:hover {
+            background: #764ba2;
+        }
+
+        /* Forum Styles */
+        .forum-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .forum-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+        }
+
+        .forum-thread {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .thread-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .thread-header h4 {
+            color: #667eea;
+            margin: 0;
+        }
+
+        .thread-meta {
+            font-size: 0.85em;
+            color: #999;
+        }
+
+        .thread-body {
+            color: #333;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        /* Badge Styles */
+        .badges-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .badge.earned {
+            border-color: #ffc107;
+            background: #fffbf0;
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+        }
+
+        .badge-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .badge-name {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .badge-requirement {
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        /* Certificate Styles */
+        .certificate-container {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .certificate-preview {
+            background: white;
+            border: 3px solid #d4a373;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-preview h2 {
+            color: #d4a373;
+            margin: 20px 0;
+            font-size: 2em;
+        }
+
+        .certificate-preview p {
+            color: #666;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .certificate-btn {
+            background: #d4a373;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .certificate-btn:hover {
+            background: #c19260;
+            transform: scale(1.05);
+        }
+
+        .notification {
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        .notification.show {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .sandbox-container {
+                grid-template-columns: 1fr;
+            }
+
+            .badges-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .tab-button {
+                flex: 0 1 auto;
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Data Science Academy</h1>
+            <p>Professional Certificate in Data Science & Generative AI</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('courses')">📚 Courses</button>
+            <button class="tab-button" onclick="switchTab('lessons')">📖 Lessons</button>
+            <button class="tab-button" onclick="switchTab('quiz')">❓ Quiz</button>
+            <button class="tab-button" onclick="switchTab('sandbox')">💻 Sandbox</button>
+            <button class="tab-button" onclick="switchTab('forum')">💬 Forum</button>
+            <button class="tab-button" onclick="switchTab('badges')">🏆 Badges</button>
+            <button class="tab-button" onclick="switchTab('certificates')">📜 Certificates</button>
+        </div>
+
+        <div class="content">
+            <!-- Courses Tab -->
+            <div id="courses" class="tab-pane active">
+                <h2>Core Courses</h2>
+                <div class="course-grid" id="courseGrid"></div>
+            </div>
+
+            <!-- Lessons Tab -->
+            <div id="lessons" class="tab-pane">
+                <h2>Individual Lessons</h2>
+                <div class="lessons-container" id="lessonsContainer"></div>
+            </div>
+
+            <!-- Quiz Tab -->
+            <div id="quiz" class="tab-pane">
+                <h2>Quizzes & Assessments</h2>
+                <div class="quiz-container" id="quizContainer"></div>
+            </div>
+
+            <!-- Sandbox Tab -->
+            <div id="sandbox" class="tab-pane">
+                <h2>Interactive Code Sandbox</h2>
+                <div class="sandbox-container">
+                    <div class="sandbox-section">
+                        <h3>Editor</h3>
+                        <textarea class="code-editor" id="codeEditor" placeholder="Write your Python code here...">
+# Example: Calculate statistics
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+mean = sum(numbers) / len(numbers)
+print(f"Mean: {mean}")
+print(f"Max: {max(numbers)}")
+                        </textarea>
+                        <div class="sandbox-buttons">
+                            <button class="sandbox-btn" onclick="runCode()">▶ Run Code</button>
+                            <button class="sandbox-btn" onclick="clearCode()">🔄 Clear</button>
+                            <button class="sandbox-btn" onclick="downloadCode()">⬇ Download</button>
+                        </div>
+                    </div>
+                    <div class="sandbox-section">
+                        <h3>Output</h3>
+                        <div class="sandbox-output" id="codeOutput">Run code to see output here...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forum Tab -->
+            <div id="forum" class="tab-pane">
+                <h2>Discussion Forum</h2>
+                <div class="forum-container">
+                    <form class="forum-form" onsubmit="createNewThread(event)">
+                        <div class="form-group">
+                            <label>Discussion Topic</label>
+                            <input type="text" id="threadTopic" placeholder="What would you like to discuss?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="threadMessage" placeholder="Share your thoughts..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" id="threadAuthor" placeholder="Enter your name" required>
+                        </div>
+                        <button type="submit" class="quiz-button">Post Thread</button>
+                    </form>
+                    <div id="forumThreads"></div>
+                </div>
+            </div>
+
+            <!-- Badges Tab -->
+            <div id="badges" class="tab-pane">
+                <h2>Achievement Badges</h2>
+                <div class="badges-container">
+                    <p>Earn badges by completing courses, quizzes, and participating in discussions!</p>
+                    <div class="badges-grid" id="badgesGrid"></div>
+                </div>
+            </div>
+
+            <!-- Certificates Tab -->
+            <div id="certificates" class="tab-pane">
+                <h2>Certificates</h2>
+                <div class="certificate-container">
+                    <p>Earn certificates by completing courses and achieving learning goals.</p>
+                    <div id="certificatesGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Courses Data
+        const coursesData = [
+            {
+                id: 'PC DS 01',
+                title: 'Program Induction & Fundamentals',
+                description: 'Get started with the Professional Certificate and explore everything about the domain. Kickstart your Data Science journey.',
+                weeks: 2,
+                modules: ['Program Induction', 'Statistics Basics', 'Environment Setup']
+            },
+            {
+                id: 'PC DS 02',
+                title: 'Programming Refresher',
+                description: 'Develop essential Python skills that are crucial foundation for your progress throughout the program.',
+                weeks: 3,
+                modules: ['Python Basics', 'Data Structures', 'Functions']
+            },
+            {
+                id: 'PC DS 03',
+                title: 'Database Management using SQL',
+                description: 'Gain vital skills for proficiently handling SQL databases. Master SQL statements, joins, and subqueries.',
+                weeks: 4,
+                modules: ['SQL Fundamentals', 'Advanced Queries', 'Database Design']
+            },
+            {
+                id: 'PC DS 04',
+                title: 'Python for Data Science (IBM)',
+                description: 'Learn necessary skills to leverage Python for data science using Jupyter-based lab environment.',
+                weeks: 4,
+                modules: ['Jupyter & Pandas', 'Data Cleaning', 'Visualization']
+            },
+            {
+                id: 'PC DS 05',
+                title: 'Applied Data Science with Python',
+                description: 'Comprehensive exploration of data science essentials covering data preparation, model building, and evaluation.',
+                weeks: 5,
+                modules: ['NumPy & Linear Algebra', 'Statistics', 'Feature Engineering']
+            },
+            {
+                id: 'PC DS 06',
+                title: 'Machine Learning',
+                description: 'Explore diverse machine learning types and their practical applications with TensorFlow and Keras.',
+                weeks: 6,
+                modules: ['Supervised Learning', 'Unsupervised Learning', 'Ensemble Methods']
+            },
+            {
+                id: 'PC DS 07',
+                title: 'Deep Learning Specialization',
+                description: 'Deploy deep learning tools using AI/ML frameworks. Master neural networks, CNNs, and RNNs.',
+                weeks: 6,
+                modules: ['Neural Networks', 'CNNs', 'RNNs']
+            },
+            {
+                id: 'PC DS 08',
+                title: 'Essentials of Generative AI & Prompt Engineering',
+                description: 'Comprehensively study generative AI models with emphasis on ChatGPT and prompt engineering.',
+                weeks: 4,
+                modules: ['GenAI Basics', 'Prompt Engineering', 'ChatGPT & LLMs']
+            },
+            {
+                id: 'PC DS 09',
+                title: 'Generative AI for Data Professionals',
+                description: 'Explore the crucial role of generative AI in data science from data generation to analysis.',
+                weeks: 5,
+                modules: ['Data Generation', 'Data Pipeline', 'Applications']
+            },
+            {
+                id: 'PC DS 10',
+                title: 'Advanced GenAI Skills for Data Scientists (IBM)',
+                description: 'Harness generative AI for solving data challenges. Explore GANs, VAEs, and data preparation.',
+                weeks: 5,
+                modules: ['GANs & VAEs', 'Data Preparation', 'Predictive Modeling']
+            },
+            {
+                id: 'PC DS 11',
+                title: 'Data Science Capstone Project',
+                description: 'Apply skills in real-world scenarios guided by industry mentors. Address industry challenges.',
+                weeks: 8,
+                modules: ['Project Planning', 'Data Processing', 'Result Presentation']
+            },
+            {
+                id: 'PC DS 12',
+                title: 'Electives & Specializations',
+                description: 'Choose from Data Visualization, Advanced Deep Learning, NLP, R Programming, Data Ethics, and Masterclasses.',
+                weeks: 'Variable',
+                modules: ['PowerBI', 'Computer Vision', 'NLP', 'R Programming']
+            }
+        ];
+
+        // Quiz Data
+        const quizzes = {
+            'PC DS 01': [
+                {
+                    q: 'What is the mean of the dataset [2, 4, 6, 8, 10]?',
+                    options: ['4', '6', '8', '10'],
+                    answer: 1
+                },
+                {
+                    q: 'Which Python library is primarily used for data manipulation?',
+                    options: ['NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn'],
+                    answer: 1
+                }
+            ],
+            'PC DS 02': [
+                {
+                    q: 'What does a list comprehension do in Python?',
+                    options: ['Compresses lists', 'Creates a new list by applying an expression', 'Sorts a list', 'Removes duplicates'],
+                    answer: 1
+                }
+            ]
+        };
+
+        // Badge Definitions
+        const badgeDefinitions = {
+            'Quiz Master': { icon: '🧠', requirement: 'Score 90%+ on a quiz', color: '#FFD700' },
+            'Code Warrior': { icon: '⚔️', requirement: 'Run 10 code examples', color: '#FF6B6B' },
+            'Discussion Pioneer': { icon: '💬', requirement: 'Create 5 forum threads', color: '#4ECDC4' },
+            'Module Master': { icon: '🎓', requirement: 'Complete a full module', color: '#95E1D3' },
+            'Consistency Hero': { icon: '⭐', requirement: 'Log in 7 days in a row', color: '#FFD93D' },
+            'Capstone Champion': { icon: '🏆', requirement: 'Complete capstone project', color: '#FF8C42' }
+        };
+
+        // Initialize Platform
+        function initializePlatform() {
+            renderCourses();
+            renderLessons();
+            loadBadges();
+            renderForumThreads();
+        }
+
+        // Tab Switching
+        function switchTab(tabName) {
+            const panes = document.querySelectorAll('.tab-pane');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            panes.forEach(pane => pane.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Render Courses
+        function renderCourses() {
+            const grid = document.getElementById('courseGrid');
+            grid.innerHTML = coursesData.map((course, idx) => `
+                <div class="course-card" onclick="selectCourse(${idx})">
+                    <h3>${course.title}</h3>
+                    <p>${course.description}</p>
+                    <p><strong>Duration:</strong> ${course.weeks} weeks</p>
+                </div>
+            `).join('');
+        }
+
+        function selectCourse(index) {
+            const course = coursesData[index];
+            alert(`Selected: ${course.title}\n\nModules:\n${course.modules.join('\n')}`);
+        }
+
+        // Render Lessons
+        function renderLessons() {
+            const container = document.getElementById('lessonsContainer');
+            const lessons = [
+                { num: 1, title: 'Welcome & Program Overview', duration: '30 min' },
+                { num: 2, title: 'Statistics Fundamentals', duration: '45 min' },
+                { num: 3, title: 'Data Types & Variables', duration: '40 min' },
+                { num: 4, title: 'Environment Setup', duration: '25 min' },
+                { num: 5, title: 'Your First Python Script', duration: '35 min' }
+            ];
+
+            container.innerHTML = lessons.map(lesson => `
+                <div class="lesson-item">
+                    <h4>Lesson ${lesson.num}: ${lesson.title}</h4>
+                    <p>Duration: ${lesson.duration} | Status: Available</p>
+                </div>
+            `).join('');
+        }
+
+        // Quiz Functions
+        function loadQuiz(courseCode) {
+            const quiz = quizzes[courseCode] || quizzes['PC DS 01'];
+            const container = document.getElementById('quizContainer');
+
+            container.innerHTML = quiz.map((q, idx) => `
+                <div class="quiz-question">
+                    <h4>Question ${idx + 1}: ${q.q}</h4>
+                    <div class="quiz-options">
+                        ${q.options.map((opt, optIdx) => `
+                            <label class="quiz-option">
+                                <input type="radio" name="q${idx}" value="${optIdx}"> ${opt}
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            container.innerHTML += `<button class="quiz-button" onclick="submitQuiz('${courseCode}')">Submit Quiz</button>`;
+        }
+
+        function submitQuiz(courseCode) {
+            const quiz = quizzes[courseCode] || quizzes['PC DS 01'];
+            let score = 0;
+
+            quiz.forEach((q, idx) => {
+                const selected = document.querySelector(`input[name="q${idx}"]:checked`);
+                if (selected && parseInt(selected.value) === q.answer) {
+                    score++;
+                }
+            });
+
+            const percentage = (score / quiz.length) * 100;
+            const result = document.querySelector('.quiz-result') || document.createElement('div');
+            result.className = 'quiz-result show';
+            result.innerHTML = `<strong>Score: ${score}/${quiz.length} (${percentage.toFixed(0)}%)</strong>`;
+
+            if (!document.querySelector('.quiz-result')) {
+                document.getElementById('quizContainer').appendChild(result);
+            }
+
+            if (percentage >= 90) {
+                awardBadge('Quiz Master', courseCode);
+            }
+        }
+
+        // Code Sandbox
+        function runCode() {
+            const code = document.getElementById('codeEditor').value;
+            const output = document.getElementById('codeOutput');
+
+            try {
+                output.textContent = 'Executing code...\n';
+                // Simulate code execution
+                eval(code.replace(/python|print/g, 'console.log'));
+                output.textContent = 'Code executed successfully!';
+            } catch (error) {
+                output.textContent = `Error: ${error.message}`;
+            }
+        }
+
+        function clearCode() {
+            document.getElementById('codeEditor').value = '';
+            document.getElementById('codeOutput').textContent = 'Run code to see output here...';
+        }
+
+        function downloadCode() {
+            const code = document.getElementById('codeEditor').value;
+            const blob = new Blob([code], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'code.py';
+            a.click();
+        }
+
+        // Forum Functions
+        function createNewThread(event) {
+            event.preventDefault();
+
+            const threads = JSON.parse(localStorage.getItem('forumThreads') || '[]');
+            const newThread = {
+                id: Date.now(),
+                topic: document.getElementById('threadTopic').value,
+                message: document.getElementById('threadMessage').value,
+                author: document.getElementById('threadAuthor').value,
+                date: new Date().toLocaleDateString(),
+                replies: 0
+            };
+
+            threads.push(newThread);
+            localStorage.setItem('forumThreads', JSON.stringify(threads));
+
+            document.getElementById('threadTopic').value = '';
+            document.getElementById('threadMessage').value = '';
+            document.getElementById('threadAuthor').value = '';
+
+            renderForumThreads();
+            awardBadge('Discussion Pioneer', 'PC DS 01');
+        }
+
+        function renderForumThreads() {
+            const threads = JSON.parse(localStorage.getItem('forumThreads') || '[]');
+            const container = document.getElementById('forumThreads');
+
+            if (threads.length === 0) {
+                container.innerHTML = '<p>No discussions yet. Start one!</p>';
+                return;
+            }
+
+            container.innerHTML = threads.map(thread => `
+                <div class="forum-thread">
+                    <div class="thread-header">
+                        <h4>${thread.topic}</h4>
+                        <span class="thread-meta">${thread.date}</span>
+                    </div>
+                    <p class="thread-meta">By: ${thread.author}</p>
+                    <div class="thread-body">${thread.message}</div>
+                    <p class="thread-meta">Replies: ${thread.replies}</p>
+                </div>
+            `).join('');
+        }
+
+        // Badge Functions
+        function awardBadge(badgeName, courseCode) {
+            const badges = JSON.parse(localStorage.getItem('earnedBadges') || '{}');
+
+            if (!badges[badgeName]) {
+                badges[badgeName] = {
+                    name: badgeName,
+                    earnedDate: new Date().toLocaleDateString(),
+                    courseCode: courseCode
+                };
+
+                localStorage.setItem('earnedBadges', JSON.stringify(badges));
+
+                const notification = document.querySelector('.notification') || document.createElement('div');
+                notification.className = 'notification show';
+                notification.innerHTML = `🎉 Badge Earned: ${badgeName}!`;
+
+                if (!document.querySelector('.notification')) {
+                    document.body.appendChild(notification);
+                }
+
+                setTimeout(() => notification.classList.remove('show'), 3000);
+                renderBadges();
+            }
+        }
+
+        function renderBadges() {
+            const grid = document.getElementById('badgesGrid');
+            const earned = JSON.parse(localStorage.getItem('earnedBadges') || '{}');
+
+            grid.innerHTML = Object.entries(badgeDefinitions).map(([name, badge]) => {
+                const isEarned = earned[name];
+                return `
+                    <div class="badge ${isEarned ? 'earned' : ''}">
+                        <div class="badge-icon">${badge.icon}</div>
+                        <div class="badge-name">${name}</div>
+                        <div class="badge-requirement">${badge.requirement}</div>
+                        ${isEarned ? `<p style="color: #4caf50; font-size: 0.85em; margin-top: 10px;">Earned: ${earned[name].earnedDate}</p>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function loadBadges() {
+            renderBadges();
+        }
+
+        // Certificate Functions
+        function renderCertificate(courseIndex) {
+            const course = coursesData[courseIndex];
+            const certificatesGrid = document.getElementById('certificatesGrid');
+
+            certificatesGrid.innerHTML = `
+                <div class="certificate-preview">
+                    <h2>Certificate of Completion</h2>
+                    <p>This certifies that you have successfully completed</p>
+                    <h3>${course.title}</h3>
+                    <p>Professional Certificate in Data Science & Generative AI</p>
+                    <p>Date: ${new Date().toLocaleDateString()}</p>
+                    <button class="certificate-btn" onclick="downloadCertificate('${course.title}')">📥 Download Certificate</button>
+                </div>
+            `;
+        }
+
+        function downloadCertificate(courseTitle) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = 1200;
+            canvas.height = 800;
+
+            // Background
+            ctx.fillStyle = '#f5f5f5';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Border
+            ctx.strokeStyle = '#d4a373';
+            ctx.lineWidth = 10;
+            ctx.strokeRect(30, 30, canvas.width - 60, canvas.height - 60);
+
+            // Title
+            ctx.fillStyle = '#d4a373';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Certificate of Completion', canvas.width / 2, 150);
+
+            // Course name
+            ctx.font = 'bold 32px Arial';
+            ctx.fillStyle = '#333';
+            ctx.fillText(courseTitle, canvas.width / 2, 350);
+
+            // Footer
+            ctx.font = '18px Arial';
+            ctx.fillText(`Issued: ${new Date().toLocaleDateString()}`, canvas.width / 2, 700);
+
+            // Download
+            canvas.toBlob(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `certificate-${courseTitle}.png`;
+                a.click();
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', initializePlatform);
+
+        // Load default quiz
+        window.addEventListener('DOMContentLoaded', () => loadQuiz('PC DS 01'));
+    </script>
+</body>
+</html>
