@@ -1,0 +1,501 @@
+@page "/data-science"
+
+<PageTitle>Professional Certificate in Data Science & AI - Learning Platform</PageTitle>
+
+<CourseHeader 
+    CourseName="Professional Certificate in Data Science & AI"
+    Description="Master Python, machine learning, deep learning, and generative AI in partnership with Purdue University Online. Perfect for aspiring data science professionals."
+    Duration="12 months"
+    LessonCount="48"
+    HasCertificate="true" />
+
+<div class="learning-cta">
+    <a href="/data-science/learning" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
+    </a>
+</div>
+
+<div class="container">
+    <section class="course-overview">
+        <h2>Course Modules</h2>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="card-number">1</div>
+                <h3>Program Induction</h3>
+                <p>Get started with the program and explore everything about the domain. Kickstart your Data Science journey with preparatory courses on Statistics and Programming.</p>
+                <div class="card-meta">4 lessons • 2 hours</div>
+                <a href="/data-science/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">2</div>
+                <h3>Programming Refresher</h3>
+                <p>Develop essential Python skills that are a crucial foundation for your progress throughout the program. Covers Python basics and best practices.</p>
+                <div class="card-meta">6 lessons • 5.5 hours</div>
+                <a href="/data-science/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+            <div class="overview-card">
+                <div class="card-number">3</div>
+                <h3>Database Management</h3>
+                <p>Gain vital skills for proficiently handling SQL databases. Master SQL statements, conditional statements, joins, subqueries, and functions.</p>
+                <div class="card-meta">2 lessons • 1.5 hours</div>
+                <a href="/data-science/learning" class="btn btn-sm btn-primary">Start Module</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <h2>Tools You'll Master</h2>
+        <div class="tools-grid">
+            @foreach (var tool in Tools)
+            {
+                <div class="tool-badge">@tool</div>
+            }
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <h2>What You'll Learn</h2>
+        <div class="requirements-grid">
+            <div class="requirement">
+                <h4>✓ Python Programming</h4>
+                <p>Core Python concepts, data structures, and advanced programming techniques for data science.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Data Analysis</h4>
+                <p>Using NumPy, Pandas, and other libraries to process, analyze, and visualize data effectively.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Machine Learning</h4>
+                <p>Supervised and unsupervised learning, regression, classification, and ensemble methods.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Deep Learning</h4>
+                <p>Neural networks, TensorFlow, Keras, CNNs, RNNs, and advanced deep learning architectures.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Generative AI</h4>
+                <p>ChatGPT, prompt engineering, and practical applications of generative AI in data science.</p>
+            </div>
+            <div class="requirement">
+                <h4>✓ Capstone Project</h4>
+                <p>Apply all skills to a real-world data science project with industry mentors and Tableau visualization.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-items">
+            <details class="faq-item">
+                <summary>How long does this program take?</summary>
+                <p>The program is designed to take approximately 12 months to complete if studying part-time, with flexibility to progress at your own pace.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Do I need prior programming experience?</summary>
+                <p>No! We start with fundamentals. The Programming Refresher course is designed for beginners, though some familiarity with computers is helpful.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Will I get a recognized certificate?</summary>
+                <p>Yes! Upon completion, you'll receive a Professional Certificate from Purdue University Online that's recognized by industry employers.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Can I access course materials forever?</summary>
+                <p>Yes! Once enrolled, you'll have lifetime access to all course materials, lectures, and resources.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="research-section">
+        <h2>Research & Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-item">
+                <h3>Key Organizations</h3>
+                <ul>
+                    <li><a href="https://www.kdd.org/" target="_blank">ACM SIGKDD (Data Mining & Knowledge Discovery)</a></li>
+                    <li>Leading international organization for data scientists and ML practitioners</li>
+                    <li>Access to research papers, conferences, and professional networking</li>
+                </ul>
+            </div>
+            <div class="resource-item">
+                <h3>Research Topics</h3>
+                <ul>
+                    <li>Machine learning algorithms and optimization</li>
+                    <li>Deep neural networks and computer vision</li>
+                    <li>Natural language processing and large language models</li>
+                    <li>Data visualization and interpretability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="applications-section">
+        <h2>Real-World Applications</h2>
+        <div class="applications-grid">
+            <div class="application-card">
+                <h3>Predictive Analytics</h3>
+                <p>Use machine learning to forecast trends, predict customer behavior, and optimize business decisions.</p>
+            </div>
+            <div class="application-card">
+                <h3>Fraud Detection</h3>
+                <p>Deploy AI models to identify fraudulent transactions in real-time across financial systems.</p>
+            </div>
+            <div class="application-card">
+                <h3>Recommendation Systems</h3>
+                <p>Build intelligent recommendation engines for e-commerce, streaming, and content platforms.</p>
+            </div>
+            <div class="application-card">
+                <h3>Natural Language Processing</h3>
+                <p>Create chatbots, sentiment analysis tools, and text classification systems using NLP techniques.</p>
+            </div>
+            <div class="application-card">
+                <h3>Computer Vision</h3>
+                <p>Develop image recognition, object detection, and automated quality control systems.</p>
+            </div>
+            <div class="application-card">
+                <h3>Business Intelligence</h3>
+                <p>Transform raw data into actionable insights for strategic business planning and reporting.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+@code {
+    private List<string> Tools = new()
+    {
+        "Python", "R", "MySQL", "NumPy", "SciPy", "Pandas", 
+        "Matplotlib", "Seaborn", "TensorFlow", "Keras", 
+        "Power BI", "ChatGPT", "Gemini", "Dall-E 2", "Zapier"
+    };
+}
+
+<style>
+    .learning-cta {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #e3f2fd 0%, #f0f7ff 100%);
+        border-radius: 8px;
+        margin: -20px 0 40px 0;
+    }
+
+    .learning-cta .btn {
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.3);
+    }
+
+    .learning-cta .btn:hover {
+        box-shadow: 0 6px 16px rgba(27, 110, 194, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .course-overview {
+        margin: 40px 0;
+    }
+
+    .course-overview h2 {
+        font-size: 1.6rem;
+        color: #333;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .overview-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-card:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        transform: translateY(-4px);
+    }
+
+    .card-number {
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        width: 40px;
+        height: 40px;
+        background: #1b6ec2;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .overview-card h3 {
+        color: #333;
+        font-weight: 700;
+        margin: 15px 0 12px 0;
+    }
+
+    .overview-card p {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;
+        flex: 1;
+    }
+
+    .card-meta {
+        font-size: 0.85rem;
+        color: #999;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tools-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .tools-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .tool-badge {
+        background: white;
+        padding: 12px 15px;
+        border-radius: 6px;
+        text-align: center;
+        font-weight: 600;
+        color: #1b6ec2;
+        border: 1px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .tool-badge:hover {
+        background: #1b6ec2;
+        color: white;
+    }
+
+    .requirements-section {
+        margin: 40px 0;
+    }
+
+    .requirements-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .requirements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .requirement {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+
+    .requirement:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .requirement h4 {
+        color: #1b6ec2;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .requirement p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    .faq-section {
+        margin: 40px 0 60px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .faq-items {
+        display: grid;
+        gap: 15px;
+    }
+
+    .faq-item {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-color: #1b6ec2;
+    }
+
+    .faq-item summary {
+        font-weight: 700;
+        color: #333;
+        outline: none;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-item p {
+        color: #666;
+        margin: 15px 0 0 0;
+        line-height: 1.6;
+    }
+
+    /* Research Section */
+    .research-section {
+        margin: 60px 0;
+    }
+
+    .research-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #1b6ec2;
+        font-weight: 700;
+    }
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .resource-item {
+        background: #f0f5ff;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+    }
+
+    .resource-item h3 {
+        color: #1b6ec2;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+
+    .resource-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .resource-item li {
+        color: #666;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    .resource-item a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .resource-item a:hover {
+        text-decoration: underline;
+    }
+
+    /* Applications Section */
+    .applications-section {
+        margin: 60px 0;
+    }
+
+    .applications-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #1b6ec2;
+        font-weight: 700;
+    }
+
+    .applications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .application-card {
+        background: #f0f5ff;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #1b6ec2;
+        transition: all 0.3s ease;
+    }
+
+    .application-card:hover {
+        box-shadow: 0 8px 16px rgba(27, 110, 194, 0.15);
+        transform: translateY(-4px);
+        border-left-color: #0d47a1;
+    }
+
+    .application-card h3 {
+        color: #1b6ec2;
+        margin: 0 0 15px 0;
+        font-size: 1.15rem;
+    }
+
+    .application-card p {
+        color: #666;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+    .application-card a {
+        color: #1b6ec2;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .application-card a:hover {
+        text-decoration: underline;
+    }
+
+    @@media (max-width: 768px) {
+        .resources-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .applications-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

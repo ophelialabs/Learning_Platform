@@ -1,0 +1,749 @@
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-w7mf952350-w7mf952350.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-bwtsdfdc8u-bwtsdfdc8u.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-bwtsdfdc8u-bwtsdfdc8u.gz
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/jesse/Desktop/Company/Tools/learning_plat/Platform/LP_app/obj/Debug/net10.0/ref/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/ref/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-zcd2eb7xx1-zcd2eb7xx1.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-j0nwxb0iqh-j0nwxb0iqh.gz
+/Users/meganmccaw/Downloads/Learning_Platform-main 2/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-j0nwxb0iqh-j0nwxb0iqh.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-zcd2eb7xx1-zcd2eb7xx1.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/ref/LP_app.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.Build.Locator.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.IO.Redist.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/Newtonsoft.Json.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Buffers.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Collections.Immutable.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.CommandLine.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Memory.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Numerics.Vectors.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Runtime.CompilerServices.Unsafe.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Threading.Tasks.Extensions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/cs/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/de/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/es/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/fr/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/it/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/ja/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/ko/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/pl/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/pt-BR/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/ru/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/tr/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/zh-Hans/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-net472/zh-Hant/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.Build.Locator.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/Newtonsoft.Json.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/System.Collections.Immutable.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/System.CommandLine.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/cs/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/de/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/es/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/fr/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/it/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/ja/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/ko/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/pl/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/pt-BR/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/ru/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/tr/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/zh-Hans/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/BuildHost-netcore/zh-Hant/System.CommandLine.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Azure.Core.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Azure.Identity.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Humanizer.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Build.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Build.Framework.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Build.Tasks.Core.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Build.Utilities.Core.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Logging.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Options.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Primitives.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Identity.Client.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.NET.StringTools.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Mono.TextTemplating.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.ClientModel.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.CodeDom.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Composition.Convention.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Composition.Hosting.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Composition.Runtime.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Composition.TypedParts.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Formats.Nrbf.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Memory.Data.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Resources.Extensions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Security.Permissions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/System.Windows.Extensions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Windows.Extensions.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.csproj.AssemblyReference.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.sourcelink.json
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.csproj.Up2Date
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.RazorAssemblyInfo.cache
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.RazorAssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cs
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ddhk6zdr92-{0}-x7t7cfpcik-x7t7cfpcik.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/pwvxujq5mn-{0}-6fwsz2vw06-6fwsz2vw06.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/7hxnbw0kwr-{0}-e5oa8w7z0a-e5oa8w7z0a.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/w1kkpg471r-{0}-vn2i7ckcp9-vn2i7ckcp9.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/ld7phzqie7-{0}-cfyzwoxtpq-cfyzwoxtpq.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/1er0cxw3ic-{0}-jwg3xpux5r-jwg3xpux5r.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-exfrbd4bw2-exfrbd4bw2.gz
+/Users/meganmccaw/Downloads/Learning_Platform1-main-2/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-exfrbd4bw2-exfrbd4bw2.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.Build.Locator.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/Microsoft.IO.Redist.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/Newtonsoft.Json.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Buffers.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Collections.Immutable.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.CommandLine.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Memory.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Numerics.Vectors.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Runtime.CompilerServices.Unsafe.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/System.Threading.Tasks.Extensions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/cs/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/de/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/es/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/fr/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/it/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/ja/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/ko/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/pl/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/pt-BR/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/ru/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/tr/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/zh-Hans/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-net472/zh-Hant/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.Build.Locator.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/Newtonsoft.Json.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/System.Collections.Immutable.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/System.CommandLine.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/cs/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/de/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/es/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/fr/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/it/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/ja/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/ko/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/pl/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/pt-BR/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/ru/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/tr/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/zh-Hans/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/BuildHost-netcore/zh-Hant/System.CommandLine.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/appsettings.Development.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/appsettings.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.runtime.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.staticwebassets.endpoints.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.deps.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.runtimeconfig.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/LP_app.pdb
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Azure.Core.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Azure.Identity.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Humanizer.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Bcl.Cryptography.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Build.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Build.Framework.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Build.Tasks.Core.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Build.Utilities.Core.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Data.SqlClient.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.DependencyModel.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Logging.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Options.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Extensions.Primitives.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Identity.Client.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Logging.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.IdentityModel.Tokens.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.NET.StringTools.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.OpenApi.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Microsoft.SqlServer.Server.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Mono.TextTemplating.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.ClientModel.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.CodeDom.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Composition.AttributedModel.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Composition.Convention.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Composition.Hosting.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Composition.Runtime.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Composition.TypedParts.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Configuration.ConfigurationManager.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Formats.Nrbf.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Memory.Data.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Reflection.MetadataLoadContext.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Resources.Extensions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Security.Cryptography.ProtectedData.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Security.Permissions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/System.Windows.Extensions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/cs/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/de/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/es/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/fr/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/it/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ja/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ko/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pl/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/pt-BR/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/ru/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/tr/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hans/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/zh-Hant/Microsoft.Data.SqlClient.resources.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/unix/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/win/lib/net9.0/Microsoft.Data.SqlClient.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/bin/Debug/net10.0/runtimes/win/lib/net9.0/System.Windows.Extensions.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/EmbeddedAttribute.cs
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/ValidatableTypeAttribute.cs
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.csproj.AssemblyReference.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfoInputs.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.AssemblyInfo.cs
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.csproj.CoreCompileInputs.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cs
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.MvcApplicationPartsAssemblyInfo.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.RazorAssemblyInfo.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.RazorAssemblyInfo.cs
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/NavMenu.razor.rz.scp.css
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/scopedcss/Components/Layout/ReconnectModal.razor.rz.scp.css
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/scopedcss/bundle/LP_app.styles.css
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/scopedcss/projectbundle/LP_app.bundle.scp.css
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/dj9vzf1s7t-{0}-zcd2eb7xx1-zcd2eb7xx1.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/7hxnbw0kwr-{0}-e5oa8w7z0a-e5oa8w7z0a.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/1er0cxw3ic-{0}-jwg3xpux5r-jwg3xpux5r.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/ld7phzqie7-{0}-cfyzwoxtpq-cfyzwoxtpq.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/w1kkpg471r-{0}-vn2i7ckcp9-vn2i7ckcp9.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/de5jun96l8-{0}-bqjiyaj88i-bqjiyaj88i.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/uw0ozgppcf-{0}-c2jlpeoesf-c2jlpeoesf.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/heahf0otby-{0}-erw9l3u2r3-erw9l3u2r3.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/iby7ueom17-{0}-aexeepp0ev-aexeepp0ev.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/hbgp346f6w-{0}-d7shbmvgxk-d7shbmvgxk.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/7pcwq2weww-{0}-ausgxo2sd3-ausgxo2sd3.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/8j53hz43ux-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/b406d6ouzm-{0}-cosvhxvwiu-cosvhxvwiu.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/6fwmbbbt5n-{0}-ub07r2b239-ub07r2b239.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/jlrqzw6t9i-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/sgyc9ybyqa-{0}-b7pk76d08c-b7pk76d08c.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/rw3jc22e0c-{0}-fsbi9cje9m-fsbi9cje9m.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/mb2hgam16o-{0}-rzd6atqjts-rzd6atqjts.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/v4q40nt359-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/m353p3bkft-{0}-dxx9fxp4il-dxx9fxp4il.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/7472927lrp-{0}-jd9uben2k1-jd9uben2k1.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/d63537uvcl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/tlln6oxy0o-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/khqfo74hfp-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/nq9c73b254-{0}-c2oey78nd0-c2oey78nd0.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/jxh4r445c2-{0}-tdbxkamptv-tdbxkamptv.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/ol0czr2014-{0}-j5mq2jizvt-j5mq2jizvt.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/evu175iek7-{0}-06098lyss8-06098lyss8.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/6mpu114qge-{0}-nvvlpmu67g-nvvlpmu67g.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/xo2omu8dqj-{0}-s35ty4nyc5-s35ty4nyc5.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/9y0nnahceg-{0}-pj5nd1wqec-pj5nd1wqec.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/u4z5qdbqm9-{0}-46ein0sx1k-46ein0sx1k.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/6grid0e8yl-{0}-v0zj4ognzu-v0zj4ognzu.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/pwhxw3wipz-{0}-37tfw0ft22-37tfw0ft22.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/twkk2crkvi-{0}-hrwsygsryq-hrwsygsryq.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/uuu50j0i48-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/mvql0gx6nm-{0}-ft3s53vfgj-ft3s53vfgj.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/18iu4429zn-{0}-6cfz1n2cew-6cfz1n2cew.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/k81lyfm0l4-{0}-6pdc2jztkx-6pdc2jztkx.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/vghyvxh7nw-{0}-493y06b0oq-493y06b0oq.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/ppdzm138et-{0}-iovd86k7lj-iovd86k7lj.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/mgrkxommrr-{0}-vr1egmr9el-vr1egmr9el.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/e1t6epeltq-{0}-kbrnm935zg-kbrnm935zg.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/jjfawt2l14-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/kamc9vrjzs-{0}-y7v9cxd14o-y7v9cxd14o.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/r1kkkpkgp4-{0}-notf2xhcfb-notf2xhcfb.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/z8w3bot8g5-{0}-h1s4sie4z3-h1s4sie4z3.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/0lgarck8z9-{0}-63fj8s7r0e-63fj8s7r0e.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/wolynjfnbo-{0}-0j3bgjxly4-0j3bgjxly4.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/ddhk6zdr92-{0}-x7t7cfpcik-x7t7cfpcik.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/pwvxujq5mn-{0}-6fwsz2vw06-6fwsz2vw06.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/u2ljwavo4n-{0}-w97mql0d9w-w97mql0d9w.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/62mnp11p9p-{0}-4n3g7fqvoz-4n3g7fqvoz.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/armuwdsdi3-{0}-v6ptob665s-v6ptob665s.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/e0ru4umo7t-{0}-exfrbd4bw2-exfrbd4bw2.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/compressed/oqhzhh0lde-{0}-exfrbd4bw2-exfrbd4bw2.gz
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/staticwebassets.build.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/staticwebassets.development.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/swae.build.ex.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.csproj.Up2Date
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/refint/LP_app.dll
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.pdb
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/LP_app.genruntimeconfig.cache
+/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/Debug/net10.0/ref/LP_app.dll

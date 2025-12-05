@@ -1,0 +1,426 @@
+@* Code Sandbox Component for Interactive Learning *@
+
+<div class="code-sandbox-wrapper">
+    <div class="sandbox-header">
+        <h2>Interactive Code Sandbox</h2>
+        <p>Write and execute Python code directly in the browser. Practice what you've learned!</p>
+    </div>
+
+    <div class="sandbox-container">
+        <div class="editor-section">
+            <div class="editor-header">
+                <span class="language-badge">Python 3</span>
+                <div class="editor-actions">
+                    <button class="btn btn-sm btn-outline-secondary" onclick="ClearCode()">Clear</button>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="ResetCode()">Reset</button>
+                </div>
+            </div>
+            <textarea class="code-editor" placeholder="# Write your Python code here...
+# Example:
+# numbers = [1, 2, 3, 4, 5]
+# squared = [x**2 for x in numbers]
+# print(squared)"></textarea>
+        </div>
+
+        <div class="execution-section">
+            <div class="execution-header">
+                <span>Output</span>
+                <button class="btn btn-primary btn-sm" onclick="ExecuteCode()">
+                    <i class="bi bi-play-fill"></i> Run Code
+                </button>
+            </div>
+            <div class="output-console">
+                <div class="output-content" id="outputContent">
+                    <p class="output-placeholder">Output will appear here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sandbox-features">
+        <div class="feature">
+            <i class="bi bi-lightning-fill"></i>
+            <h4>Run Instantly</h4>
+            <p>Execute your code and see results immediately</p>
+        </div>
+        <div class="feature">
+            <i class="bi bi-book-fill"></i>
+            <h4>Learn by Doing</h4>
+            <p>Experiment with code examples and modify them</p>
+        </div>
+        <div class="feature">
+            <i class="bi bi-save"></i>
+            <h4>Save Progress</h4>
+            <p>Your code is automatically saved locally</p>
+        </div>
+        <div class="feature">
+            <i class="bi bi-share"></i>
+            <h4>Share Code</h4>
+            <p>Get a shareable link to your code snippets</p>
+        </div>
+    </div>
+
+    <div class="sandbox-templates">
+        <h3>Quick Templates</h3>
+        <div class="templates-grid">
+            <button class="template-btn" onclick="LoadTemplate('lists')">
+                <span class="template-icon">📝</span>
+                <span>Lists & Loops</span>
+            </button>
+            <button class="template-btn" onclick="LoadTemplate('functions')">
+                <span class="template-icon">⚙️</span>
+                <span>Functions</span>
+            </button>
+            <button class="template-btn" onclick="LoadTemplate('numpy')">
+                <span class="template-icon">🔢</span>
+                <span>NumPy Arrays</span>
+            </button>
+            <button class="template-btn" onclick="LoadTemplate('pandas')">
+                <span class="template-icon">📊</span>
+                <span>Pandas DataFrames</span>
+            </button>
+            <button class="template-btn" onclick="LoadTemplate('matplotlib')">
+                <span class="template-icon">📈</span>
+                <span>Matplotlib Plotting</span>
+            </button>
+            <button class="template-btn" onclick="LoadTemplate('ml')">
+                <span class="template-icon">🤖</span>
+                <span>ML Basics</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="sandbox-tips">
+        <h3>Tips & Tricks</h3>
+        <ul>
+            <li><strong>Keyboard Shortcut:</strong> Press Ctrl+Enter to run your code</li>
+            <li><strong>Multiple Lines:</strong> Each line is executed in sequence</li>
+            <li><strong>Import Libraries:</strong> Common data science libraries are pre-installed</li>
+            <li><strong>Error Handling:</strong> Check the console for error messages and stack traces</li>
+            <li><strong>Performance:</strong> Code with infinite loops will timeout after 5 seconds</li>
+        </ul>
+    </div>
+</div>
+
+@code {
+    private string? codeInput { get; set; }
+
+    private void ExecuteCode()
+    {
+        // This would call a backend API to execute Python code
+        var output = "print('Hello from Code Sandbox!')\nOutput: Hello from Code Sandbox!";
+        UpdateOutput(output);
+    }
+
+    private void ClearCode()
+    {
+        codeInput = string.Empty;
+    }
+
+    private void ResetCode()
+    {
+        codeInput = "# Write your Python code here...";
+    }
+
+    private void LoadTemplate(string templateName)
+    {
+        codeInput = templateName switch
+        {
+            "lists" => @"# Lists and Loops
+numbers = [1, 2, 3, 4, 5]
+squared = [x**2 for x in numbers]
+print('Squared:', squared)
+
+# Loop through
+for num in numbers:
+    print(f'Number: {num}')",
+            "functions" => @"# Define and call functions
+def greet(name):
+    return f'Hello, {name}!'
+
+def add(a, b):
+    return a + b
+
+print(greet('Data Scientist'))
+print(f'Sum: {add(10, 20)}')",
+            "numpy" => @"import numpy as np
+
+# Create arrays
+arr = np.array([1, 2, 3, 4, 5])
+print('Array:', arr)
+
+# Array operations
+print('Mean:', arr.mean())
+print('Sum:', arr.sum())
+print('Max:', arr.max())",
+            "pandas" => @"import pandas as pd
+
+# Create DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'],
+        'Score': [85, 92, 78]}
+df = pd.DataFrame(data)
+print(df)
+print('\\nAverage Score:', df['Score'].mean())",
+            "matplotlib" => @"import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure(figsize=(10, 5))
+plt.plot(x, y)
+plt.title('Sine Wave')
+plt.xlabel('X')
+plt.ylabel('sin(x)')
+plt.show()",
+            "ml" => @"from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+
+# Sample data
+X = [[0, 0], [1, 1], [0, 1], [1, 0]]
+y = [0, 1, 1, 0]
+
+# Split and train
+X_train, X_test, y_train, y_test = train_test_split(X, y)
+clf = DecisionTreeClassifier()
+clf.fit(X_train, y_train)
+
+print(f'Accuracy: {clf.score(X_test, y_test)}')",
+            _ => "# Select a template"
+        };
+    }
+
+    private void UpdateOutput(string output)
+    {
+        // This would update the output console
+    }
+}
+
+<style>
+    .code-sandbox-wrapper {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .sandbox-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .sandbox-header h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .sandbox-header p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .sandbox-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .editor-section,
+    .execution-section {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .editor-header,
+    .execution-header {
+        background: #2d2d2d;
+        color: #ccc;
+        padding: 12px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .language-badge {
+        background: #1b6ec2;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .editor-actions {
+        display: flex;
+        gap: 8px;
+    }
+
+    .code-editor {
+        width: 100%;
+        height: 400px;
+        padding: 15px;
+        border: none;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        resize: vertical;
+    }
+
+    .code-editor:focus {
+        outline: 2px solid #1b6ec2;
+        outline-offset: -2px;
+    }
+
+    .output-console {
+        height: 400px;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 15px;
+        overflow-y: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .output-placeholder {
+        color: #666;
+        margin: 0;
+    }
+
+    .sandbox-features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .feature {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .feature i {
+        font-size: 2rem;
+        color: #1b6ec2;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .feature h4 {
+        margin: 12px 0;
+        color: #333;
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        color: #666;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .sandbox-templates {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+    }
+
+    .sandbox-templates h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .templates-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .template-btn {
+        padding: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        background: white;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .template-btn:hover {
+        border-color: #1b6ec2;
+        background: #f0f7ff;
+        transform: translateY(-2px);
+    }
+
+    .template-icon {
+        font-size: 1.8rem;
+    }
+
+    .sandbox-tips {
+        background: #f0f7ff;
+        border-left: 4px solid #1b6ec2;
+        padding: 25px;
+        border-radius: 8px;
+    }
+
+    .sandbox-tips h3 {
+        color: #1b6ec2;
+        margin-top: 0;
+    }
+
+    .sandbox-tips ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sandbox-tips li {
+        padding: 8px 0;
+        color: #555;
+        border-bottom: 1px solid #d0e3f7;
+    }
+
+    .sandbox-tips li:last-child {
+        border-bottom: none;
+    }
+
+    .sandbox-tips strong {
+        color: #333;
+    }
+
+    @@media (max-width: 1024px) {
+        .sandbox-container {
+            grid-template-columns: 1fr;
+        }
+
+        .code-editor,
+        .output-console {
+            height: 300px;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .sandbox-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .templates-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>

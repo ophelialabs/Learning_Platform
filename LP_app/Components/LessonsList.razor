@@ -1,0 +1,124 @@
+@* Lessons List Component *@
+
+<div class="lessons-section">
+    <h2>Course Lessons</h2>
+    <ul class="lessons-list">
+        @foreach (var lesson in Lessons)
+        {
+            <li class="lesson-item">
+                <div class="lesson-header">
+                    <h3>@lesson.Title</h3>
+                    <span class="duration">@lesson.Duration</span>
+                </div>
+                <p class="lesson-description">@lesson.Description</p>
+                <div class="lesson-tags">
+                    @foreach (var tag in lesson.Topics)
+                    {
+                        <span class="tag">@tag</span>
+                    }
+                </div>
+                <a href="@lesson.Link" class="btn btn-sm btn-outline-primary">View Lesson</a>
+            </li>
+        }
+    </ul>
+</div>
+
+@code {
+    [Parameter]
+    public List<LessonItem> Lessons { get; set; } = new();
+    
+    public class LessonItem
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Duration { get; set; } = string.Empty;
+        public string Link { get; set; } = string.Empty;
+        public List<string> Topics { get; set; } = new();
+    }
+}
+
+<style>
+    .lessons-section {
+        margin: 40px 0;
+    }
+    
+    .lessons-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: #333;
+        font-weight: 700;
+    }
+    
+    .lessons-list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        gap: 20px;
+    }
+    
+    .lesson-item {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+    }
+    
+    .lesson-item:hover {
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        transform: translateY(-2px);
+        border-color: #1b6ec2;
+    }
+    
+    .lesson-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    
+    .lesson-header h3 {
+        margin: 0;
+        color: #333;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    
+    .duration {
+        background-color: #e3f2fd;
+        color: #1b6ec2;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    
+    .lesson-description {
+        color: #666;
+        margin: 12px 0;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    
+    .lesson-tags {
+        display: flex;
+        gap: 8px;
+        margin: 15px 0;
+        flex-wrap: wrap;
+    }
+    
+    .tag {
+        background-color: #f0f0f0;
+        color: #555;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+    
+    .lesson-item .btn {
+        margin-top: 10px;
+    }
+</style>

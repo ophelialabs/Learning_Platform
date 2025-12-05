@@ -1,0 +1,613 @@
+@* Lesson Content Component *@
+
+<div class="lesson-content-wrapper">
+    <div class="lesson-header">
+        <div class="lesson-breadcrumb">
+            <a href="/data-science">Data Science</a> > <span>@CurrentLesson?.Title</span>
+        </div>
+        <h1>@CurrentLesson?.Title</h1>
+        <div class="lesson-meta">
+            <span class="meta-badge"><i class="bi bi-clock"></i> @CurrentLesson?.Duration</span>
+            <span class="meta-badge"><i class="bi bi-bookmark"></i> Module @CurrentLesson?.ModuleNumber</span>
+            <span class="lesson-progress">Progress: <strong>@CurrentLessonIndex / @TotalLessons</strong></span>
+        </div>
+    </div>
+
+    <div class="lesson-body">
+        <div class="lesson-main">
+            <!-- Lesson Content -->
+            <section class="content-section">
+                <h2>Overview</h2>
+                <p>@CurrentLesson?.Overview</p>
+            </section>
+
+            <!-- Key Topics -->
+            <section class="content-section">
+                <h2>Key Topics</h2>
+                <ul class="topics-list">
+                    @foreach (var topic in CurrentLesson?.Topics ?? new List<string>())
+                    {
+                        <li>
+                            <span class="topic-icon">📌</span>
+                            @topic
+                        </li>
+                    }
+                </ul>
+            </section>
+
+            <!-- Learning Objectives -->
+            <section class="content-section">
+                <h2>Learning Objectives</h2>
+                <div class="objectives-grid">
+                    @foreach (var obj in CurrentLesson?.Objectives ?? new List<string>())
+                    {
+                        <div class="objective-card">
+                            <span class="objective-icon">✓</span>
+                            @obj
+                        </div>
+                    }
+                </div>
+            </section>
+
+            <!-- Code Example -->
+            @if (!string.IsNullOrEmpty(CurrentLesson?.CodeExample))
+            {
+                <section class="content-section">
+                    <h2>Code Example</h2>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>Python</span>
+                            <button class="btn btn-sm btn-outline-primary" onclick="copyCode()">Copy</button>
+                        </div>
+                        <pre><code>@CurrentLesson.CodeExample</code></pre>
+                    </div>
+                </section>
+            }
+
+            <!-- Resources -->
+            @if (CurrentLesson?.Resources?.Any() == true)
+            {
+                <section class="content-section">
+                    <h2>Resources</h2>
+                    <div class="resources-list">
+                        @foreach (var resource in CurrentLesson.Resources)
+                        {
+                            var (displayText, url) = ParseMarkdownLink(resource);
+                            <a href="@url" class="resource-item">
+                                <span class="resource-icon">📄</span>
+                                <span>@displayText</span>
+                                <span class="resource-link-icon">→</span>
+                            </a>
+                        }
+                    </div>
+                </section>
+            }
+
+            <!-- Navigation -->
+            <div class="lesson-navigation">
+                @if (CurrentLessonIndex > 1)
+                {
+                    <button class="btn btn-outline-secondary" @onclick="GoToPreviousLesson">
+                        <i class="bi bi-chevron-left"></i> Previous
+                    </button>
+                }
+
+                @if (!CurrentLesson?.IsCompleted == true)
+                {
+                    <button class="btn btn-success" @onclick="CompleteLesson">
+                        <i class="bi bi-check-circle"></i> Mark as Complete
+                    </button>
+                }
+
+                @if (CurrentLessonIndex < TotalLessons)
+                {
+                    <button class="btn btn-primary" @onclick="GoToNextLesson">
+                        Next <i class="bi bi-chevron-right"></i>
+                    </button>
+                }
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="lesson-sidebar">
+            <div class="sidebar-card">
+                <h3>Lesson Progress & Contents</h3>
+                
+                <div class="progress-info">
+                    <div class="progress-bar-large">
+                        <div class="progress-fill" style="width: @((CurrentLessonIndex * 100 / TotalLessons))%"></div>
+                    </div>
+                    <p class="progress-text">@CurrentLessonIndex of @TotalLessons lessons completed</p>
+                </div>
+
+                <div class="contents-divider"></div>
+
+                <ul class="contents-list">
+                    @foreach (var lesson in Lessons ?? new List<LessonData>())
+                    {
+                        var isActive = lesson.Id == CurrentLesson?.Id;
+                        <li class="@(isActive ? "active" : "") @(lesson.IsCompleted ? "completed" : "")">
+                            <a href="@GetLessonRoute(lesson.Id)" class="lesson-link">
+                                <span class="status-icon">@(lesson.IsCompleted ? "✓" : "→")</span>
+                                @lesson.Title
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3>Quick Tips</h3>
+                <ul class="tips-list">
+                    <li>Take notes while watching videos</li>
+                    <li>Practice the code examples</li>
+                    <li>Complete the quiz before moving on</li>
+                    <li>Review topics if confused</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<LessonData>? Lessons { get; set; }
+
+    private LessonData? CurrentLesson { get; set; }
+    private int CurrentLessonIndex { get; set; } = 1;
+    private int TotalLessons { get; set; } = 0;
+
+    protected override void OnInitialized()
+    {
+        TotalLessons = Lessons?.Count ?? 0;
+        if (Lessons?.Any() == true)
+        {
+            CurrentLesson = Lessons.First();
+            CurrentLessonIndex = 1;
+        }
+    }
+
+    private void SelectLesson(int lessonId)
+    {
+        var lesson = Lessons?.FirstOrDefault(l => l.Id == lessonId);
+        if (lesson != null)
+        {
+            CurrentLesson = lesson;
+            CurrentLessonIndex = Lessons!.IndexOf(lesson) + 1;
+            StateHasChanged();
+        }
+    }
+
+    private void GoToNextLesson()
+    {
+        if (CurrentLessonIndex < TotalLessons)
+        {
+            CurrentLessonIndex++;
+            CurrentLesson = Lessons![CurrentLessonIndex - 1];
+            StateHasChanged();
+        }
+    }
+
+    private void GoToPreviousLesson()
+    {
+        if (CurrentLessonIndex > 1)
+        {
+            CurrentLessonIndex--;
+            CurrentLesson = Lessons![CurrentLessonIndex - 1];
+            StateHasChanged();
+        }
+    }
+
+    private void CompleteLesson()
+    {
+        if (CurrentLesson != null)
+        {
+            CurrentLesson.IsCompleted = true;
+            StateHasChanged();
+        }
+    }
+
+    private string GetLessonRoute(int lessonId)
+    {
+        return lessonId switch
+        {
+            1 => "/data-science/lessons/program-overview",
+            2 => "/data-science/lessons/course-navigation",
+            3 => "/data-science/lessons/setting-up-environment",
+            4 => "/data-science/lessons/program-induction-assessment",
+            5 => "/data-science/lessons/python-basics",
+            6 => "/data-science/lessons/control-flow",
+            7 => "/data-science/lessons/functions-modules",
+            8 => "/data-science/lessons/data-structures",
+            9 => "/data-science/lessons/list-comprehensions",
+            10 => "/data-science/lessons/python-refresher-quiz",
+            11 => "/data-science/lessons/sql-basics",
+            12 => "/data-science/lessons/joins-queries",
+            13 => "/data-science/lessons/numpy-arrays",
+            14 => "/data-science/lessons/pandas-dataframes",
+            _ => "/data-science/learning"
+        };
+    }
+
+    private (string displayText, string url) ParseMarkdownLink(string markdown)
+    {
+        // Parse markdown link format: [Display Text](/url)
+        var pattern = @"\[(.*?)\]\((.*?)\)";
+        var match = System.Text.RegularExpressions.Regex.Match(markdown, pattern);
+        
+        if (match.Success)
+        {
+            return (match.Groups[1].Value, match.Groups[2].Value);
+        }
+        
+        // If not markdown format, return as-is
+        return (markdown, "#");
+    }
+
+    public class LessonData
+    {
+        public int Id { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public int ModuleNumber { get; set; }
+        public string Duration { get; set; } = string.Empty;
+        public string Overview { get; set; } = string.Empty;
+        public List<string> Topics { get; set; } = new();
+        public List<string> Objectives { get; set; } = new();
+        public string CodeExample { get; set; } = string.Empty;
+        public List<string> Resources { get; set; } = new();
+        public bool IsCompleted { get; set; }
+    }
+}
+
+<style>
+    .lesson-content-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .lesson-header {
+        margin-bottom: 40px;
+    }
+
+    .lesson-breadcrumb {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .lesson-breadcrumb a {
+        color: #1b6ec2;
+        text-decoration: none;
+    }
+
+    .lesson-header h1 {
+        font-size: 2.2rem;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    .lesson-meta {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .meta-badge {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .lesson-progress {
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .lesson-body {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 30px;
+    }
+
+    .lesson-main {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .content-section {
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content-section:last-of-type {
+        border-bottom: none;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .content-section p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topics-list li {
+        padding: 12px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-left: 4px solid #1b6ec2;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topic-icon {
+        font-size: 1.2rem;
+    }
+
+    .objectives-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .objective-card {
+        background: #f0f7ff;
+        border: 1px solid #c3e7ff;
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .objective-icon {
+        color: #26b050;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    .code-block {
+        background: #1e1e1e;
+        border-radius: 6px;
+        overflow: hidden;
+        margin: 15px 0;
+    }
+
+    .code-header {
+        background: #2d2d2d;
+        color: #ccc;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    .code-block pre {
+        margin: 0;
+        padding: 15px;
+        color: #d4d4d4;
+        overflow-x: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+    }
+
+    .code-block code {
+        color: #ce9178;
+    }
+
+    .resources-list {
+        display: grid;
+        gap: 10px;
+    }
+
+    .resource-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 15px;
+        background: #f8f9fa;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #1b6ec2;
+        transition: all 0.2s;
+        border-left: 3px solid transparent;
+    }
+
+    .resource-item:hover {
+        background: #e3f2fd;
+        border-left-color: #1b6ec2;
+    }
+
+    .resource-icon {
+        font-size: 1.2rem;
+    }
+
+    .resource-link-icon {
+        margin-left: auto;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+    }
+
+    .resource-item:hover .resource-link-icon {
+        opacity: 1;
+    }
+
+    .lesson-navigation {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-top: 25px;
+        border-top: 1px solid #eee;
+    }
+
+    .lesson-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .sidebar-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .progress-bar-large {
+        width: 100%;
+        height: 8px;
+        background: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #1b6ec2, #26b050);
+        transition: width 0.3s;
+    }
+
+    .progress-text {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0;
+    }
+
+    .contents-divider {
+        height: 1px;
+        background: #e0e0e0;
+        margin: 15px 0;
+    }
+
+    .contents-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contents-list li {
+        margin-bottom: 8px;
+    }
+
+    .contents-list li.active .lesson-link {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        font-weight: 700;
+    }
+
+    .contents-list li.completed .status-icon::before {
+        content: "✓";
+        color: #26b050;
+    }
+
+    .contents-list li:not(.completed) .status-icon::before {
+        content: "→";
+        color: #ccc;
+    }
+
+    .contents-list .lesson-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #555;
+        transition: all 0.2s;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 0.95rem;
+        font-family: inherit;
+    }
+
+    .contents-list .lesson-link:hover {
+        background: #f0f0f0;
+        color: #1b6ec2;
+    }
+
+    .status-icon {
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+
+    .tips-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tips-list li {
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        background: #f0f7ff;
+        border-left: 3px solid #1b6ec2;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    @@media (max-width: 1024px) {
+        .lesson-body {
+            grid-template-columns: 1fr;
+        }
+
+        .lesson-sidebar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .lesson-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .lesson-main {
+            padding: 20px;
+        }
+
+        .lesson-navigation {
+            flex-direction: column;
+        }
+
+        .lesson-navigation button {
+            width: 100%;
+        }
+    }
+</style>

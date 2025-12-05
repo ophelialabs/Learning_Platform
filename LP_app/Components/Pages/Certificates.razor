@@ -1,0 +1,301 @@
+@page "/certificates"
+
+<PageTitle>My Certificates - Learning Platform</PageTitle>
+
+<div class="certificates-header">
+    <div class="container">
+        <h1>My Certificates</h1>
+        <p>Showcase your achievements and professional credentials</p>
+    </div>
+</div>
+
+<div class="container">
+    <section class="certificates-section">
+        <h2>Earned Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card earned">
+                <div class="certificate-preview">
+                    <div class="cert-emblem">📜</div>
+                    <h3>Professional Certificate in Data Science & AI</h3>
+                    <p class="cert-issuer">Purdue University Online</p>
+                    <p class="cert-date">Earned: December 2024</p>
+                </div>
+                <div class="certificate-actions">
+                    <button class="btn btn-sm btn-primary">Download</button>
+                    <button class="btn btn-sm btn-outline-secondary">Share</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates-section">
+        <h2>In Progress</h2>
+        <p class="section-subtitle">Complete these courses to earn certificates</p>
+        <div class="in-progress-grid">
+            <div class="progress-cert-card">
+                <div class="cert-info">
+                    <h4>Mathematics</h4>
+                    <p class="cert-issuer">Essential & Advanced Mathematics</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                    <span class="progress-percent">40%</span>
+                </div>
+                <p class="cert-hint">8 of 20 lessons completed - Keep going!</p>
+            </div>
+
+            <div class="progress-cert-card">
+                <div class="cert-info">
+                    <h4>Physics</h4>
+                    <p class="cert-issuer">Fundamental & Advanced Physics</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 25%;"></div>
+                    </div>
+                    <span class="progress-percent">25%</span>
+                </div>
+                <p class="cert-hint">4 of 16 lessons completed - You're doing great!</p>
+            </div>
+
+            <div class="progress-cert-card">
+                <div class="cert-info">
+                    <h4>Chemistry</h4>
+                    <p class="cert-issuer">General, Organic & Analytical Chemistry</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-percent">0%</span>
+                </div>
+                <p class="cert-hint">Not started - Begin your chemistry journey</p>
+                <a href="/chemistry" class="btn btn-sm btn-primary">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates-section">
+        <h2>Certificate Information</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h4>What's on Your Certificate?</h4>
+                <ul>
+                    <li>Course title and completion date</li>
+                    <li>Hours of coursework completed</li>
+                    <li>Institution name (Purdue University Online)</li>
+                    <li>Unique certificate ID</li>
+                    <li>Digital badge for sharing</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>How to Share Your Certificate</h4>
+                <ul>
+                    <li>Download as PDF for your resume</li>
+                    <li>Share on LinkedIn and other social media</li>
+                    <li>Share the unique certificate URL</li>
+                    <li>Add to your professional portfolio</li>
+                    <li>Print for framing or display</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h4>Certificate Recognition</h4>
+                <ul>
+                    <li>Recognized by industry employers</li>
+                    <li>Demonstrates professional commitment</li>
+                    <li>Shareable with verification link</li>
+                    <li>Valid for professional development</li>
+                    <li>Accepted by leading universities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    .certificates-header {
+        background: linear-gradient(135deg, #1b6ec2 0%, #004a7d 100%);
+        color: white;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+
+    .certificates-header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .certificates-section {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+    .certificates-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .section-subtitle {
+        color: #999;
+        margin-bottom: 20px;
+    }
+
+    .certificates-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .certificate-card {
+        background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
+        border: 2px solid #1b6ec2;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .certificate-card.earned {
+        box-shadow: 0 8px 24px rgba(27, 110, 194, 0.15);
+    }
+
+    .certificate-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(27, 110, 194, 0.2);
+    }
+
+    .certificate-preview {
+        margin-bottom: 20px;
+    }
+
+    .cert-emblem {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .certificate-card h3 {
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .cert-issuer {
+        color: #1b6ec2;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .cert-date {
+        color: #999;
+        font-size: 0.9rem;
+    }
+
+    .certificate-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .certificate-actions .btn {
+        flex: 1;
+    }
+
+    .in-progress-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .progress-cert-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #ffc107;
+    }
+
+    .cert-info h4 {
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .progress-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    .progress-bar-small {
+        flex: 1;
+        height: 6px;
+        background-color: #e0e0e0;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #ffc107, #ff9800);
+        transition: width 0.3s ease;
+    }
+
+    .progress-percent {
+        min-width: 45px;
+        font-weight: 700;
+        color: #ff9800;
+    }
+
+    .cert-hint {
+        color: #999;
+        font-size: 0.85rem;
+        margin: 10px 0;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+
+    .info-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-top: 4px solid #1b6ec2;
+    }
+
+    .info-card h4 {
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .info-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info-card li {
+        padding: 8px 0;
+        color: #666;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .info-card li:last-child {
+        border-bottom: none;
+    }
+
+    .info-card li:before {
+        content: "✓ ";
+        color: #26b050;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+</style>

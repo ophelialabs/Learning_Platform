@@ -1,0 +1,582 @@
+@page "/Journals"
+@using System.Net.Http
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<PageTitle>Research Journals & Publications</PageTitle>
+
+<link rel="stylesheet" href="/css/journals.css" />
+
+<div class="journals-container">
+    <!-- Header -->
+    <div class="journals-header">
+        <h1>Research Journals & Publications</h1>
+        <p class="subtitle">Latest research, resources, and insights updated weekly</p>
+        <div class="last-update">Last updated: @lastUpdateTime.ToString("MMMM dd, yyyy HH:mm")</div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-container">
+        <button class="tab-btn @(activeTab == "research" ? "active" : "")" @onclick="@((e) => SelectTab("research"))">
+            📚 Research
+        </button>
+        <button class="tab-btn @(activeTab == "resources" ? "active" : "")" @onclick="@((e) => SelectTab("resources"))">
+            📖 Resources
+        </button>
+        <button class="tab-btn @(activeTab == "advances" ? "active" : "")" @onclick="@((e) => SelectTab("advances"))">
+            🚀 Recent Advances & Applications
+        </button>
+        <button class="tab-btn @(activeTab == "challenges" ? "active" : "")" @onclick="@((e) => SelectTab("challenges"))">
+            ⚠️ Current Challenges
+        </button>
+    </div>
+
+    <!-- Content Sections -->
+    @if (isLoading)
+    {
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading content...</p>
+        </div>
+    }
+    else
+    {
+        <!-- Research Section -->
+        @if (activeTab == "research")
+        {
+            <div class="tab-content research-section">
+                <h2>Latest Research Publications</h2>
+                
+                <div class="research-grid">
+                    @foreach (var item in researchItems)
+                    {
+                        <div class="research-card">
+                            <div class="card-badge">@item.Category</div>
+                            <h3>@item.Title</h3>
+                            <p class="authors">By: @item.Authors</p>
+                            <p class="description">@item.Description</p>
+                            <div class="card-meta">
+                                <span class="source">📰 @item.Source</span>
+                                <span class="date">📅 @item.PublishDate.ToString("MMM dd, yyyy")</span>
+                            </div>
+                            <a href="@item.Link" target="_blank" class="read-more-btn">Read Full Paper →</a>
+                        </div>
+                    }
+                </div>
+
+                <!-- Search & Filter for Research -->
+                <div class="search-section">
+                    <input type="text" class="search-input" placeholder="Search research by keywords, title, or author..." 
+                           @onchange="@((ChangeEventArgs e) => FilterResearch(e.Value?.ToString()))">
+                    
+                    <div class="filter-section">
+                        <label>Filter by Source:</label>
+                        <div class="source-filters">
+                            @foreach (var source in researchSources)
+                            {
+                                <button class="source-btn @(selectedResearchSource == source ? "active" : "")"
+                                        @onclick="() => FilterBySource(source)">
+                                    @source
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Resources Section -->
+        @if (activeTab == "resources")
+        {
+            <div class="tab-content resources-section">
+                <h2>Educational & Reference Resources</h2>
+                
+                <div class="resources-grid">
+                    @foreach (var resource in resourceItems)
+                    {
+                        <div class="resource-card">
+                            <div class="resource-icon">@resource.Icon</div>
+                            <h3>@resource.Title</h3>
+                            <p class="resource-type">Type: @resource.Type</p>
+                            <p class="description">@resource.Description</p>
+                            <div class="resource-meta">
+                                <span class="difficulty">Difficulty: @resource.Level</span>
+                                <span class="date">Updated: @resource.LastUpdated.ToString("MMM dd, yyyy")</span>
+                            </div>
+                            <a href="@resource.Link" target="_blank" class="access-btn">Access Resource →</a>
+                        </div>
+                    }
+                </div>
+
+                <!-- Suggested Resources by Category -->
+                <div class="resources-by-category">
+                    <h3>Browse by Category</h3>
+                    <div class="category-tabs">
+                        @foreach (var category in resourceCategories)
+                        {
+                            <button class="category-tab @(selectedResourceCategory == category ? "active" : "")"
+                                    @onclick="() => FilterResourcesByCategory(category)">
+                                @category
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Recent Advances & Applications Section -->
+        @if (activeTab == "advances")
+        {
+            <div class="tab-content advances-section">
+                <h2>Recent Advances & Real-World Applications</h2>
+                
+                <div class="advances-grid">
+                    @foreach (var advance in advancesItems)
+                    {
+                        <div class="advance-card">
+                            <div class="impact-badge">Impact: @advance.ImpactLevel</div>
+                            <h3>@advance.Title</h3>
+                            <p class="field">Field: @advance.Field</p>
+                            <p class="description">@advance.Description</p>
+                            
+                            <div class="applications">
+                                <h4>Applications:</h4>
+                                <ul>
+                                    @foreach (var app in advance.Applications)
+                                    {
+                                        <li>✓ @app</li>
+                                    }
+                                </ul>
+                            </div>
+                            
+                            <div class="advance-meta">
+                                <span class="year">📅 @advance.YearDiscovered</span>
+                                <span class="status">Status: @advance.CurrentStatus</span>
+                            </div>
+                            <a href="@advance.SourceLink" target="_blank" class="learn-more-btn">Learn More →</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+        <!-- Current Challenges Section -->
+        @if (activeTab == "challenges")
+        {
+            <div class="tab-content challenges-section">
+                <h2>Current Challenges & Research Gaps</h2>
+                
+                <div class="challenges-grid">
+                    @foreach (var challenge in challengesItems)
+                    {
+                        <div class="challenge-card">
+                            <div class="urgency-badge @challenge.Urgency.ToLower()">Priority: @challenge.Urgency</div>
+                            <h3>@challenge.Title</h3>
+                            <p class="area">Area: @challenge.Area</p>
+                            <p class="description">@challenge.Description</p>
+                            
+                            <div class="challenge-details">
+                                <div class="detail-item">
+                                    <strong>Research Gaps:</strong>
+                                    <ul>
+                                        @foreach (var gap in challenge.ResearchGaps)
+                                        {
+                                            <li>• @gap</li>
+                                        }
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <strong>Potential Solutions:</strong>
+                                    <ul>
+                                        @foreach (var solution in challenge.PotentialSolutions)
+                                        {
+                                            <li>→ @solution</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="challenge-meta">
+                                <span class="identified">Identified: @challenge.IdentifiedYear</span>
+                                <span class="funding">Est. Funding Needed: @challenge.FundingNeeded</span>
+                            </div>
+                            <a href="@challenge.ResearchLink" target="_blank" class="research-btn">View Research →</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private string activeTab = "research";
+    private bool isLoading = true;
+    private DateTime lastUpdateTime;
+    private System.Timers.Timer? weeklyUpdateTimer;
+    private string selectedResearchSource = "All Sources";
+    private string selectedResourceCategory = "All Categories";
+
+    // Data Lists
+    private List<ResearchItem> researchItems = new();
+    private List<ResourceItem> resourceItems = new();
+    private List<AdvanceItem> advancesItems = new();
+    private List<ChallengeItem> challengesItems = new();
+
+    private List<string> researchSources = new();
+    private List<string> resourceCategories = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllContent();
+        InitializeWeeklyUpdate();
+    }
+
+    private async Task LoadAllContent()
+    {
+        isLoading = true;
+        LoadResearchItems();
+        LoadResourceItems();
+        LoadAdvancesItems();
+        LoadChallengesItems();
+        lastUpdateTime = DateTime.Now;
+        isLoading = false;
+        await Task.CompletedTask;
+    }
+
+    private void InitializeWeeklyUpdate()
+    {
+        weeklyUpdateTimer = new System.Timers.Timer(TimeSpan.FromDays(7).TotalMilliseconds);
+        weeklyUpdateTimer.Elapsed += async (s, e) =>
+        {
+            await Task.Run(() => LoadAllContent());
+        };
+        weeklyUpdateTimer.Start();
+    }
+
+    private void LoadResearchItems()
+    {
+        researchItems = new List<ResearchItem>
+        {
+            new ResearchItem
+            {
+                Title = "Machine Learning Applications in Climate Modeling",
+                Authors = "Dr. Jane Smith, Prof. John Anderson",
+                Description = "Comprehensive study on using deep learning for improved weather prediction and climate pattern recognition.",
+                Category = "AI & Climate",
+                Source = "Science Advances",
+                PublishDate = DateTime.Now.AddDays(-5),
+                Link = "https://www.science.org/journal/sciadv"
+            },
+            new ResearchItem
+            {
+                Title = "Sustainable Energy Storage: Recent Breakthroughs",
+                Authors = "Dr. Ahmed Hassan, Dr. Maria Rodriguez",
+                Description = "Review of latest battery technologies and their applications in renewable energy systems.",
+                Category = "Energy",
+                Source = "Journal of Advanced Research",
+                PublishDate = DateTime.Now.AddDays(-10),
+                Link = "https://www.sciencedirect.com/journal/journal-of-advanced-research/"
+            },
+            new ResearchItem
+            {
+                Title = "Quantum Computing: From Theory to Practice",
+                Authors = "Prof. David Chen, Dr. Lisa Wang",
+                Description = "Latest developments in quantum algorithm optimization and error correction techniques.",
+                Category = "Quantum Tech",
+                Source = "IEEE Xplore",
+                PublishDate = DateTime.Now.AddDays(-3),
+                Link = "https://ieeexplore.ieee.org"
+            }
+        };
+
+        researchSources = researchItems.Select(r => r.Source).Distinct().ToList();
+        researchSources.Insert(0, "All Sources");
+    }
+
+    private void LoadResourceItems()
+    {
+        resourceItems = new List<ResourceItem>
+        {
+            new ResourceItem
+            {
+                Title = "Introduction to Machine Learning",
+                Type = "Online Course",
+                Icon = "🎓",
+                Description = "Comprehensive course covering ML fundamentals, algorithms, and real-world applications.",
+                Level = "Beginner",
+                LastUpdated = DateTime.Now.AddDays(-15),
+                Link = "https://www.coursera.org",
+                Category = "AI & Machine Learning"
+            },
+            new ResourceItem
+            {
+                Title = "Environmental Science Textbook Collection",
+                Type = "E-Book",
+                Icon = "📚",
+                Description = "Curated selection of peer-reviewed environmental science and sustainability resources.",
+                Level = "Intermediate",
+                LastUpdated = DateTime.Now.AddDays(-30),
+                Link = "https://www.ncbi.nlm.nih.gov",
+                Category = "Environmental Science"
+            },
+            new ResourceItem
+            {
+                Title = "Data Science Toolkit & Libraries Guide",
+                Type = "Reference",
+                Icon = "🛠️",
+                Description = "Complete guide to Python, R, and other data science tools and frameworks.",
+                Level = "Intermediate",
+                LastUpdated = DateTime.Now.AddDays(-7),
+                Link = "https://github.com",
+                Category = "Data Science"
+            },
+            new ResourceItem
+            {
+                Title = "Renewable Energy Technologies Handbook",
+                Type = "E-Book",
+                Icon = "⚡",
+                Description = "Detailed technical handbook covering solar, wind, hydro, and other renewable sources.",
+                Level = "Advanced",
+                LastUpdated = DateTime.Now.AddDays(-20),
+                Link = "https://www.sciencedirect.com",
+                Category = "Energy"
+            }
+        };
+
+        resourceCategories = resourceItems.Select(r => r.Category).Distinct().ToList();
+        resourceCategories.Insert(0, "All Categories");
+    }
+
+    private void LoadAdvancesItems()
+    {
+        advancesItems = new List<AdvanceItem>
+        {
+            new AdvanceItem
+            {
+                Title = "CRISPR Gene Editing Technology",
+                Field = "Biotechnology & Medicine",
+                Description = "Revolutionary gene-editing tool enabling precise DNA modifications for disease treatment.",
+                ImpactLevel = "Transformative",
+                YearDiscovered = 2012,
+                CurrentStatus = "Clinical Trials & Early Deployment",
+                Applications = new List<string> 
+                { 
+                    "Cancer treatment", 
+                    "Genetic disease correction", 
+                    "Personalized medicine" 
+                },
+                SourceLink = "https://www.science.org"
+            },
+            new AdvanceItem
+            {
+                Title = "Artificial Intelligence in Healthcare",
+                Field = "Healthcare & AI",
+                Description = "AI systems for disease diagnosis, drug discovery, and personalized treatment planning.",
+                ImpactLevel = "High",
+                YearDiscovered = 2016,
+                CurrentStatus = "Rapid Deployment",
+                Applications = new List<string> 
+                { 
+                    "Medical imaging analysis", 
+                    "Drug discovery acceleration", 
+                    "Patient outcome prediction" 
+                },
+                SourceLink = "https://www.ncbi.nlm.nih.gov"
+            },
+            new AdvanceItem
+            {
+                Title = "Quantum Key Distribution",
+                Field = "Cybersecurity & Physics",
+                Description = "Quantum-based cryptography providing theoretically unbreakable encryption.",
+                ImpactLevel = "High",
+                YearDiscovered = 1984,
+                CurrentStatus = "Commercial Availability",
+                Applications = new List<string> 
+                { 
+                    "Secure communications", 
+                    "Financial transactions", 
+                    "Government systems" 
+                },
+                SourceLink = "https://ieeexplore.ieee.org"
+            }
+        };
+    }
+
+    private void LoadChallengesItems()
+    {
+        challengesItems = new List<ChallengeItem>
+        {
+            new ChallengeItem
+            {
+                Title = "Climate Change Mitigation Scalability",
+                Area = "Environmental Science & Climate",
+                Description = "Challenge in scaling carbon capture, renewable energy, and sustainable practices globally.",
+                Urgency = "High",
+                IdentifiedYear = 2015,
+                FundingNeeded = "$5-10 Trillion USD",
+                ResearchGaps = new List<string>
+                {
+                    "Cost-effective carbon capture at scale",
+                    "Grid stability with 100% renewables",
+                    "Sustainable material alternatives"
+                },
+                PotentialSolutions = new List<string>
+                {
+                    "Advanced battery storage technology",
+                    "Direct air capture improvements",
+                    "Green hydrogen production"
+                },
+                ResearchLink = "https://www.ipcc.ch"
+            },
+            new ChallengeItem
+            {
+                Title = "Antibiotic Resistance Crisis",
+                Area = "Medicine & Public Health",
+                Description = "Rising bacterial resistance to antibiotics threatening modern medicine effectiveness.",
+                Urgency = "High",
+                IdentifiedYear = 2000,
+                FundingNeeded = "$3-5 Billion USD",
+                ResearchGaps = new List<string>
+                {
+                    "Novel antibiotic discovery mechanisms",
+                    "Rapid diagnostic methods",
+                    "Global surveillance systems"
+                },
+                PotentialSolutions = new List<string>
+                {
+                    "Phage therapy development",
+                    "Immunotherapy approaches",
+                    "AI-driven drug discovery"
+                },
+                ResearchLink = "https://www.who.int"
+            },
+            new ChallengeItem
+            {
+                Title = "Artificial General Intelligence Safety",
+                Area = "AI & Computer Science",
+                Description = "Ensuring safe development of AGI systems with alignment to human values.",
+                Urgency = "High",
+                IdentifiedYear = 2010,
+                FundingNeeded = "$500M - $1B USD",
+                ResearchGaps = new List<string>
+                {
+                    "AGI alignment methodologies",
+                    "Interpretability breakthroughs",
+                    "Robust testing frameworks"
+                },
+                PotentialSolutions = new List<string>
+                {
+                    "AI safety research collaboration",
+                    "Interpretable AI development",
+                    "International governance frameworks"
+                },
+                ResearchLink = "https://www.alignmentresearchcenter.org"
+            }
+        };
+    }
+
+    private void SelectTab(string tab)
+    {
+        activeTab = tab;
+    }
+
+    private void FilterResearch(string? searchTerm)
+    {
+        if (string.IsNullOrEmpty(searchTerm))
+        {
+            LoadResearchItems();
+            return;
+        }
+
+        var filtered = researchItems.Where(r => 
+            r.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            r.Authors.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            r.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+        ).ToList();
+
+        researchItems = filtered;
+    }
+
+    private void FilterBySource(string source)
+    {
+        selectedResearchSource = source;
+        if (source == "All Sources")
+        {
+            LoadResearchItems();
+        }
+        else
+        {
+            researchItems = researchItems.Where(r => r.Source == source).ToList();
+        }
+    }
+
+    private void FilterResourcesByCategory(string category)
+    {
+        selectedResourceCategory = category;
+        if (category == "All Categories")
+        {
+            LoadResourceItems();
+        }
+        else
+        {
+            resourceItems = resourceItems.Where(r => r.Category == category).ToList();
+        }
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync()
+    {
+        weeklyUpdateTimer?.Dispose();
+        await Task.CompletedTask;
+    }
+
+    // Models
+    private class ResearchItem
+    {
+        public string Title { get; set; } = "";
+        public string Authors { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string Category { get; set; } = "";
+        public string Source { get; set; } = "";
+        public DateTime PublishDate { get; set; }
+        public string Link { get; set; } = "";
+    }
+
+    private class ResourceItem
+    {
+        public string Title { get; set; } = "";
+        public string Type { get; set; } = "";
+        public string Icon { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string Level { get; set; } = "";
+        public DateTime LastUpdated { get; set; }
+        public string Link { get; set; } = "";
+        public string Category { get; set; } = "";
+    }
+
+    private class AdvanceItem
+    {
+        public string Title { get; set; } = "";
+        public string Field { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string ImpactLevel { get; set; } = "";
+        public int YearDiscovered { get; set; }
+        public string CurrentStatus { get; set; } = "";
+        public List<string> Applications { get; set; } = new();
+        public string SourceLink { get; set; } = "";
+    }
+
+    private class ChallengeItem
+    {
+        public string Title { get; set; } = "";
+        public string Area { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string Urgency { get; set; } = "";
+        public int IdentifiedYear { get; set; }
+        public string FundingNeeded { get; set; } = "";
+        public List<string> ResearchGaps { get; set; } = new();
+        public List<string> PotentialSolutions { get; set; } = new();
+        public string ResearchLink { get; set; } = "";
+    }
+}

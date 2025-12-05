@@ -1,0 +1,677 @@
+@* Completion Summary Component *@
+
+<div class="completion-summary-wrapper">
+    <div class="summary-header">
+        <div class="header-content">
+            <h1>Your Learning Progress</h1>
+            <p>Track your journey through the Data Science program</p>
+        </div>
+    </div>
+
+    <div class="summary-grid">
+        <!-- Overall Progress Card -->
+        <div class="summary-card large">
+            <div class="card-icon">📊</div>
+            <div class="card-content">
+                <h2>Overall Progress</h2>
+                <div class="progress-visualization">
+                    <div class="progress-bar-large">
+                        <div class="progress-fill" style="width: @(OverallProgress)%"></div>
+                    </div>
+                    <div class="progress-text">@(OverallProgress)% Complete</div>
+                </div>
+                <div class="progress-stats">
+                    <div class="stat">
+                        <span class="stat-value">@CompletedLessons</span>
+                        <span class="stat-label">Lessons Done</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">@TotalLessons</span>
+                        <span class="stat-label">Total Lessons</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">@CompletedModules</span>
+                        <span class="stat-label">Modules</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Time Card -->
+        <div class="summary-card">
+            <div class="card-icon">⏱️</div>
+            <h3>Learning Time</h3>
+            <p class="stat-large">@TotalHoursPracticed.ToString("F1") <span class="unit">hours</span></p>
+            <p class="stat-small">Keep practicing to reach your goals!</p>
+        </div>
+
+        <!-- Certificates Card -->
+        <div class="summary-card">
+            <div class="card-icon">🏆</div>
+            <h3>Certificates Earned</h3>
+            <p class="stat-large">@CertificatesEarned <span class="unit">badges</span></p>
+            <p class="stat-small">You're on your way to mastery!</p>
+        </div>
+
+        <!-- Current Streak Card -->
+        <div class="summary-card">
+            <div class="card-icon">🔥</div>
+            <h3>Learning Streak</h3>
+            <p class="stat-large">@CurrentStreak <span class="unit">days</span></p>
+            <p class="stat-small">Keep it up!</p>
+        </div>
+    </div>
+
+    <!-- Module Breakdown -->
+    <div class="modules-section">
+        <h2>Module Breakdown</h2>
+        <div class="modules-grid">
+            @foreach (var module in Modules ?? new List<ModuleData>())
+            {
+                <div class="module-card">
+                    <div class="module-header">
+                        <h3>@module.Name</h3>
+                        <span class="progress-percent">@(module.CompletionPercentage)%</span>
+                    </div>
+                    <p class="module-description">@module.Description</p>
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: @(module.CompletionPercentage)%"></div>
+                    </div>
+                    <div class="module-stats">
+                        <span>@module.CompletedLessons / @module.TotalLessons lessons</span>
+                        <span class="module-status @(module.IsCompleted ? "completed" : "in-progress")">
+                            @(module.IsCompleted ? "✓ Completed" : "In Progress")
+                        </span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Skills Learned -->
+    <div class="skills-section">
+        <h2>Skills Mastered</h2>
+        <div class="skills-grid">
+            @foreach (var skill in SkillsMastered ?? new List<string>())
+            {
+                <div class="skill-badge">
+                    <span class="skill-icon">✓</span>
+                    <span class="skill-name">@skill</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="achievements-section">
+        <h2>Achievements Unlocked</h2>
+        <div class="achievements-grid">
+            @foreach (var achievement in Achievements ?? new List<AchievementData>())
+            {
+                <div class="achievement-card @(achievement.Unlocked ? "unlocked" : "locked")">
+                    <div class="achievement-badge">@achievement.Icon</div>
+                    <h4>@achievement.Title</h4>
+                    <p>@achievement.Description</p>
+                    @if (achievement.UnlockedDate.HasValue)
+                    {
+                        <p class="unlock-date">Unlocked: @achievement.UnlockedDate?.ToString("MMM d, yyyy")</p>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="recommendations-section">
+        <h2>What's Next?</h2>
+        <div class="recommendations-grid">
+            <div class="recommendation-card">
+                <h3>Continue Learning</h3>
+                <p>You're @(100 - OverallProgress)% away from completing the course. Keep pushing forward!</p>
+                <button class="btn btn-primary">Resume Course</button>
+            </div>
+            <div class="recommendation-card">
+                <h3>Practice Code</h3>
+                <p>Sharpen your skills with interactive coding challenges and projects.</p>
+                <button class="btn btn-primary">Go to Sandbox</button>
+            </div>
+            <div class="recommendation-card">
+                <h3>Join Community</h3>
+                <p>Connect with other learners, ask questions, and share your projects.</p>
+                <button class="btn btn-primary">Join Forum</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export Certificate -->
+    @if (OverallProgress >= 80)
+    {
+        <div class="certificate-section">
+            <div class="certificate-card">
+                <div class="certificate-icon">📜</div>
+                <h2>Your Certificate is Ready!</h2>
+                <p>You've completed @(OverallProgress)% of the course and earned this certificate.</p>
+                <div class="certificate-actions">
+                    <button class="btn btn-success btn-lg">Download Certificate</button>
+                    <button class="btn btn-outline-primary btn-lg">Share on LinkedIn</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int OverallProgress { get; set; } = 65;
+
+    [Parameter]
+    public int CompletedLessons { get; set; } = 42;
+
+    [Parameter]
+    public int TotalLessons { get; set; } = 65;
+
+    [Parameter]
+    public int CompletedModules { get; set; } = 5;
+
+    [Parameter]
+    public int TotalModules { get; set; } = 12;
+
+    [Parameter]
+    public double TotalHoursPracticed { get; set; } = 48.5;
+
+    [Parameter]
+    public int CertificatesEarned { get; set; } = 3;
+
+    [Parameter]
+    public int CurrentStreak { get; set; } = 12;
+
+    [Parameter]
+    public List<ModuleData>? Modules { get; set; }
+
+    [Parameter]
+    public List<string>? SkillsMastered { get; set; }
+
+    [Parameter]
+    public List<AchievementData>? Achievements { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Modules ??= new()
+        {
+            new() { Name = "Program Induction", Description = "Get started with the course", CompletedLessons = 4, TotalLessons = 4, IsCompleted = true },
+            new() { Name = "Programming Refresher", Description = "Python fundamentals", CompletedLessons = 8, TotalLessons = 12, IsCompleted = false },
+            new() { Name = "Database Management", Description = "SQL and data handling", CompletedLessons = 6, TotalLessons = 10, IsCompleted = false },
+            new() { Name = "Python for Data Science", Description = "Advanced Python concepts", CompletedLessons = 5, TotalLessons = 8, IsCompleted = false },
+            new() { Name = "Applied Data Science", Description = "Real-world applications", CompletedLessons = 8, TotalLessons = 12, IsCompleted = false },
+            new() { Name = "Machine Learning", Description = "ML algorithms and models", CompletedLessons = 11, TotalLessons = 19, IsCompleted = false }
+        };
+
+        SkillsMastered ??= new()
+        {
+            "Python Basics", "Data Structures", "SQL Queries", "NumPy Arrays",
+            "Pandas DataFrames", "Data Cleaning", "Visualization", "Linear Regression",
+            "Classification", "Feature Engineering", "Model Evaluation", "Python Advanced"
+        };
+
+        Achievements ??= new()
+        {
+            new() { Icon = "🚀", Title = "Getting Started", Description = "Complete your first lesson", Unlocked = true, UnlockedDate = DateTime.Now.AddDays(-30) },
+            new() { Icon = "💪", Title = "Week Warrior", Description = "Study 7 days in a row", Unlocked = true, UnlockedDate = DateTime.Now.AddDays(-10) },
+            new() { Icon = "🔥", Title = "On Fire", Description = "Maintain 14-day streak", Unlocked = true, UnlockedDate = DateTime.Now.AddDays(-2) },
+            new() { Icon = "📚", Title = "Knowledge Seeker", Description = "Complete 10 lessons", Unlocked = true, UnlockedDate = DateTime.Now.AddDays(-15) },
+            new() { Icon = "👨‍💻", Title = "Code Master", Description = "Write 100+ lines in sandbox", Unlocked = false, UnlockedDate = null },
+            new() { Icon = "🎓", Title = "Module Expert", Description = "Complete any full module", Unlocked = true, UnlockedDate = DateTime.Now.AddDays(-5) },
+            new() { Icon = "🏆", Title = "Completion Champion", Description = "Complete the entire course", Unlocked = false, UnlockedDate = null }
+        };
+    }
+
+    public class ModuleData
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public int CompletedLessons { get; set; }
+        public int TotalLessons { get; set; }
+        public bool IsCompleted { get; set; }
+
+        public int CompletionPercentage => TotalLessons > 0 ? (CompletedLessons * 100 / TotalLessons) : 0;
+    }
+
+    public class AchievementData
+    {
+        public string Icon { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public bool Unlocked { get; set; }
+        public DateTime? UnlockedDate { get; set; }
+    }
+}
+
+<style>
+    .completion-summary-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .summary-header {
+        background: linear-gradient(135deg, #1b6ec2 0%, #004a7d 100%);
+        color: white;
+        padding: 50px 30px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .summary-header h1 {
+        font-size: 2.5rem;
+        margin: 0 0 10px 0;
+    }
+
+    .summary-header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .summary-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .summary-card.large {
+        grid-column: 1 / -1;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .summary-card h2,
+    .summary-card h3 {
+        margin: 0 0 15px 0;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .summary-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .summary-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .progress-visualization {
+        margin-bottom: 20px;
+    }
+
+    .progress-bar-large {
+        width: 100%;
+        height: 12px;
+        background: #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #1b6ec2, #26b050);
+        transition: width 0.3s;
+    }
+
+    .progress-text {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #1b6ec2;
+    }
+
+    .progress-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-value {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #1b6ec2;
+    }
+
+    .stat-label {
+        display: block;
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 5px;
+    }
+
+    .stat-large {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #1b6ec2;
+        margin: 0;
+    }
+
+    .unit {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #666;
+        margin-left: 5px;
+    }
+
+    .stat-small {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 10px 0 0 0;
+    }
+
+    .modules-section {
+        margin-bottom: 50px;
+    }
+
+    .modules-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .modules-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .module-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .module-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .module-header h3 {
+        margin: 0;
+        color: #333;
+        font-size: 1.1rem;
+    }
+
+    .progress-percent {
+        background: #e3f2fd;
+        color: #1b6ec2;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    .module-description {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 12px;
+    }
+
+    .progress-bar-small {
+        width: 100%;
+        height: 6px;
+        background: #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+
+    .module-stats {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+        color: #666;
+    }
+
+    .module-status {
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+
+    .module-status.in-progress {
+        background: #fff3cd;
+        color: #ff9800;
+    }
+
+    .module-status.completed {
+        background: #d4edda;
+        color: #26b050;
+    }
+
+    .skills-section {
+        margin-bottom: 50px;
+    }
+
+    .skills-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .skill-badge {
+        background: white;
+        border: 2px solid #1b6ec2;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .skill-icon {
+        font-size: 1.5rem;
+        color: #26b050;
+    }
+
+    .skill-name {
+        font-weight: 600;
+        color: #333;
+        font-size: 0.95rem;
+    }
+
+    .achievements-section {
+        margin-bottom: 50px;
+    }
+
+    .achievements-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .achievements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .achievement-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        transition: all 0.3s;
+        opacity: 0.6;
+        grayscale: 1;
+    }
+
+    .achievement-card.unlocked {
+        opacity: 1;
+        grayscale: 0;
+        box-shadow: 0 4px 12px rgba(27, 110, 194, 0.15);
+    }
+
+    .achievement-badge {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .achievement-card h4 {
+        margin: 12px 0;
+        color: #333;
+        font-size: 1.1rem;
+    }
+
+    .achievement-card p {
+        color: #666;
+        font-size: 0.9rem;
+        margin: 8px 0;
+    }
+
+    .unlock-date {
+        font-size: 0.8rem;
+        color: #26b050;
+        font-weight: 600;
+        margin-top: 10px !important;
+    }
+
+    .recommendations-section {
+        margin-bottom: 50px;
+    }
+
+    .recommendations-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .recommendations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .recommendation-card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        border-top: 4px solid #1b6ec2;
+    }
+
+    .recommendation-card h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.2rem;
+    }
+
+    .recommendation-card p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .certificate-section {
+        background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+        padding: 50px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .certificate-card {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .certificate-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .certificate-card h2 {
+        color: #ffd700;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .certificate-card p {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .certificate-actions {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @@media (max-width: 1024px) {
+        .summary-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .summary-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .progress-stats {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .summary-header {
+            padding: 30px 20px;
+        }
+
+        .summary-header h1 {
+            font-size: 1.8rem;
+        }
+
+        .summary-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .recommendations-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .certificate-section {
+            padding: 30px 20px;
+        }
+
+        .certificate-card {
+            padding: 20px;
+        }
+    }
+</style>
