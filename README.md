@@ -5,7 +5,7 @@ To-do:
 CFD, Book companion, Periodic Table
 4. Setup SQL/Hyrax integration
 5. Spring boot/java or React/ADK
- - Use AWS [Example](https://github.com/aws-containers/retail-store-sample-app/tree/main/src/ui/src/main/java/com/amazon/sample/ui/web) 
+ - Use AWS [Example](https://github.com/aws-containers/retail-store-sample-app/tree/main/src/ui/src/main/java/com/amazon/sample/ui/) 
 
 # Learning Platform - Quick Start Guide
 
