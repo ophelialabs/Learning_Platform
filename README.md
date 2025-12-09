@@ -3,6 +3,7 @@ To-do:
 2. Add agent to Learning_Platform
 3. Implement tools in platform
 CFD, Book companion, Periodic Table
+4. Setup SQL/Hyrax integration 
 
 # Learning Platform - Quick Start Guide
 
