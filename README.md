@@ -1,3 +1,5 @@
+![banner](LP_app/public/LP.png)
+
 # Learning Platform - Quick Start Guide
 
 ## 📋 What's Been Built
