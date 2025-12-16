@@ -1,0 +1,78 @@
+@page "/data-science/lessons/sql-basics"
+
+<PageTitle>SQL Basics - Data Science Learning Platform</PageTitle>
+
+<div class="lesson-page-wrapper">
+    <div class="lesson-header">
+        <a href="/data-science/learning" class="back-link">&lt;- Back to Learning</a>
+        <h1>SQL Basics</h1>
+        <div class="lesson-meta">
+            <span class="meta-badge"><i class="bi bi-clock"></i> 75 mins</span>
+            <span class="meta-badge"><i class="bi bi-bookmark"></i> Module 3</span>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <section class="content-section">
+            <h2>Overview</h2>
+            <p>Learn SQL fundamentals including database concepts, SELECT statements, and basic queries for data retrieval.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Key Topics</h2>
+            <ul class="topics-list">
+                <li><span class="topic-icon">🗄️</span> Databases and Tables</li>
+                <li><span class="topic-icon">🗄️</span> SELECT Statements</li>
+                <li><span class="topic-icon">🗄️</span> Basic Queries</li>
+            </ul>
+        </section>
+        <section class="content-section">
+            <h2>Learning Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Understand database structure
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Write basic SELECT queries
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">✓</span>
+                    Retrieve data from tables
+                </div>
+            </div>
+        </section>  
+        <section class="content-section">
+            <h2>Code Example</h2>
+            <div class="code-block">
+                <pre><code>-- Top Earners by Department and City
+SELECT department, city, MAX(salary) AS top_earner
+FROM employees
+GROUP BY department, city
+ORDER BY department, city;</code></pre>
+                <pre><code>-- Example 2
+With ranked AS (
+    Select
+    id, name, city, department, salary,
+    Rank() OVER (
+        PARTITION BY department
+        ORDER BY salary DESC
+    ) AS dept_rank,
+    Rank() OVER (
+        PARTITION BY city
+        ORDER BY salary DESC
+    ) AS city_rank
+    From employees
+)Select
+    id, name, city, department, salary, dept_rank, city_rank,
+    CASE WHEN dept_rank = 1 THEN 1 ELSE 0 END AS is_top_in_dept,
+    CASE WHEN city_rank = 1 THEN 1 ELSE 0 END AS is_top_in_city
+From ranked;
+WHERE dept_rank = 1 OR city_rank = 1;
+ORDER BY department, city, salary DESC, name;</code></pre>
+            </div>
+        </section>
+    </div>
+</div>
+            
