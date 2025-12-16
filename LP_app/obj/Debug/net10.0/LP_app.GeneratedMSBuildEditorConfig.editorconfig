@@ -11,333 +11,333 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LP_app
 build_property.RootNamespace = LP_app
-build_property.ProjectDir = /Users/jesse/Downloads/Learning_Platform-main/LP_app/
+build_property.ProjectDir = /Users/jesse/Downloads/Learning_Platform1/LP_app/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/jesse/Downloads/Learning_Platform-main/LP_app
+build_property.MSBuildProjectDirectory = /Users/jesse/Downloads/Learning_Platform1/LP_app
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/App.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/CodeSandbox.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/CodeSandbox.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db2RlU2FuZGJveC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/CompletionSummary.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/CompletionSummary.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wbGV0aW9uU3VtbWFyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/CourseHeader.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/CourseHeader.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db3Vyc2VIZWFkZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/LessonContent.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/LessonContent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MZXNzb25Db250ZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/LessonsList.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/LessonsList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MZXNzb25zTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/BrowseCourses.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/BrowseCourses.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ccm93c2VDb3Vyc2VzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Certificates.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Certificates.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DZXJ0aWZpY2F0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Auth.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Auth.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9BdXRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Fleet.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Fleet.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9GbGVldC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Globe.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Globe.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9HbG9iZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Maps.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Maps.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9NYXBzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Paris.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Paris.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9QYXJpcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Check/Sat.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Check/Sat.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DaGVjay9TYXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Enterprise/Architecture/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Enterprise/Architecture/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FbnRlcnByaXNlL0FyY2hpdGVjdHVyZS9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Enterprise/GeoFence/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Enterprise/GeoFence/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FbnRlcnByaXNlL0dlb0ZlbmNlL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Enterprise/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Enterprise/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FbnRlcnByaXNlL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Error.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Home.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Aerospace_Engineering/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Aerospace_Engineering/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9BZXJvc3BhY2VfRW5naW5lZXJpbmcvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Aerospace_Engineering/Pages/FundamentalsOfFlight.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Aerospace_Engineering/Pages/FundamentalsOfFlight.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9BZXJvc3BhY2VfRW5naW5lZXJpbmcvUGFnZXMvRnVuZGFtZW50YWxzT2ZGbGlnaHQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Aerospace_Engineering/Pages/Sat_Engineering/Launch-Vehicles.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Aerospace_Engineering/Pages/Sat_Engineering/Launch-Vehicles.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9BZXJvc3BhY2VfRW5naW5lZXJpbmcvUGFnZXMvU2F0X0VuZ2luZWVyaW5nL0xhdW5jaC1WZWhpY2xlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/BioMedical_Engineering/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/BioMedical_Engineering/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9CaW9NZWRpY2FsX0VuZ2luZWVyaW5nL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/BioMedical_Engineering/Pages/IntroductionToBiomedicine.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/BioMedical_Engineering/Pages/IntroductionToBiomedicine.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9CaW9NZWRpY2FsX0VuZ2luZWVyaW5nL1BhZ2VzL0ludHJvZHVjdGlvblRvQmlvbWVkaWNpbmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/BioTechnology_Program/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/BioTechnology_Program/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9CaW9UZWNobm9sb2d5X1Byb2dyYW0vSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/BioTechnology_Program/Pages/MolecularBiologyFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/BioTechnology_Program/Pages/MolecularBiologyFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9CaW9UZWNobm9sb2d5X1Byb2dyYW0vUGFnZXMvTW9sZWN1bGFyQmlvbG9neUZ1bmRhbWVudGFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Chemistry/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Chemistry/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9DaGVtaXN0cnkvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Chemistry/Pages/AtomicStructureAndBonding.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Chemistry/Pages/AtomicStructureAndBonding.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9DaGVtaXN0cnkvUGFnZXMvQXRvbWljU3RydWN0dXJlQW5kQm9uZGluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Learning.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Learning.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvTGVhcm5pbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/ControlFlow.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/ControlFlow.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvQ29udHJvbEZsb3cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/CourseNavigation.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/CourseNavigation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvQ291cnNlTmF2aWdhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/DataStructures.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/DataStructures.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvRGF0YVN0cnVjdHVyZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/FunctionsModules.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/FunctionsModules.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvRnVuY3Rpb25zTW9kdWxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/JoinsQueries.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/JoinsQueries.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvSm9pbnNRdWVyaWVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/ListComprehensions.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/ListComprehensions.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvTGlzdENvbXByZWhlbnNpb25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/NumpyArrays.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/NumpyArrays.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvTnVtcHlBcnJheXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/PandasDataFrames.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/PandasDataFrames.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvUGFuZGFzRGF0YUZyYW1lcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/ProgramInductionAssessment.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/ProgramInductionAssessment.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvUHJvZ3JhbUluZHVjdGlvbkFzc2Vzc21lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/ProgramOverview.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/ProgramOverview.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvUHJvZ3JhbU92ZXJ2aWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/PythonBasics.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/PythonBasics.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvUHl0aG9uQmFzaWNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/PythonRefresherQuiz.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/PythonRefresherQuiz.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvUHl0aG9uUmVmcmVzaGVyUXVpei5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/SettingUpEnvironment.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/SettingUpEnvironment.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvU2V0dGluZ1VwRW52aXJvbm1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Pages/SqlBasics.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Pages/SqlBasics.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUGFnZXMvU3FsQmFzaWNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Resources/GettingStartedGuide.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Resources/GettingStartedGuide.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUmVzb3VyY2VzL0dldHRpbmdTdGFydGVkR3VpZGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Resources/ProgramSyllabus.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Resources/ProgramSyllabus.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUmVzb3VyY2VzL1Byb2dyYW1TeWxsYWJ1cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Resources/ResourcePage.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Resources/ResourcePage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUmVzb3VyY2VzL1Jlc291cmNlUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Data_Science/Resources/WelcomeVideo.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Data_Science/Resources/WelcomeVideo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9EYXRhX1NjaWVuY2UvUmVzb3VyY2VzL1dlbGNvbWVWaWRlby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Engineering/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Engineering/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9FbmdpbmVlcmluZy9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Engineering/Pages/EngineeringFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Engineering/Pages/EngineeringFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9FbmdpbmVlcmluZy9QYWdlcy9FbmdpbmVlcmluZ0Z1bmRhbWVudGFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Geospatial_Analytics/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Geospatial_Analytics/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9HZW9zcGF0aWFsX0FuYWx5dGljcy9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Geospatial_Analytics/Pages/GISFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Geospatial_Analytics/Pages/GISFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9HZW9zcGF0aWFsX0FuYWx5dGljcy9QYWdlcy9HSVNGdW5kYW1lbnRhbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Mathematics/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Mathematics/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9NYXRoZW1hdGljcy9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Mathematics/Pages/CalculusFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Mathematics/Pages/CalculusFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9NYXRoZW1hdGljcy9QYWdlcy9DYWxjdWx1c0Z1bmRhbWVudGFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Nano/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Nano/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9OYW5vL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Nano/Pages/Advanced_Materials.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Nano/Pages/Advanced_Materials.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9OYW5vL1BhZ2VzL0FkdmFuY2VkX01hdGVyaWFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Nuclear_Engineering/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Nuclear_Engineering/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9OdWNsZWFyX0VuZ2luZWVyaW5nL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Nuclear_Engineering/Pages/NuclearPhysicsBasics.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Nuclear_Engineering/Pages/NuclearPhysicsBasics.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9OdWNsZWFyX0VuZ2luZWVyaW5nL1BhZ2VzL051Y2xlYXJQaHlzaWNzQmFzaWNzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Physics/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Physics/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9QaHlzaWNzL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Physics/Pages/MechanicsFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Physics/Pages/MechanicsFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9QaHlzaWNzL1BhZ2VzL01lY2hhbmljc0Z1bmRhbWVudGFscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Textiles/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Textiles/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9UZXh0aWxlcy9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Learning/Textiles/Pages/TextileFundamentals.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Learning/Textiles/Pages/TextileFundamentals.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZWFybmluZy9UZXh0aWxlcy9QYWdlcy9UZXh0aWxlRnVuZGFtZW50YWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/MyLearning.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/MyLearning.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9NeUxlYXJuaW5nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/NotFound.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ob3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/01_Enterprise-Linux/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/01_Enterprise-Linux/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDFfRW50ZXJwcmlzZS1MaW51eC9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/02_DotNet/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/02_DotNet/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDJfRG90TmV0L0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/03_React/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/03_React/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDNfUmVhY3QvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/04_Python/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/04_Python/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDRfUHl0aG9uL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/05_Rust/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/05_Rust/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDVfUnVzdC9JbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/06_ROS/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/06_ROS/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDZfUk9TL0luZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/07_Cmake/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/07_Cmake/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDdfQ21ha2UvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/08_Q\#/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Ophelia/Pipeline/Tabs/08_Q\#/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9PcGhlbGlhL1BpcGVsaW5lL1RhYnMvMDhfUSMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Profile.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Qcm9maWxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Pages/Research/Universities/Index.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Pages/Research/Universities/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9SZXNlYXJjaC9Vbml2ZXJzaXRpZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/QuizzesList.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/QuizzesList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9RdWl6emVzTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Routes.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/_Imports.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Layout/MainLayout.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-2czftve675
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Layout/NavMenu.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-cgq88qfwn3
 
-[/Users/jesse/Downloads/Learning_Platform-main/LP_app/Components/Layout/ReconnectModal.razor]
+[/Users/jesse/Downloads/Learning_Platform1/LP_app/Components/Layout/ReconnectModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-uugq7wodjd
