@@ -19,7 +19,7 @@ Your Learning Platform is now a **complete, professional e-learning system** wit
 
 ### 1. Run the Application
 ```bash
-cd "Learning_Platform-main 2"
+cd "Learning_Platform"
 dotnet run
 ```
 
