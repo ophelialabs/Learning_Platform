@@ -1,5 +1,3 @@
-*Check local for quantum network visualization page*
-
 ![banner](LP_app/public/LP.png)
 
 # Learning Platform - Quick Start Guide
