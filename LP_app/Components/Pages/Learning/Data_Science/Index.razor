@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section class="tools-section">
-        <h2>Tools You'll Master</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="requirements-section">
         <h2>What You'll Learn</h2>
@@ -160,11 +162,23 @@
 </div>
 
 @code {
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "Python", "R", "MySQL", "NumPy", "SciPy", "Pandas", 
-        "Matplotlib", "Seaborn", "TensorFlow", "Keras", 
-        "Power BI", "ChatGPT", "Gemini", "Dall-E 2", "Zapier"
+        { "Python", "https://www.python.org/" },
+        { "R", "https://www.r-project.org/" },
+        { "MySQL", "https://www.mysql.com/" },
+        { "NumPy", "https://numpy.org/" },
+        { "SciPy", "https://scipy.org/" },
+        { "Pandas", "https://pandas.pydata.org/" },
+        { "Matplotlib", "https://matplotlib.org/" },
+        { "Seaborn", "https://seaborn.pydata.org/" },
+        { "TensorFlow", "https://www.tensorflow.org/" },
+        { "Keras", "https://keras.io/" },
+        { "Power BI", "https://powerbi.microsoft.com/" },
+        { "ChatGPT", "https://chat.openai.com/chat" },
+        { "Gemini", "https://gemini.google.com" },
+        { "Dall-E 2", "https://www.dalle2.com" },
+        { "Zapier", "https://zapier.com" }
     };
 }
 

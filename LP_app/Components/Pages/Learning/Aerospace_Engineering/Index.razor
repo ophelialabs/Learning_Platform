@@ -87,15 +87,17 @@
 
     <QuizzesList @ref="quizzesComponent" />
 
-    <section class="tools-section">
-        <h2>Tools You'll Use</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="cta-section-internal">
         <h3>Ready to Start?</h3>
@@ -161,9 +163,14 @@
     private LessonsList? lessonsComponent;
     private QuizzesList? quizzesComponent;
     
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "MATLAB", "CATIA", "SolidWorks", "ANSYS", "CFX", "Simulink"
+        { "MATLAB", "https://www.mathworks.com/products/matlab.html" },
+        { "CATIA", "https://www.3ds.com/products/catia/" },
+        { "SolidWorks", "https://www.solidworks.com/" },
+        { "ANSYS", "https://www.ansys.com/" },
+        { "CFX", "https://www.ansys.com/products/fluids/cfx" },
+        { "Simulink", "https://www.mathworks.com/products/simulink.html" }
     };
 
     protected override void OnInitialized()
@@ -176,7 +183,7 @@
                     Title = "Introduction to Aerospace", 
                     Description = "Overview of aerospace engineering and its applications.",
                     Duration = "2 hours",
-                    Link = "/lesson/ae-intro",
+                    Link = "/lessons/fundamentals-of-flight",
                     Topics = new() { "Fundamentals", "History", "Applications" }
                 },
                 new() { 

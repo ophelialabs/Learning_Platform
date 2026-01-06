@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section class="tools-section">
-        <h2>Tools You'll Master</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="requirements-section">
         <h2>What You'll Learn</h2>
@@ -217,18 +219,18 @@
 </div>
 
 @code {
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "Electron Microscopy",
-        "X-ray Diffraction",
-        "Spectroscopy",
-        "Material Simulation",
-        "Photonics",
-        "Lithography",
-        "Semiconductor Design",
-        "Optical Engineering",
-        "Nanotechnology CAD",
-        "Lab Equipment"
+        { "Electron Microscopy", "https://www.thermofisher.com/electron-microscopy" },
+        { "X-ray Diffraction", "https://www.diffrac.com/" },
+        { "Spectroscopy", "https://www.spectroscopy.com/" },
+        { "Material Simulation", "https://www.materialsproject.org/" },
+        { "Photonics", "https://www.photonics.com/" },
+        { "Lithography", "https://www.microelectronicsemiconductor.com/lithography/" },
+        { "Semiconductor Design", "https://www.semiconductors.org/" },
+        { "Optical Engineering", "https://www.opticalengineering.com/" },
+        { "Nanotechnology CAD", "https://www.nanotechnologycad.com/" },
+        { "Lab Equipment", "https://www.labequipment.com/" }
     };
 }
 

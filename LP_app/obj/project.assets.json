@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jesse/Downloads/Learning_Platform1/LP_app/LP_app.csproj",
+      "projectUniqueName": "/Users/jesse/Desktop/Company/Learning_Platform/LP_app/LP_app.csproj",
       "projectName": "LP_app",
-      "projectPath": "/Users/jesse/Downloads/Learning_Platform1/LP_app/LP_app.csproj",
+      "projectPath": "/Users/jesse/Desktop/Company/Learning_Platform/LP_app/LP_app.csproj",
       "packagesPath": "/Users/jesse/.nuget/packages/",
-      "outputPath": "/Users/jesse/Downloads/Learning_Platform1/LP_app/obj/",
+      "outputPath": "/Users/jesse/Desktop/Company/Learning_Platform/LP_app/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jesse/.nuget/NuGet/NuGet.Config"

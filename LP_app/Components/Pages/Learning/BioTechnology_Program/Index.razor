@@ -10,7 +10,7 @@
     HasCertificate="true" />
 
 <div class="learning-cta">
-    <a href="/biotechnology/learning" class="btn btn-primary btn-lg">
+    <a href="/biotechnology/lessons/molecular-biology-fundamentals" class="btn btn-primary btn-lg">
         <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
     </a>
 </div>
@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section class="tools-section">
-        <h2>Tools You'll Master</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="requirements-section">
         <h2>What You'll Learn</h2>
@@ -141,9 +143,14 @@
     private LessonsList? lessonsComponent;
     private QuizzesList? quizzesComponent;
 
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "Bioinformatics Tools", "BLAST", "Python", "R", "MATLAB", "ImageJ"
+        { "Bioinformatics Tools", "https://www.ncbi.nlm.nih.gov/BLAST/" },
+        { "BLAST", "https://www.ncbi.nlm.nih.gov/BLAST/" },
+        { "Python", "https://www.python.org/" },
+        { "R", "https://www.r-project.org/" },
+        { "MATLAB", "https://www.mathworks.com/products/matlab.html" },
+        { "ImageJ", "https://imagej.nih.gov/ij/" }
     };
 
     protected override void OnInitialized() {

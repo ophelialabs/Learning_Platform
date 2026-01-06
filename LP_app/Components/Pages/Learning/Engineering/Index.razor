@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section class="tools-section">
-        <h2>Tools You'll Master</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="requirements-section">
         <h2>What You'll Learn</h2>
@@ -141,9 +143,14 @@
     private LessonsList? lessonsComponent;
     private QuizzesList? quizzesComponent;
 
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "AutoCAD", "SOLIDWORKS", "MATLAB", "Python", "ANSYS", "SAP2000"
+        { "AutoCAD", "https://www.autodesk.com/products/autocad" },
+        { "SOLIDWORKS", "https://www.solidworks.com/" },
+        { "MATLAB", "https://www.mathworks.com/products/matlab.html" },
+        { "Python", "https://www.python.org/" },
+        { "ANSYS", "https://www.ansys.com/" },
+        { "SAP2000", "https://www.csiber.com/products/sap2000" }
     };
 
     protected override void OnInitialized() {

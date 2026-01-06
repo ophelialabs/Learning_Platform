@@ -184,6 +184,7 @@
 .research-section.collapsed,
 .learning-section.collapsed,
 .enterprise-section.collapsed,
+.ophelia-section.collapsed,
 .account-section.collapsed {
     display: none;
 }

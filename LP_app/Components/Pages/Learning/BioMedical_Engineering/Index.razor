@@ -10,7 +10,7 @@
     HasCertificate="true" />
 
 <div class="learning-cta">
-    <a href="/biomedical-engineering/learning" class="btn btn-primary btn-lg">
+    <a href="/biomedical-engineering/lessons/introduction-to-biomedicine" class="btn btn-primary btn-lg">
         <i class="bi bi-play-circle-fill"></i> Start Interactive Learning
     </a>
 </div>
@@ -24,7 +24,7 @@
                 <h3>Biomedical Fundamentals</h3>
                 <p>Core concepts in biomedical engineering, human anatomy, and physiology for engineers.</p>
                 <div class="card-meta">7 lessons • 5 hours</div>
-                <a href="/biomedical-engineering/learning" class="btn btn-sm btn-primary">Start Module</a>
+                <a href="/biomedical-engineering/lessons/introduction-to-biomedicine" class="btn btn-sm btn-primary">Start Module</a>
             </div>
             <div class="overview-card">
                 <div class="card-number">2</div>
@@ -43,15 +43,17 @@
         </div>
     </section>
 
-    <section class="tools-section">
-        <h2>Tools You'll Master</h2>
-        <div class="tools-grid">
-            @foreach (var tool in Tools)
-            {
-                <div class="tool-badge">@tool</div>
-            }
-        </div>
-    </section>
+<section class="tools-section">
+    <h2>Tools You'll Master</h2>
+    <div class="tools-grid">
+        @foreach (var tool in Tools)
+        {
+            <a href="@tool.Value" target="_blank" rel="noopener noreferrer" class="tool-badge">
+                @tool.Key
+            </a>
+        }
+    </div>
+</section>
 
     <section class="requirements-section">
         <h2>What You'll Learn</h2>
@@ -138,9 +140,14 @@
 </div>
 
 @code {
-    private List<string> Tools = new()
+    private Dictionary<string, string> Tools = new()
     {
-        "MATLAB", "ANSYS", "SolidWorks", "Simulink", "LabVIEW", "CAD"
+        { "MATLAB", "https://www.mathworks.com/products/matlab.html" },
+        { "ANSYS", "https://www.ansys.com/" },
+        { "SolidWorks", "https://www.solidworks.com/" },
+        { "Simulink", "https://www.mathworks.com/products/simulink.html" },
+        { "LabVIEW", "https://www.ni.com/en-us/shop/labview.html" },
+        { "CAD", "https://www.autodesk.com/products/civil-3d/overview" }
     };
 }
 
