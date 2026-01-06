@@ -1,6 +1,8 @@
 ![banner](LP_app/public/LP.png)
 
 # Learning Platform - Quick Start Guide
+[Iseek](https://www.iseek.ai)
+ - continously tag content to discipline-specific ontologies and classification systems, flag coverage gaps and uncover overlaps among courses
 
 ## 📋 What's Been Built
 
